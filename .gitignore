@@ -1,7 +1,11 @@
 portfolio.xd
 Styleguide.xd
 logo-original/
+
 .idea/misc.xml
 .idea/modules.xml
 .idea/portfolio.iml
 .idea/workspace.xml
+
+package-lock.json
+node_modules/
