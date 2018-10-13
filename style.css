@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -94,4 +95,50 @@ html {
   -webkit-font-smoothing: subpixel-antialiased;
   font-variant-ligatures: common-ligatures;
   color: #545454;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-variant-ligatures: common-ligatures;
+  color: #545454;
+}
+
+header {
+  position: relative;
+}
+
+header img {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 35px;
+}
+
+header span {
+  position: fixed;
+  right: 10px;
+  width: 5%;
+  border-bottom: solid 3px #928484;
+}
+
+header span:nth-child(1) {
+  top: 15px;
+}
+
+header span:nth-child(2) {
+  top: 25px;
+}
+
+header span:nth-child(3) {
+  top: 35px;
 }

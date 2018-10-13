@@ -1,0 +1,30 @@
+@import "variable", "typography";
+
+header {
+  position: relative;
+
+  img {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 35px;
+  }
+
+  span {
+    position: fixed;
+    right: 10px;
+    width: 5%;
+    border-bottom: solid 3px $brown;
+
+    &:nth-child(1) {
+      top: 15px;
+    }
+    &:nth-child(2) {
+      top: 25px;
+    }
+    &:nth-child(3) {
+      top: 35px;
+    }
+  }
+}
