@@ -1,0 +1,10 @@
+@import "variable";
+
+@mixin menuTrigger($marginTop) {
+  display: block;
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: $brown;
+  margin-top: ($marginTop);
+}

@@ -1,30 +1,41 @@
-@import "variable", "typography";
+@import "variable", "typography", "mixin";
 
 header {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
 
   img {
-    position: fixed;
-    top: 10px;
-    left: 10px;
     width: 30px;
     height: 35px;
   }
 
-  span {
-    position: fixed;
-    right: 10px;
-    width: 5%;
-    border-bottom: solid 3px $brown;
+  .nav--button {
+    display: inline-block;
+    position: relative;
+    width: 44px;
+    height: 38px;
 
-    &:nth-child(1) {
-      top: 15px;
-    }
-    &:nth-child(2) {
-      top: 25px;
-    }
-    &:nth-child(3) {
-      top: 35px;
+
+    &>span {
+      display: block;
+      position: absolute;
+      top: 46%;
+      left: 45%;
+      width: 30px;
+      height: 3px;
+      background-color: $brown;
+
+      &::before {
+        @include menuTrigger(-10px);
+      }
+
+      &::after {
+        @include menuTrigger(17px);
+      }
     }
   }
+
 }
