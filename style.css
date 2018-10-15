@@ -4,6 +4,7 @@
 */
 @import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -73,6 +74,7 @@ body {
   -moz-osx-font-smoothing: auto;
   background-color: #FFFFFF;
   width: 100%;
+  padding-top: 50px;
 }
 
 main {
@@ -85,16 +87,6 @@ a {
 
 a:hover {
   text-decoration: none;
-}
-
-html {
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 400;
-  -webkit-font-smoothing: subpixel-antialiased;
-  font-variant-ligatures: common-ligatures;
-  color: #545454;
 }
 
 .container {
@@ -112,33 +104,81 @@ html {
   color: #545454;
 }
 
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-variant-ligatures: common-ligatures;
+  color: #545454;
+}
+
 header {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
 }
 
 header img {
-  position: fixed;
-  top: 10px;
-  left: 10px;
   width: 30px;
   height: 35px;
 }
 
-header span {
-  position: fixed;
-  right: 10px;
-  width: 5%;
-  border-bottom: solid 3px #928484;
+header .nav--button {
+  display: inline-block;
+  position: relative;
+  width: 44px;
+  height: 38px;
 }
 
-header span:nth-child(1) {
-  top: 15px;
+header .nav--button > span {
+  display: block;
+  position: absolute;
+  top: 46%;
+  left: 45%;
+  width: 30px;
+  height: 3px;
+  background-color: #928484;
 }
 
-header span:nth-child(2) {
-  top: 25px;
+header .nav--button > span::before {
+  display: block;
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: #928484;
+  margin-top: -10px;
 }
 
-header span:nth-child(3) {
-  top: 35px;
+header .nav--button > span::after {
+  display: block;
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: #928484;
+  margin-top: 17px;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-variant-ligatures: common-ligatures;
+  color: #545454;
+}
+
+.hero h1 {
+  text-align: center;
+  font-size: 1.875rem;
+}
+
+.hero h2 {
+  text-align: center;
+  font-size: 1.562rem;
+  color: #EE817B;
 }
