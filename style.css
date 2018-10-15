@@ -74,7 +74,7 @@ body {
   -moz-osx-font-smoothing: auto;
   background-color: #FFFFFF;
   width: 100%;
-  padding-top: 50px;
+  padding-top: 150px;
 }
 
 main {
@@ -116,6 +116,7 @@ html {
 
 header {
   display: flex;
+  top: 10px;
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -175,10 +176,23 @@ html {
 .hero h1 {
   text-align: center;
   font-size: 1.875rem;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  padding-bottom: 32px;
 }
 
 .hero h2 {
   text-align: center;
   font-size: 1.562rem;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
   color: #EE817B;
+  padding-bottom: 10px;
+}
+
+.hero img {
+  display: block;
+  margin: 54px auto;
+  width: 70%;
 }

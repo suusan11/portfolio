@@ -1,0 +1,26 @@
+@import "variable", "typography";
+
+.hero {
+  h1 {
+    text-align: center;
+    font-size: $font-size-h1-mb;
+    font-family: $font-heading;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.3em;
+    padding-bottom: 32px;
+  }
+  h2 {
+    text-align: center;
+    font-size: $font-size-h2-mb;
+    font-family: $font-heading;
+    font-weight: $font-weight-bold;
+    color: $secondary-pink;
+    padding-bottom: 10px;
+  }
+
+  img{
+    display: block;
+    margin: 54px auto;
+    width: 70%;
+  }
+}
