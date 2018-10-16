@@ -8,3 +8,21 @@
   background-color: $brown;
   margin-top: ($marginTop);
 }
+
+@mixin circle($top, $right, $bottom, $left) {
+  content: '';
+  display: block;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-color: $primary-pink;
+  margin: $top $right $bottom $left;
+}
+
+@mixin guideLine($top, $right, $bottom, $left) {
+  display: block;
+  content: '';
+  border-left: 3px solid $brown;
+  height: 30px;
+  margin: $top $right $bottom $left;
+}

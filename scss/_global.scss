@@ -1,4 +1,4 @@
-@import "_variable.scss";
+@import "variable", "typography", "mixin";
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -51,4 +51,34 @@ a {
 .container {
   width: 90%;
   margin: 0 auto;
+}
+
+.heading {
+  display: inline-block;
+  margin-left: 50px;
+
+  h2 {
+    display: inline-block;
+    font-size: $font-size-h2-mb;
+    font-family: $font-heading;
+    font-weight: $font-weight-bold;
+  }
+
+  h2.text--upright {
+    letter-spacing: 10px;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    -webkit-text-orientation: upright;
+    text-orientation: upright;
+
+    &::before {
+      @include circle(-25px, 0, 0, -70px);
+    }
+
+    &::after {
+      @include guideLine(110px, 13px, 0, 0);
+    }
+  }
+
+
 }
