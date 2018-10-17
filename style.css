@@ -92,6 +92,10 @@ main {
   display: block;
 }
 
+section {
+  margin: 30% 0;
+}
+
 h1 {
   font-size: 1.875rem;
   font-family: "Dosis", sans-serif;
@@ -285,7 +289,6 @@ html {
 
 .works__thumbnails {
   width: 100%;
-  margin: 10% 0;
 }
 
 .works__thumbnails .thumbnail {
@@ -302,4 +305,13 @@ html {
 
 .motto__block {
   padding: 5% 0;
+}
+
+.motto__block h3 {
+  color: #EE817B;
+  padding: 3% 0;
+}
+
+.motto__block p {
+  line-height: 24px;
 }
