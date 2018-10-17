@@ -25,11 +25,25 @@ main {
 }
 
 h1 {
-
+  font-size: $font-size-h1-mb;
+  font-family: $font-heading;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.3em;
 }
 
 h2 {
+  font-size: $font-size-h2-mb;
+  font-family: $font-heading;
+  font-weight: $font-weight-bold;
+}
 
+h2.text--upright {
+  display: inline-block;
+  letter-spacing: 10px;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  -webkit-text-orientation: upright;
+  text-orientation: upright;
 }
 
 h3 {
@@ -38,6 +52,10 @@ h3 {
 
 h4 {
 
+}
+
+p {
+  font-family: $font-size-base-mb;
 }
 
 a {
@@ -53,23 +71,11 @@ a {
   margin: 0 auto;
 }
 
-.heading {
-  display: inline-block;
-  margin-left: 50px;
-
-  h2 {
-    display: inline-block;
-    font-size: $font-size-h2-mb;
-    font-family: $font-heading;
-    font-weight: $font-weight-bold;
-  }
+.heading__left {
+  text-align: left;
 
   h2.text--upright {
-    letter-spacing: 10px;
-    -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
-    -webkit-text-orientation: upright;
-    text-orientation: upright;
+  padding-left: 9%;
 
     &::before {
       @include circle(-25px, 0, 0, -70px);
@@ -79,6 +85,21 @@ a {
       @include guideLine(110px, 13px, 0, 0);
     }
   }
-
-
 }
+
+.heading__right {
+  text-align: right;
+
+  h2.text--upright {
+    padding-right: 9%;
+
+    &::before {
+      @include circle(-25px, -10px, 0, 0);
+    }
+
+    &::after {
+      @include guideLine(110px, 13px, 0, 0);
+    }
+  }
+}
+
