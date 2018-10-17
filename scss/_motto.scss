@@ -1,0 +1,14 @@
+@import "variable";
+
+.motto__block {
+  padding: 5% 0;
+
+  h3 {
+    color: $primary-pink;
+    padding: 3% 0;
+  }
+
+  p {
+     line-height: 24px;
+  }
+}

@@ -92,6 +92,36 @@ main {
   display: block;
 }
 
+h1 {
+  font-size: 1.875rem;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+}
+
+h2 {
+  font-size: 1.562rem;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+}
+
+h2.text--upright {
+  display: inline-block;
+  letter-spacing: 10px;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  -webkit-text-orientation: upright;
+  text-orientation: upright;
+}
+
+h3 {
+  font-size: 1.562rem;
+}
+
+p {
+  font-family: 16px;
+}
+
 a {
   text-decoration: none;
 }
@@ -105,27 +135,15 @@ a:hover {
   margin: 0 auto;
 }
 
-.heading {
-  display: inline-block;
-  margin-left: 50px;
+.heading__left {
+  text-align: left;
 }
 
-.heading h2 {
-  display: inline-block;
-  font-size: 1.562rem;
-  font-family: "Dosis", sans-serif;
-  font-weight: bold;
+.heading__left h2.text--upright {
+  padding-left: 9%;
 }
 
-.heading h2.text--upright {
-  letter-spacing: 10px;
-  -webkit-writing-mode: vertical-rl;
-  writing-mode: vertical-rl;
-  -webkit-text-orientation: upright;
-  text-orientation: upright;
-}
-
-.heading h2.text--upright::before {
+.heading__left h2.text--upright::before {
   content: '';
   display: block;
   width: 85px;
@@ -135,7 +153,33 @@ a:hover {
   margin: -25px 0 0 -70px;
 }
 
-.heading h2.text--upright::after {
+.heading__left h2.text--upright::after {
+  display: block;
+  content: '';
+  border-left: 3px solid #928484;
+  height: 30px;
+  margin: 110px 13px 0 0;
+}
+
+.heading__right {
+  text-align: right;
+}
+
+.heading__right h2.text--upright {
+  padding-right: 9%;
+}
+
+.heading__right h2.text--upright::before {
+  content: '';
+  display: block;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-color: #FCECEA;
+  margin: -25px -10px 0 0;
+}
+
+.heading__right h2.text--upright::after {
   display: block;
   content: '';
   border-left: 3px solid #928484;
@@ -224,18 +268,11 @@ html {
 
 .hero h1 {
   text-align: center;
-  font-size: 1.875rem;
-  font-family: "Dosis", sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.3em;
   padding-bottom: 32px;
 }
 
 .hero h2 {
   text-align: center;
-  font-size: 1.562rem;
-  font-family: "Dosis", sans-serif;
-  font-weight: bold;
   color: #EE817B;
   padding-bottom: 10px;
 }
@@ -244,4 +281,25 @@ html {
   display: block;
   margin: 54px auto;
   width: 70%;
+}
+
+.works__thumbnails {
+  width: 100%;
+  margin: 10% 0;
+}
+
+.works__thumbnails .thumbnail {
+  padding: 8% 0;
+}
+
+.works__thumbnails .thumbnail img {
+  width: 100%;
+}
+
+.works__thumbnails .thumbnail p {
+  padding: 5px 0 0 5px;
+}
+
+.motto__block {
+  padding: 5% 0;
 }
