@@ -1,0 +1,39 @@
+@import "variable";
+
+div.text__container {
+  display: inline-block;
+  margin: 15px 0;
+
+  p {
+    display: inline;
+    line-height: 2em;
+    padding: 3px;
+    background-color: $primary-pink;
+  }
+
+  p.bg-color--secondpink {
+    background-color: $secondary-pink;
+    color: #FFFFFF;
+  }
+}
+
+
+.text__right {
+  text-align: right;
+
+  h3::after {
+      display: block;
+      content: '';
+      border-bottom: 3px solid $brown;
+      width: 30px;
+      margin: 18px auto 34px;
+  }
+}
+
+.text__left {
+  text-align: left;
+}
+
+.about img {
+  width: 100%;
+}

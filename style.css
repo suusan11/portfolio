@@ -119,6 +119,7 @@ h2.text--upright {
 }
 
 h3 {
+  display: inline-block;
   font-size: 1.562rem;
 }
 
@@ -314,4 +315,41 @@ html {
 
 .motto__block p {
   line-height: 24px;
+}
+
+div.text__container {
+  display: inline-block;
+  margin: 15px 0;
+}
+
+div.text__container p {
+  display: inline;
+  line-height: 2em;
+  padding: 3px;
+  background-color: #FCECEA;
+}
+
+div.text__container p.bg-color--secondpink {
+  background-color: #EE817B;
+  color: #FFFFFF;
+}
+
+.text__right {
+  text-align: right;
+}
+
+.text__right h3::after {
+  display: block;
+  content: '';
+  border-bottom: 3px solid #928484;
+  width: 30px;
+  margin: 18px auto 34px;
+}
+
+.text__left {
+  text-align: left;
+}
+
+.about img {
+  width: 100%;
 }
