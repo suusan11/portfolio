@@ -19,10 +19,18 @@
   margin: $top $right $bottom $left;
 }
 
-@mixin guideLine($top, $right, $bottom, $left) {
+@mixin guideLineH($top, $right, $bottom, $left) {
   display: block;
   content: '';
   border-left: 3px solid $brown;
   height: 30px;
   margin: $top $right $bottom $left;
+}
+
+@mixin guideLineW($top, $bottom) {
+  display: block;
+  content: '';
+  border-bottom: 3px solid $brown;
+  width: 30px;
+  margin: $top auto $bottom;
 }

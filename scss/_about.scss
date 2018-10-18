@@ -1,4 +1,4 @@
-@import "variable";
+@import "variable", "mixin";
 
 div.text__container {
   display: inline-block;
@@ -22,11 +22,7 @@ div.text__container {
   text-align: right;
 
   h3::after {
-      display: block;
-      content: '';
-      border-bottom: 3px solid $brown;
-      width: 30px;
-      margin: 18px auto 34px;
+      @include guideLineW(18px, 34px);
   }
 }
 
