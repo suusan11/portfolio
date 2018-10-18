@@ -1,0 +1,21 @@
+@import "variable", "typography";
+
+footer {
+  border-top: 1px solid $brown;
+  text-align: center;
+
+  .sns {
+    display: inline-block;
+    margin: 30px auto;
+
+    img {
+      width: 18px;
+      margin: 0 16px;
+    }
+  }
+
+  p {
+    font-size: 0.65rem;
+    margin-bottom: 30px;
+  }
+}

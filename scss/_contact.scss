@@ -1,0 +1,25 @@
+@import "variable";
+
+.contact {
+  text-align: center;
+
+  &__text {
+    margin: 50px auto 30px;
+    width: 70%;
+    line-height: 50px;
+  }
+}
+
+.icon--bg-pink {
+  width: 80px;
+  height: 80px;
+  border-radius: 30%;
+  background-color: $secondary-pink;
+  margin: 0 auto;
+
+  img {
+    width: 40px;
+    padding: 20px 0;
+  }
+}
+
