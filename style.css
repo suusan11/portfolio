@@ -172,7 +172,9 @@ a:hover {
 }
 
 .heading__right h2.text--upright {
-  padding-right: 9%;
+  display: inline-block;
+  position: relative;
+  padding-right: 12%;
 }
 
 .heading__right h2.text--upright::before {
@@ -183,6 +185,10 @@ a:hover {
   border-radius: 50%;
   background-color: #FCECEA;
   margin: -25px -10px 0 0;
+  position: absolute;
+  top: 0;
+  right: 9%;
+  z-index: -1;
 }
 
 .heading__right h2.text--upright::after {
@@ -191,6 +197,9 @@ a:hover {
   border-left: 3px solid #928484;
   height: 30px;
   margin: 110px 13px 0 0;
+  position: absolute;
+  bottom: 35%;
+  right: 18%;
 }
 
 .heading__center {

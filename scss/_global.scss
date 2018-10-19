@@ -96,14 +96,23 @@ a {
   text-align: right;
 
   h2.text--upright {
-    padding-right: 9%;
+    display: inline-block;
+    position: relative;
+    padding-right: 12%;
 
     &::before {
       @include circle(-25px, -10px, 0, 0);
+      position: absolute;
+      top: 0;
+      right: 9%;
+      z-index: -1;
     }
 
     &::after {
       @include guideLineH(110px, 13px, 0, 0);
+      position: absolute;
+      bottom: 35%;
+      right: 18%;
     }
   }
 }
