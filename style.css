@@ -303,6 +303,10 @@ html {
   color: #545454;
 }
 
+.hero {
+  margin-top: 0;
+}
+
 .hero h1 {
   text-align: center;
   padding-bottom: 32px;
