@@ -1,40 +1,43 @@
 @import "variable", "typography", "mixin";
 
 header {
-  display: flex;
-  top: 10px;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
+  top: 10px;
   width: 100%;
 
-  img {
-    width: 30px;
-    height: 35px;
-  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  .nav--button {
-    display: inline-block;
-    position: relative;
-    width: 44px;
-    height: 38px;
-
-
-    &>span {
-      display: block;
-      position: absolute;
-      top: 46%;
-      left: 45%;
+    img {
       width: 30px;
-      height: 3px;
-      background-color: $brown;
+      height: 35px;
+    }
 
-      &::before {
-        @include menuTrigger(-10px);
-      }
+    .nav--button {
+      display: block;
+      position: relative;
+      width: 44px;
+      height: 38px;
+      cursor: pointer;
 
-      &::after {
-        @include menuTrigger(17px);
+      & > span {
+        display: block;
+        position: absolute;
+        top: 46%;
+        left: 45%;
+        width: 30px;
+        height: 3px;
+        background-color: $brown;
+
+        &::before {
+          @include menuTrigger(-10px);
+        }
+
+        &::after {
+          @include menuTrigger(17px);
+        }
       }
     }
   }

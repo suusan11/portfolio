@@ -254,27 +254,31 @@ html {
 }
 
 header {
-  display: flex;
-  top: 10px;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
+  top: 10px;
   width: 100%;
 }
 
-header img {
+header .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .flex img {
   width: 30px;
   height: 35px;
 }
 
-header .nav--button {
-  display: inline-block;
+header .flex .nav--button {
+  display: block;
   position: relative;
   width: 44px;
   height: 38px;
+  cursor: pointer;
 }
 
-header .nav--button > span {
+header .flex .nav--button > span {
   display: block;
   position: absolute;
   top: 46%;
@@ -284,7 +288,7 @@ header .nav--button > span {
   background-color: #928484;
 }
 
-header .nav--button > span::before {
+header .flex .nav--button > span::before {
   display: block;
   content: '';
   width: 30px;
@@ -293,7 +297,7 @@ header .nav--button > span::before {
   margin-top: -10px;
 }
 
-header .nav--button > span::after {
+header .flex .nav--button > span::after {
   display: block;
   content: '';
   width: 30px;
