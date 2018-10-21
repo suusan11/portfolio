@@ -516,3 +516,16 @@ html {
   background-color: #EE817B;
   transition: .5s ease-out;
 }
+
+.works__images {
+  text-align: center;
+}
+
+.works__images-img {
+  display: inline-block;
+  width: 274px;
+  height: 187px;
+  background-color: #BEB9B9;
+  border-radius: 20%;
+  margin: 5% 0;
+}
