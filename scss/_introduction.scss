@@ -21,6 +21,10 @@
         @include guideLineW(12px, 12px);
       }
     }
+
+    p {
+      line-height: 24px;
+    }
   }
 
   button {

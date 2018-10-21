@@ -496,6 +496,10 @@ html {
   margin: 12px auto 12px;
 }
 
+.introduction__container p {
+  line-height: 24px;
+}
+
 .introduction button {
   display: block;
   width: 150px;
