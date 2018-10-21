@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -455,4 +456,59 @@ footer .sns img {
 footer p {
   font-size: 0.65rem;
   margin-bottom: 30px;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-variant-ligatures: common-ligatures;
+  color: #545454;
+}
+
+.bg-color--primarypink {
+  width: 100%;
+  padding: 10% 0;
+  background-color: #FCECEA;
+}
+
+.introduction {
+  margin-top: 0;
+}
+
+.introduction__container {
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.introduction__container h1 {
+  padding-bottom: 10%;
+}
+
+.introduction__container h1::after {
+  display: block;
+  content: '';
+  border-bottom: 3px solid #928484;
+  width: 30px;
+  margin: 12px auto 12px;
+}
+
+.introduction button {
+  display: block;
+  width: 150px;
+  padding: 9px 30px;
+  margin: 10% auto 0;
+  font-size: 18px;
+  color: #EE817B;
+  border: 2px solid #EE817B;
+  background-color: #FFFFFF;
+}
+
+.introduction button:hover {
+  color: #FFFFFF;
+  background-color: #EE817B;
+  transition: .5s ease-out;
 }
