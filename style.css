@@ -581,3 +581,23 @@ html {
 .style__color p, .style__font p {
   display: inline-block;
 }
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 30%;
+}
+
+.link h4 {
+  display: inline-block;
+  color: #EE817B;
+}
+
+.link h4::after {
+  display: block;
+  content: '';
+  border-bottom: 3px solid #928484;
+  width: 30px;
+  margin: 10% auto 0;
+}
