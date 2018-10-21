@@ -13,6 +13,7 @@ $font-size-base-mb: 16px;
 $font-size-h1-mb: 1.875rem; //30px
 $font-size-h2-mb: 1.562rem; //25px
 $font-size-h3-mb: 1.562rem; //25px
+$font-size-h4-mb: 1.25rem; //20px
 
 // font-size: PC
 $font-size-base-pc: 20px;
@@ -20,8 +21,8 @@ $font-size-h1-pc: 2.5rem; //50px
 $font-size-h2-pc: 2rem; //40px
 
 //font-weight
-$font-weight-bold: bold; //700
-$font-weight-light: lighter; //400
+$font-weight-bold: 700;
+$font-weight-light: 400;
 
 
 html {

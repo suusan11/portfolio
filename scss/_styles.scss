@@ -1,0 +1,39 @@
+@import "variable", "typography";
+
+.bg-color--primarypink {
+  background-color: $primary-pink;
+}
+
+.style {
+  margin-top: 0;
+
+  &__color, &__font {
+    width: 80%;
+    margin: 3% auto;
+    text-align: left;
+
+    h4 {
+      padding: 5% 0;
+    }
+
+    span {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-color: #FFFFFF;
+      border-radius: 50%;
+      margin-right: 3%;
+    }
+
+    h2.font--lato {
+      display: inline-block;
+      font-family: "Lato", sans-serif;
+      margin-right: 2%;
+    }
+
+    p {
+      display: inline-block;
+    }
+  }
+}
+
