@@ -276,7 +276,7 @@ header .flex img {
   height: 35px;
 }
 
-header .flex .nav--button {
+header .flex .global-menu {
   display: block;
   position: relative;
   right: 2%;
@@ -285,7 +285,7 @@ header .flex .nav--button {
   cursor: pointer;
 }
 
-header .flex .nav--button > span {
+header .flex .global-menu > span {
   display: block;
   position: absolute;
   top: 46%;
@@ -295,7 +295,7 @@ header .flex .nav--button > span {
   background-color: #928484;
 }
 
-header .flex .nav--button > span::before {
+header .flex .global-menu > span::before {
   display: block;
   content: '';
   width: 30px;
@@ -304,7 +304,7 @@ header .flex .nav--button > span::before {
   margin-top: -10px;
 }
 
-header .flex .nav--button > span::after {
+header .flex .global-menu > span::after {
   display: block;
   content: '';
   width: 30px;
