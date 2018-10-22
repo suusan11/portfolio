@@ -34,3 +34,10 @@
   width: 30px;
   margin: $top auto $bottom;
 }
+
+//for responsive
+@mixin pcSize {
+  @media (max-width: (1000px)) {
+    @content;
+  }
+}
