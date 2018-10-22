@@ -27,10 +27,10 @@
   margin: $top $right $bottom $left;
 }
 
-@mixin guideLineW($top, $bottom) {
+@mixin guideLineW($color, $top, $bottom) {
   display: block;
   content: '';
-  border-bottom: 3px solid $brown;
+  border-bottom: 3px solid $color;
   width: 30px;
   margin: $top auto $bottom;
 }

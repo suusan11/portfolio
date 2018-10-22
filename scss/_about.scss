@@ -22,7 +22,7 @@ div.text__container {
   text-align: right;
 
   h3::after {
-      @include guideLineW(18px, 34px);
+      @include guideLineW($brown, 18px, 34px);
   }
 }
 

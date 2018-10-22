@@ -597,7 +597,7 @@ html {
 .link h4::after {
   display: block;
   content: '';
-  border-bottom: 3px solid #928484;
+  border-bottom: 3px solid #EE817B;
   width: 30px;
-  margin: 10% auto 0;
+  margin: 40% auto 0;
 }

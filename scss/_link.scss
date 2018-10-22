@@ -11,7 +11,7 @@
     color: $secondary-pink;
 
     &::after {
-      @include guideLineW(10%, 0);
+      @include guideLineW($secondary-pink, 40%, 0);
     }
   }
 }

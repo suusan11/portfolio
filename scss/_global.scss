@@ -133,7 +133,7 @@ a {
     }
 
     &::after {
-      @include guideLineW(18px, 0);
+      @include guideLineW($brown, 18px, 0);
     }
   }
 }
