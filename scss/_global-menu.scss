@@ -1,0 +1,80 @@
+@import "variable", "_typography.scss", "mixin";
+
+.global-menu {
+  display: block;
+  position: relative;
+  right: 2%;
+  width: 100%;
+  z-index: 1;
+  height: 100px;
+
+  & > span {
+    display: block;
+    position: absolute;
+    top: 46%;
+    right: 0;
+    width: 30px;
+    height: 3px;
+    background-color: $brown;
+    cursor: pointer;
+    z-index: 10;
+
+    &::before {
+      @include menuTrigger(-10px);
+    }
+
+    &::after {
+      @include menuTrigger(17px);
+    }
+  }
+
+  .nav-list {
+    display: none;
+    width: 100%;
+    font-family: $font-heading;
+    background-color: $secondary-pink;
+    text-align: center;
+
+    li {
+      padding: 3%;
+    }
+
+    a {
+      color: $white;
+    }
+    
+    .close {
+      display: block;
+      -webkit-animation: hideNav;
+      -o-animation: hideNav;
+      animation: hideNav;
+    }
+
+    @keyframes hideNav {
+      0% {
+        opacity: 1;
+        z-index: 1;
+      }
+      100% {
+        opacity: 0;
+        z-index: -1;
+      }
+    }
+
+    .open {
+      display: block;
+      -webkit-animation: showNav;
+      -o-animation: showNav;
+      animation: showNav;
+    }
+
+    @keyframes showNav {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
