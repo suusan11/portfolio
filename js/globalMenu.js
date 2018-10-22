@@ -3,7 +3,7 @@ function navToggle() {
     var navShow = document.getElementById("nav-list");
     var toggleBtnClass = toggleBtn.getAttribute("class");
 
-    if(toggleBtnClass === "nav-toggle-btn close") {
+    if(toggleBtnClass == "nav-toggle-btn close") {
         toggleBtn.classList.remove("close");
         navShow.classList.remove("close");
 

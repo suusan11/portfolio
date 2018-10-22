@@ -294,6 +294,7 @@ html {
   width: 100%;
   z-index: 1;
   height: 100px;
+  cursor: pointer;
 }
 
 .global-menu > span {
@@ -304,7 +305,6 @@ html {
   width: 30px;
   height: 3px;
   background-color: #928484;
-  cursor: pointer;
   z-index: 10;
 }
 
@@ -328,7 +328,12 @@ html {
 
 .nav-list {
   display: none;
-  width: 100%;
+  position: relative;
+  width: 130%;
+  height: auto;
+  padding: 5%;
+  line-height: 70px;
+  border-radius: 50%;
   font-family: "Dosis", sans-serif;
   background-color: #EE817B;
   text-align: center;

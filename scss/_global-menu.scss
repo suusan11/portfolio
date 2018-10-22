@@ -1,4 +1,4 @@
-@import "variable", "_typography.scss", "mixin";
+@import "variable", "typography", "mixin";
 
 .global-menu {
   display: block;
@@ -7,6 +7,7 @@
   width: 100%;
   z-index: 1;
   height: 100px;
+  cursor: pointer;
 
   & > span {
     display: block;
@@ -16,7 +17,6 @@
     width: 30px;
     height: 3px;
     background-color: $brown;
-    cursor: pointer;
     z-index: 10;
 
     &::before {
@@ -32,10 +32,16 @@
 
 .nav-list {
   display: none;
-  width: 100%;
+  position: relative;
+  width: 130%;
+  height: auto;
+  padding: 5%;
+  line-height: 70px;
+  border-radius: 50%;
   font-family: $font-heading;
   background-color: $secondary-pink;
   text-align: center;
+  //z-index: 100;
 
   li {
     padding: 3%;
