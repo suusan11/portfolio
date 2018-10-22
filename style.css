@@ -326,7 +326,7 @@ html {
   margin-top: 17px;
 }
 
-.global-menu .nav-list {
+.nav-list {
   display: none;
   width: 100%;
   font-family: "Dosis", sans-serif;
@@ -334,19 +334,19 @@ html {
   text-align: center;
 }
 
-.global-menu .nav-list li {
+.nav-list li {
   padding: 3%;
 }
 
-.global-menu .nav-list a {
+.nav-list a {
   color: #FFFFFF;
 }
 
-.global-menu .nav-list .close {
+.nav-list .close {
   display: block;
-  -webkit-animation: hideNav;
-  -o-animation: hideNav;
-  animation: hideNav;
+  -webkit-animation: hideNav .5s;
+  -o-animation: hideNav .5s;
+  animation: hideNav .5s;
 }
 
 @keyframes hideNav {
@@ -360,11 +360,11 @@ html {
   }
 }
 
-.global-menu .nav-list .open {
+.nav-list .open {
   display: block;
-  -webkit-animation: showNav;
-  -o-animation: showNav;
-  animation: showNav;
+  -webkit-animation: showNav .5s;
+  -o-animation: showNav .5s;
+  animation: showNav .5s;
 }
 
 @keyframes showNav {

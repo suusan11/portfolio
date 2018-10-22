@@ -27,54 +27,55 @@
       @include menuTrigger(17px);
     }
   }
+}
 
-  .nav-list {
-    display: none;
-    width: 100%;
-    font-family: $font-heading;
-    background-color: $secondary-pink;
-    text-align: center;
 
-    li {
-      padding: 3%;
+.nav-list {
+  display: none;
+  width: 100%;
+  font-family: $font-heading;
+  background-color: $secondary-pink;
+  text-align: center;
+
+  li {
+    padding: 3%;
+  }
+
+  a {
+    color: $white;
+  }
+
+  .close {
+    display: block;
+    -webkit-animation: hideNav .5s;
+    -o-animation: hideNav .5s;
+    animation: hideNav .5s;
+  }
+
+  @keyframes hideNav {
+    0% {
+      opacity: 1;
+      z-index: 1;
     }
-
-    a {
-      color: $white;
+    100% {
+      opacity: 0;
+      z-index: -1;
     }
-    
-    .close {
-      display: block;
-      -webkit-animation: hideNav;
-      -o-animation: hideNav;
-      animation: hideNav;
-    }
+  }
 
-    @keyframes hideNav {
-      0% {
-        opacity: 1;
-        z-index: 1;
-      }
-      100% {
-        opacity: 0;
-        z-index: -1;
-      }
-    }
+  .open {
+    display: block;
+    -webkit-animation: showNav .5s;
+    -o-animation: showNav .5s;
+    animation: showNav .5s;
+  }
 
-    .open {
-      display: block;
-      -webkit-animation: showNav;
-      -o-animation: showNav;
-      animation: showNav;
+  @keyframes showNav {
+    0% {
+      opacity: 0;
     }
-
-    @keyframes showNav {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
+    100% {
+      opacity: 1;
     }
   }
 }
