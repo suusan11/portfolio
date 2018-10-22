@@ -1,4 +1,4 @@
-@import "variable", "typography";
+@import "variable", "typography", "mixin";
 
 .hero {
   margin-top: 0;
@@ -17,5 +17,19 @@
     display: block;
     margin: 54px auto;
     width: 70%;
+  }
+}
+
+//responsive for PC
+@include pcSize {
+  .hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__flex--left, &__flex--right {
+      width: 40%;
+    }
   }
 }

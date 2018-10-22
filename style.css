@@ -412,6 +412,18 @@ html {
   width: 70%;
 }
 
+@media (min-width: 1000px) {
+  .hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__flex--left, .hero__flex--right {
+    width: 40%;
+  }
+}
+
 .works__thumbnails {
   width: 100%;
 }
