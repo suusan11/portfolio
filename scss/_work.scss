@@ -1,3 +1,5 @@
+@import "mixin";
+
 .works__thumbnails {
   width: 100%;
 
@@ -11,5 +13,23 @@
     p {
       padding: 5px 0 0 5px;
     }
+  }
+}
+
+//responsive for PC
+@include pcSize {
+  .works__thumbnails {
+    width: 80%;
+    margin: 0 0 0 auto;
+
+    .thumbnail {
+
+      //text-align: right;
+
+      img {
+        border-radius: 10%;
+      }
+    }
+
   }
 }

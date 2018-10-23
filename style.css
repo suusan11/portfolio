@@ -440,6 +440,16 @@ html {
   padding: 5px 0 0 5px;
 }
 
+@media (min-width: 1000px) {
+  .works__thumbnails {
+    width: 80%;
+    margin: 0 0 0 auto;
+  }
+  .works__thumbnails .thumbnail img {
+    border-radius: 10%;
+  }
+}
+
 .motto__block {
   padding: 5% 0;
 }
