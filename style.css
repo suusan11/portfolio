@@ -464,7 +464,6 @@ html {
 }
 
 div.text__container {
-  display: inline-block;
   margin: 15px 0;
 }
 
@@ -498,6 +497,15 @@ div.text__container p.bg-color--secondpink {
 
 .about img {
   width: 100%;
+}
+
+@media (min-width: 1000px) {
+  .about {
+    text-align: center;
+  }
+  .about img {
+    width: 90%;
+  }
 }
 
 .contact {
