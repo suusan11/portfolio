@@ -73,6 +73,12 @@ html {
   color: #545454;
 }
 
+@media (min-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
   list-style: none;
@@ -250,6 +256,12 @@ html {
   color: #545454;
 }
 
+@media (min-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
+}
+
 html {
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -258,6 +270,12 @@ html {
   -webkit-font-smoothing: subpixel-antialiased;
   font-variant-ligatures: common-ligatures;
   color: #545454;
+}
+
+@media (min-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
 }
 
 header {
@@ -285,6 +303,12 @@ html {
   -webkit-font-smoothing: subpixel-antialiased;
   font-variant-ligatures: common-ligatures;
   color: #545454;
+}
+
+@media (min-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
 }
 
 .global-menu {
@@ -389,6 +413,12 @@ html {
   -webkit-font-smoothing: subpixel-antialiased;
   font-variant-ligatures: common-ligatures;
   color: #545454;
+}
+
+@media (min-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
 }
 
 .hero {
@@ -547,6 +577,12 @@ html {
   color: #545454;
 }
 
+@media (min-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
+}
+
 footer {
   border-top: 1px solid #928484;
   text-align: center;
@@ -575,6 +611,12 @@ html {
   -webkit-font-smoothing: subpixel-antialiased;
   font-variant-ligatures: common-ligatures;
   color: #545454;
+}
+
+@media (min-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
 }
 
 .bg-color--primarypink {
@@ -648,6 +690,12 @@ html {
   -webkit-font-smoothing: subpixel-antialiased;
   font-variant-ligatures: common-ligatures;
   color: #545454;
+}
+
+@media (min-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
 }
 
 .bg-color--primarypink {
