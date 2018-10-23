@@ -422,6 +422,12 @@ html {
   .hero__flex--left, .hero__flex--right {
     width: 40%;
   }
+  .hero__flex--left h1, .hero__flex--right h1 {
+    font-size: 2.5rem;
+  }
+  .hero__flex--left h2, .hero__flex--right h2 {
+    font-size: 2rem;
+  }
 }
 
 .works__thumbnails {
