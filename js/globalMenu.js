@@ -1,5 +1,5 @@
 function navToggle() {
-    var toggleBtn = document.getElementById("nav-toggle");
+    var toggleBtn = document.getElementById("js-nav-toggle");
     var navShow = document.getElementById("nav-list");
 
     if(toggleBtn.classList.contains("open") === false) {
@@ -11,5 +11,5 @@ function navToggle() {
     }
 }
 
-document.getElementById("nav-toggle").addEventListener("click", navToggle);
+document.getElementById("js-nav-toggle").addEventListener("click", navToggle);
 
