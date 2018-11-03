@@ -46,4 +46,14 @@
   }
 }
 
+//responsive for PC
+@include pcSize {
+  .bg-color--primarypink {
+    width: 688px;
+    height: 823px;
+    border-radius: 30%;
+    margin-left: 10%;
+  }
+}
+
 
