@@ -1,7 +1,12 @@
-@import "variable";
+@import "variable", "mixin";
 
 .motto__block {
+  width: 90%;
+  height: 220px;
+  background-color: #7ECEFC;
+  border-radius: 5%;
   padding: 5% 0;
+  margin: 10% 0 10% auto;
 
   h3 {
     color: $secondary-pink;
@@ -10,5 +15,11 @@
 
   p {
      line-height: 24px;
+  }
+}
+
+@include pcSize {
+  .motto__block {
+    width: 70%;
   }
 }
