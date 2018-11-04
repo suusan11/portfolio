@@ -80,7 +80,11 @@ a {
   text-align: left;
 
   h2.text--upright {
-  padding-left: 9%;
+    padding-left: 9%;
+
+    @include pcSize {
+      padding-left: 4%;
+    }
 
     &::before {
       @include circle(-25px, 0, 0, -70px);
@@ -98,10 +102,10 @@ a {
   h2.text--upright {
     display: inline-block;
     position: relative;
-    padding-right: 12%;
+    //padding-right: 12%;
 
     &::before {
-      @include circle(-25px, -10px, 0, 0);
+      @include circle(-25px, -70px, 0, 0);
       position: absolute;
       top: 0;
       right: 15%;
