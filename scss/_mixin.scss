@@ -35,9 +35,18 @@
   margin: $top auto $bottom;
 }
 
+@mixin mottoIcons($img) {
+  content: $img;
+  width: 90px;
+  position: absolute;
+  top: -50px;
+  left: 145px;
+}
+
 //for responsive
 @mixin pcSize {
   @media (min-width: (1000px)) {
     @content;
   }
 }
+

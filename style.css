@@ -159,7 +159,13 @@ a:hover {
 }
 
 .heading__left h2.text--upright {
-  padding-left: 9%;
+  padding-left: 30px;
+}
+
+@media (min-width: 1000px) {
+  .heading__left h2.text--upright {
+    padding-left: 50px;
+  }
 }
 
 .heading__left h2.text--upright::before {
@@ -187,7 +193,7 @@ a:hover {
 .heading__right h2.text--upright {
   display: inline-block;
   position: relative;
-  padding-right: 12%;
+  padding-right: 70px;
 }
 
 .heading__right h2.text--upright::before {
@@ -197,10 +203,10 @@ a:hover {
   height: 85px;
   border-radius: 50%;
   background-color: #FCECEA;
-  margin: -25px -10px 0 0;
+  margin: -25px -70px 0 0;
   position: absolute;
   top: 0;
-  right: 15%;
+  right: 100px;
   z-index: -1;
 }
 
@@ -212,7 +218,7 @@ a:hover {
   margin: 110px 13px 0 0;
   position: absolute;
   bottom: 35%;
-  right: 18%;
+  right: 40px;
 }
 
 .heading__center {
@@ -313,15 +319,21 @@ html {
 
 .global-menu {
   display: block;
-  position: relative;
   right: 2%;
-  width: 100%;
   z-index: 1;
   height: 100px;
+}
+
+.global-menu .nav-toggle {
+  position: relative;
+  top: 30%;
+  right: 0;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
 }
 
-.global-menu > span {
+.global-menu .nav-toggle span {
   display: block;
   position: absolute;
   top: 46%;
@@ -332,7 +344,7 @@ html {
   z-index: 10;
 }
 
-.global-menu > span::before {
+.global-menu .nav-toggle span::before {
   display: block;
   content: '';
   width: 30px;
@@ -341,7 +353,7 @@ html {
   margin-top: -10px;
 }
 
-.global-menu > span::after {
+.global-menu .nav-toggle span::after {
   display: block;
   content: '';
   width: 30px;
@@ -352,9 +364,11 @@ html {
 
 .nav-list {
   display: none;
-  position: relative;
-  width: 130%;
-  height: auto;
+  position: absolute;
+  top: -40px;
+  right: -200px;
+  width: 50%;
+  height: 650px;
   padding: 5%;
   line-height: 70px;
   border-radius: 50%;
@@ -363,33 +377,11 @@ html {
   text-align: center;
 }
 
-.nav-list li {
-  padding: 3%;
+.nav-list:nth-child(1) {
+  width: 10px;
 }
 
-.nav-list a {
-  color: #FFFFFF;
-}
-
-.nav-list .close {
-  display: block;
-  -webkit-animation: hideNav .5s;
-  -o-animation: hideNav .5s;
-  animation: hideNav .5s;
-}
-
-@keyframes hideNav {
-  0% {
-    opacity: 1;
-    z-index: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-
-.nav-list .open {
+.nav-list.open {
   display: block;
   -webkit-animation: showNav .5s;
   -o-animation: showNav .5s;
@@ -487,16 +479,52 @@ html {
 }
 
 .motto__block {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  background-color: #7ECEFC;
   padding: 5% 0;
+  margin: 20% auto;
+  text-align: center;
+}
+
+.motto__block:nth-child(2)::before {
+  content: url("../images/inspire.svg");
+  width: 90px;
+  position: absolute;
+  top: -50px;
+  left: 145px;
+}
+
+.motto__block:nth-child(3)::before {
+  content: url("../images/concept.svg");
+  width: 90px;
+  position: absolute;
+  top: -50px;
+  left: 145px;
+}
+
+.motto__block:nth-child(4)::before {
+  content: url("../images/clear.svg");
+  width: 90px;
+  position: absolute;
+  top: -50px;
+  left: 145px;
 }
 
 .motto__block h3 {
-  color: #EE817B;
-  padding: 3% 0;
+  color: #FFFFFF;
+  padding: 10% 0;
 }
 
 .motto__block p {
   line-height: 24px;
+}
+
+@media (min-width: 1000px) {
+  .motto__block {
+    width: 70%;
+  }
 }
 
 div.text__container {
@@ -531,17 +559,14 @@ div.text__container p.bg-color--secondpink {
   text-align: left;
 }
 
-.about img {
-  width: 100%;
+.about {
+  text-align: center;
 }
 
-@media (min-width: 1000px) {
-  .about {
-    text-align: center;
-  }
-  .about img {
-    width: 90%;
-  }
+.about img {
+  width: 50%;
+  border-radius: 50%;
+  margin: 3% 0;
 }
 
 .contact {
@@ -673,6 +698,15 @@ html {
   transition: .5s ease-out;
 }
 
+@media (min-width: 1000px) {
+  .bg-color--primarypink {
+    width: 688px;
+    height: 823px;
+    border-radius: 30%;
+    margin-left: 10%;
+  }
+}
+
 .works__images {
   text-align: center;
 }
@@ -684,6 +718,18 @@ html {
   background-color: #BEB9B9;
   border-radius: 20%;
   margin: 5% 0;
+}
+
+@media (min-width: 1000px) {
+  .works__images {
+    margin-right: 7%;
+  }
+  .works__images-img {
+    display: block;
+    width: 755px;
+    height: 514px;
+    margin-left: auto;
+  }
 }
 
 html {
