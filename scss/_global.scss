@@ -80,10 +80,10 @@ a {
   text-align: left;
 
   h2.text--upright {
-    padding-left: 9%;
+    padding-left: 30px;
 
     @include pcSize {
-      padding-left: 4%;
+      padding-left: 50px;
     }
 
     &::before {
@@ -102,13 +102,13 @@ a {
   h2.text--upright {
     display: inline-block;
     position: relative;
-    //padding-right: 12%;
+    padding-right: 70px;
 
     &::before {
       @include circle(-25px, -70px, 0, 0);
       position: absolute;
       top: 0;
-      right: 15%;
+      right: 100px;
       z-index: -1;
     }
 
@@ -116,7 +116,7 @@ a {
       @include guideLineH(110px, 13px, 0, 0);
       position: absolute;
       bottom: 35%;
-      right: 18%;
+      right: 40px;
     }
   }
 }
