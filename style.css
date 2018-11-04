@@ -193,7 +193,7 @@ a:hover {
 .heading__right h2.text--upright {
   display: inline-block;
   position: relative;
-  padding-right: 70px;
+  padding-right: 45px;
 }
 
 .heading__right h2.text--upright::before {
@@ -206,7 +206,7 @@ a:hover {
   margin: -25px -70px 0 0;
   position: absolute;
   top: 0;
-  right: 100px;
+  right: 70px;
   z-index: -1;
 }
 
@@ -218,7 +218,38 @@ a:hover {
   margin: 110px 13px 0 0;
   position: absolute;
   bottom: 35%;
-  right: 40px;
+  right: 15px;
+}
+
+@media (min-width: 1000px) {
+  .heading__right h2.text--upright {
+    display: inline-block;
+    position: relative;
+    padding-right: 70px;
+  }
+  .heading__right h2.text--upright::before {
+    content: '';
+    display: block;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: #FCECEA;
+    margin: -25px -70px 0 0;
+    position: absolute;
+    top: 0;
+    right: 100px;
+    z-index: -1;
+  }
+  .heading__right h2.text--upright::after {
+    display: block;
+    content: '';
+    border-left: 3px solid #928484;
+    height: 30px;
+    margin: 110px 13px 0 0;
+    position: absolute;
+    bottom: 35%;
+    right: 40px;
+  }
 }
 
 .heading__center {

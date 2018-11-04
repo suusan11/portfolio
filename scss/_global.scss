@@ -102,13 +102,13 @@ a {
   h2.text--upright {
     display: inline-block;
     position: relative;
-    padding-right: 70px;
+    padding-right: 45px;
 
     &::before {
       @include circle(-25px, -70px, 0, 0);
       position: absolute;
       top: 0;
-      right: 100px;
+      right: 70px;
       z-index: -1;
     }
 
@@ -116,7 +116,32 @@ a {
       @include guideLineH(110px, 13px, 0, 0);
       position: absolute;
       bottom: 35%;
-      right: 40px;
+      right: 15px;
+    }
+  }
+}
+
+@include pcSize {
+  .heading__right {
+    h2.text--upright {
+      display: inline-block;
+      position: relative;
+      padding-right: 70px;
+
+      &::before {
+        @include circle(-25px, -70px, 0, 0);
+        position: absolute;
+        top: 0;
+        right: 100px;
+        z-index: -1;
+      }
+
+      &::after {
+        @include guideLineH(110px, 13px, 0, 0);
+        position: absolute;
+        bottom: 35%;
+        right: 40px;
+      }
     }
   }
 }
