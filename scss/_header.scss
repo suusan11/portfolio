@@ -4,6 +4,7 @@ header {
   position: fixed;
   top: 10px;
   width: 100%;
+  z-index: 10;
 
   .flex {
     display: flex;
