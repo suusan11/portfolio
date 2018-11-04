@@ -1,16 +1,26 @@
 @import "variable", "mixin";
 
 .motto__block {
-  width: 90%;
+  width: 100%;
   height: 220px;
+  position: relative;
   background-color: #7ECEFC;
-  border-radius: 5%;
   padding: 5% 0;
-  margin: 10% 0 10% auto;
+  margin: 20% auto;
+  text-align: center;
+
+  &::before {
+    content: url("../images/inspire.svg");
+    width: 90px;
+    position: absolute;
+    top: -50px;
+    left: 140px;
+  }
 
   h3 {
-    color: $secondary-pink;
-    padding: 3% 0;
+    color: $white;
+    padding: 10% 0;
+
   }
 
   p {
