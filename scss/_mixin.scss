@@ -40,7 +40,6 @@
   width: 90px;
   position: absolute;
   top: -50px;
-  left: 38%;
 }
 
 //for responsive
@@ -51,7 +50,7 @@
 }
 
 @mixin middleSize {
-  @media (min-width: (400px)) {
-    @content
+  @media (min-width: 400px) and (max-width: 999px) {
+    @content;
   }
 }

@@ -514,7 +514,7 @@ html {
   width: 100%;
   height: 220px;
   position: relative;
-  background-color: #7ECEFC;
+  background-color: #EE817B;
   padding: 20px 0;
   margin: 20% auto;
   text-align: center;
@@ -565,6 +565,30 @@ html {
     height: 300px;
     border-radius: 5%;
     margin: 10% auto;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 999px) {
+  .motto__block:nth-child(1)::before {
+    content: url("../images/inspire.svg");
+    width: 90px;
+    position: absolute;
+    top: -50px;
+    left: 45%;
+  }
+  .motto__block:nth-child(2)::before {
+    content: url("../images/concept.svg");
+    width: 90px;
+    position: absolute;
+    top: -50px;
+    left: 45%;
+  }
+  .motto__block:nth-child(3)::before {
+    content: url("../images/clear.svg");
+    width: 90px;
+    position: absolute;
+    top: -50px;
+    left: 45%;
   }
 }
 
