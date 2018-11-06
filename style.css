@@ -511,7 +511,7 @@ html {
 }
 
 .motto__block {
-  width: 100%;
+  width: 90%;
   height: auto;
   position: relative;
   background-color: #7ECEFC;
@@ -576,30 +576,6 @@ html {
     margin: 0 auto;
   }
   .motto__flex .motto__block:nth-child(3)::before {
-    content: url("../images/clear.svg");
-    display: block;
-    width: 100px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 400px) and (max-width: 999px) {
-  .motto__block {
-    width: 80%;
-  }
-  .motto__block:nth-child(1)::before {
-    content: url("../images/inspire.svg");
-    display: block;
-    width: 100px;
-    margin: 0 auto;
-  }
-  .motto__block:nth-child(2)::before {
-    content: url("../images/concept.svg");
-    display: block;
-    width: 100px;
-    margin: 0 auto;
-  }
-  .motto__block:nth-child(3)::before {
     content: url("../images/clear.svg");
     display: block;
     width: 100px;

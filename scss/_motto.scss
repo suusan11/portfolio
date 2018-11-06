@@ -1,7 +1,7 @@
 @import "variable", "mixin";
 
 .motto__block {
-  width: 100%;
+  width: 90%;
   height: auto;
   position: relative;
   background-color: #7ECEFC;
@@ -55,24 +55,6 @@
       &:nth-child(3)::before {
         @include mottoIcons(url("../images/clear.svg"));
       }
-    }
-  }
-}
-
-@include middleSize {
-  .motto__block {
-    width: 80%;
-
-    &:nth-child(1)::before {
-      @include mottoIcons(url("../images/inspire.svg"));
-    }
-
-    &:nth-child(2)::before {
-      @include mottoIcons(url("../images/concept.svg"));
-    }
-
-    &:nth-child(3)::before {
-      @include mottoIcons(url("../images/clear.svg"));
     }
   }
 }
