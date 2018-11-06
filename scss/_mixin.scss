@@ -37,9 +37,9 @@
 
 @mixin mottoIcons($img) {
   content: $img;
-  width: 90px;
-  position: absolute;
-  top: -50px;
+  display: block;
+  width: 100px;
+  margin: 0 auto;
 }
 
 //for responsive
