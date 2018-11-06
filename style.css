@@ -757,9 +757,8 @@ html {
 
 @media (min-width: 1000px) {
   .bg-color--primarypink {
-    width: 688px;
-    height: 823px;
-    border-radius: 30%;
+    width: 40%;
+    border-radius: 5%;
     margin-left: 10%;
   }
 }
@@ -773,7 +772,7 @@ html {
   width: 274px;
   height: 187px;
   background-color: #BEB9B9;
-  border-radius: 20%;
+  border-radius: 5%;
   margin: 5% 0;
 }
 
