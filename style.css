@@ -521,25 +521,15 @@ html {
   text-align: center;
 }
 
-.motto__block:nth-child(1)::before {
-  content: url("../images/inspire.svg");
+.motto__block img {
   display: block;
   width: 100px;
+  fill: red;
   margin: 0 auto;
 }
 
-.motto__block:nth-child(2)::before {
-  content: url("../images/concept.svg");
-  display: block;
-  width: 100px;
-  margin: 0 auto;
-}
-
-.motto__block:nth-child(3)::before {
-  content: url("../images/clear.svg");
-  display: block;
-  width: 100px;
-  margin: 0 auto;
+.motto__block .motto__icon--brown path {
+  fill: red;
 }
 
 .motto__block h3 {
@@ -679,9 +669,12 @@ footer .sns {
   margin: 30px auto;
 }
 
-footer .sns img {
+footer .sns .icon {
   width: 18px;
-  margin: 0 16px;
+  height: 18px;
+  margin: 0 10px;
+  stroke-width: 0;
+  fill: #545454;
 }
 
 footer p {

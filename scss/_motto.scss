@@ -9,17 +9,28 @@
   margin: 15% auto;
   text-align: center;
 
-  &:nth-child(1)::before {
-    @include mottoIcons(url("../images/inspire.svg"));
+  img {
+    display: block;
+    width: 100px;
+    fill: red;
+    margin: 0 auto;
   }
 
-  &:nth-child(2)::before {
-    @include mottoIcons(url("../images/concept.svg"));
+  .motto__icon--brown path {
+    fill: red;
   }
 
-  &:nth-child(3)::before {
-    @include mottoIcons(url("../images/clear.svg"));
-  }
+  //&:nth-child(1)::before {
+  //  @include mottoIcons(url("../images/inspire.svg"));
+  //}
+  //
+  //&:nth-child(2)::before {
+  //  @include mottoIcons(url("../images/concept.svg"));
+  //}
+  //
+  //&:nth-child(3)::before {
+  //  @include mottoIcons(url("../images/clear.svg"));
+  //}
 
   h3 {
     color: $white;
