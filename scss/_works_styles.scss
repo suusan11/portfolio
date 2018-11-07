@@ -1,4 +1,4 @@
-@import "variable", "typography";
+@import "variable", "typography", "mixin";
 
 .bg-color--primarypink {
   background-color: $primary-pink;
@@ -32,6 +32,18 @@
     }
 
     p {
+      display: inline-block;
+    }
+  }
+}
+
+@include pcSize {
+  .style {
+    width: 90%;
+    height: 210px;
+    margin: 0 auto;
+
+    &__color, &__font {
       display: inline-block;
     }
   }

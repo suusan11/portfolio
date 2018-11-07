@@ -763,7 +763,7 @@ html {
 }
 
 @media (min-width: 1000px) {
-  .bg-color--primarypink {
+  .introduction {
     width: 40%;
     border-radius: 5%;
     margin-left: 10%;
@@ -846,6 +846,17 @@ html {
 
 .style__color p, .style__font p {
   display: inline-block;
+}
+
+@media (min-width: 1000px) {
+  .style {
+    width: 90%;
+    height: 210px;
+    margin: 0 auto;
+  }
+  .style__color, .style__font {
+    display: inline-block;
+  }
 }
 
 .link {
