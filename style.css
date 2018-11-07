@@ -103,7 +103,13 @@ main {
 }
 
 section {
-  margin: 20% 0;
+  margin: 35% 0;
+}
+
+@media (min-width: 1000px) {
+  section {
+    margin: 20% 0;
+  }
 }
 
 h1 {
@@ -564,7 +570,7 @@ html {
   }
   .motto__flex .motto__block {
     width: 30%;
-    height: 400px;
+    height: 430px;
     border-radius: 5%;
     margin: 10% auto;
   }

@@ -25,7 +25,13 @@ main {
 }
 
 section {
-  margin: 20% 0;
+  margin: 35% 0;
+}
+
+@include pcSize {
+  section {
+    margin: 20% 0;
+  }
 }
 
 h1 {
