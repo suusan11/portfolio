@@ -58,3 +58,9 @@
     }
   }
 }
+
+@include middleSize {
+  .motto__block p {
+    font-size: 20px;
+  }
+}

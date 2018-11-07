@@ -466,10 +466,15 @@ html {
   padding-bottom: 10px;
 }
 
-.hero img {
+.hero__flex--right {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.hero__flex--right img {
   display: block;
   margin: 54px auto;
-  width: 70%;
+  width: 80%;
 }
 
 @media (min-width: 1000px) {
@@ -487,6 +492,18 @@ html {
   }
   .hero__flex--left h2, .hero__flex--right h2 {
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero h2 {
+    font-size: 2rem;
+  }
+  .hero__flex--right {
+    width: 50%;
   }
 }
 
@@ -592,6 +609,12 @@ html {
     display: block;
     width: 100px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+  .motto__block p {
+    font-size: 20px;
   }
 }
 
