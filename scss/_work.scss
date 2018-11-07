@@ -18,16 +18,18 @@
 
 //responsive for PC
 @include pcSize {
-  .works__thumbnails {
-    width: 80%;
-    margin: 0 0 0 auto;
+  .thumbnail {
+    padding: 8% 0;
+    text-align: right;
 
-    .thumbnail {
-      img {
-        width: 100%;
-        margin-left: auto;
+    img {
+        width: 90%;
         border-radius: 3%;
       }
+
+    p {
+      text-align: left;
+      margin-left: 10%;
+    }
     }
   }
-}

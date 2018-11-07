@@ -1,9 +1,11 @@
 function addContainer() {
-    const x  = window.width();
-    const y = 999;
+    const widthMargin = document.getElementById("js-container");
+    const windowSize  = window.innerWidth;
+    const breakPoint = 1000;
 
-    if(x > y) {
-        document.getElementById("js-container").classList.add("container");
+    if(windowSize >= breakPoint) {
+        widthMargin.classList.add("container");
     }
 }
-addContainer();
+
+window.addEventListener("resize", addContainer);
