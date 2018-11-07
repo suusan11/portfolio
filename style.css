@@ -914,3 +914,44 @@ html {
   width: 30px;
   margin: 40% auto 0;
 }
+
+.bg-color--blue {
+  width: 100%;
+  padding: 3% 0;
+  margin-left: auto;
+  background-color: #7ECEFC;
+}
+
+.bg-color--blue p {
+  margin: 5% 0;
+}
+
+.bg-color--blue p:nth-child(1)::before {
+  content: url("../images/inspire.svg");
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.bg-color--blue p:nth-child(2)::before {
+  content: url("../images/concept.svg");
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.bg-color--blue p:nth-child(3)::before {
+  content: url("../images/clear.svg");
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+@media (min-width: 1000px) {
+  .bg-color--blue {
+    width: 550px;
+    height: auto;
+    border-radius: 5%;
+    margin-left: auto;
+  }
+}
