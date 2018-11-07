@@ -30,13 +30,16 @@
 
   button {
     display: block;
-    width: 150px;
+    width: 180px;
+    height: 50px;
     padding: 9px 30px;
     margin: 10% auto 0;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: $font-weight-bold;
     color: $secondary-pink;
     border: 2px solid $secondary-pink;
     background-color: $white;
+    box-shadow: 0 3px 8px #BEB9B9;
 
     &:hover {
       color: $white;
