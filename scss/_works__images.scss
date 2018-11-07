@@ -14,14 +14,10 @@
 }
 @include pcSize {
   .works__images {
-    margin-right: 7%;
-
-
     &-img {
-      display: block;
+      display: inline-block;
       width: 755px;
       height: 514px;
-      margin-left: auto;
     }
   }
 }

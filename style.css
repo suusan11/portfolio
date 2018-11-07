@@ -818,14 +818,10 @@ html {
 }
 
 @media (min-width: 1000px) {
-  .works__images {
-    margin-right: 7%;
-  }
   .works__images-img {
-    display: block;
+    display: inline-block;
     width: 755px;
     height: 514px;
-    margin-left: auto;
   }
 }
 
