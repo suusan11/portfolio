@@ -882,12 +882,16 @@ html {
 
 @media (min-width: 1000px) {
   .style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 90%;
     height: 210px;
     margin: 0 auto;
   }
   .style__color, .style__font {
     display: inline-block;
+    width: 40%;
   }
 }
 

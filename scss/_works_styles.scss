@@ -37,12 +37,16 @@
 
 @include pcSize {
   .style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 90%;
     height: 210px;
     margin: 0 auto;
 
     &__color, &__font {
       display: inline-block;
+      width: 40%;
     }
   }
 }
