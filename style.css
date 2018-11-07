@@ -507,6 +507,7 @@ html {
   }
   .works__thumbnails .thumbnail img {
     width: 100%;
+    margin-left: auto;
     border-radius: 3%;
   }
 }
