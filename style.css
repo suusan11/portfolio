@@ -513,6 +513,7 @@ html {
   }
   .thumbnail img {
     width: 90%;
+    height: 250px;
     border-radius: 3%;
   }
   .thumbnail p {
