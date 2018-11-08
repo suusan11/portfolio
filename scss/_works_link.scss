@@ -9,6 +9,15 @@
   h4 {
     display: inline-block;
     color: $secondary-pink;
+
+    &::after {
+      @include guideLineW($secondary-pink, 20%, 0);
+    }
+  }
+}
+
+@include pcSize {
+  .link h4 {
     position: relative;
 
     &::after {
@@ -22,7 +31,7 @@
     }
 
     &:hover::after {
-      top: -80%;
+      top: -60%;
       opacity: 1;
       visibility: visible;
     }

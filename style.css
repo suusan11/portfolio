@@ -947,7 +947,6 @@ html {
 .link h4 {
   display: inline-block;
   color: #EE817B;
-  position: relative;
 }
 
 .link h4::after {
@@ -955,19 +954,31 @@ html {
   content: '';
   border-bottom: 3px solid #EE817B;
   width: 30px;
-  margin: 0 auto 0;
-  position: absolute;
-  top: -120%;
-  left: 22%;
-  opacity: 0;
-  visibility: hidden;
-  transition: .3s ease-in;
+  margin: 20% auto 0;
 }
 
-.link h4:hover::after {
-  top: -80%;
-  opacity: 1;
-  visibility: visible;
+@media (min-width: 1000px) {
+  .link h4 {
+    position: relative;
+  }
+  .link h4::after {
+    display: block;
+    content: '';
+    border-bottom: 3px solid #EE817B;
+    width: 30px;
+    margin: 0 auto 0;
+    position: absolute;
+    top: -120%;
+    left: 22%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in;
+  }
+  .link h4:hover::after {
+    top: -60%;
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .bg-color--blue {
