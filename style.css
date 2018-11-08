@@ -103,7 +103,7 @@ main {
 }
 
 section {
-  margin: 35% 0;
+  margin: 30% 0;
 }
 
 @media (min-width: 1000px) {
@@ -889,6 +889,7 @@ html {
 
 .style {
   margin-top: 0;
+  padding: 3% 0;
 }
 
 .style__color, .style__font {
