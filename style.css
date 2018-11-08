@@ -931,12 +931,23 @@ html {
 .bg-color--blue {
   width: 300px;
   height: 300px;
-  border-radius: 50%;
   background-color: rgba(126, 206, 252, 0.9);
   position: relative;
   margin: 10% auto;
   text-align: center;
   line-height: 300px;
+}
+
+.bg-color--blue:nth-child(1) {
+  border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+}
+
+.bg-color--blue:nth-child(2) {
+  border-radius: 80% 30% 50% 70%/50%;
+}
+
+.bg-color--blue:nth-child(3) {
+  border-radius: 40% 40% 50% 40%/30% 50% 40% 50%;
 }
 
 .bg-color--blue img {
