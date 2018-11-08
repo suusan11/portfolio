@@ -529,13 +529,30 @@ html {
 
 @media (min-width: 1000px) {
   .thumbnail {
+    position: relative;
     padding: 8% 0;
     text-align: right;
   }
   .thumbnail img {
+    position: relative;
     width: 90%;
-    height: 250px;
+    height: 260px;
     border-radius: 3%;
+    margin: -5px;
+  }
+  .thumbnail .border--hover {
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 9%;
+    width: 90%;
+    height: 260px;
+    border: 3px solid #EE817B;
+    border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+    transition: .5s;
+  }
+  .thumbnail:hover .border--hover {
+    display: block;
   }
   .thumbnail p {
     text-align: left;
@@ -925,8 +942,8 @@ html {
 .bg-color--blue p:nth-child(1)::before {
   content: url("../images/inspire.svg");
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 
 .bg-color--blue p:nth-child(2)::before {
