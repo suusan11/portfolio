@@ -941,14 +941,17 @@ html {
   content: '';
   border-bottom: 3px solid #EE817B;
   width: 30px;
-  margin: 10% auto 0;
+  margin: 0 auto 0;
+  position: absolute;
+  top: -120%;
+  left: 22%;
   opacity: 0;
   visibility: hidden;
   transition: .3s ease-in;
 }
 
 .link h4:hover::after {
-  margin-top: 30%;
+  top: -80%;
   opacity: 1;
   visibility: visible;
 }

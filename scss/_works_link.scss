@@ -12,14 +12,17 @@
     position: relative;
 
     &::after {
-      @include guideLineW($secondary-pink, 10%, 0);
+      @include guideLineW($secondary-pink, 0, 0);
+      position: absolute;
+      top: -120%;
+      left: 22%;
       opacity: 0;
       visibility: hidden;
       transition: .3s ease-in;
     }
 
     &:hover::after {
-      margin-top: 30%;
+      top: -80%;
       opacity: 1;
       visibility: visible;
     }
