@@ -580,7 +580,7 @@ html {
   height: auto;
   position: relative;
   background-color: #B2E0F2;
-  background-color: #B2E0F2;
+  border-radius: 5%;
   padding: 20px 20px 40px;
   margin: 15% auto;
   text-align: center;
