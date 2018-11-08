@@ -108,7 +108,7 @@ section {
 
 @media (min-width: 1000px) {
   section {
-    margin: 20% 0;
+    margin: 15% 0;
   }
 }
 
@@ -941,7 +941,7 @@ html {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin: 10% 0 30%;
+  margin: 10% 0 20%;
 }
 
 .link h4 {
