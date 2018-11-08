@@ -5,19 +5,27 @@
 
   &-img {
     display: inline-block;
-    width: 274px;
-    height: 187px;
+    width: 100%;
+    height: auto;
     background-color: #BEB9B9;
     border-radius: 5%;
     margin: 5% 0;
   }
 }
+
 @include pcSize {
   .works__images {
     &-img {
       display: inline-block;
-      width: 755px;
-      height: 514px;
+      width: 70%;
+    }
+  }
+}
+
+@include middleSize {
+  .works__images {
+    &-img {
+      width: 80%;
     }
   }
 }

@@ -851,8 +851,8 @@ html {
 
 .works__images-img {
   display: inline-block;
-  width: 274px;
-  height: 187px;
+  width: 100%;
+  height: auto;
   background-color: #BEB9B9;
   border-radius: 5%;
   margin: 5% 0;
@@ -861,8 +861,13 @@ html {
 @media (min-width: 1000px) {
   .works__images-img {
     display: inline-block;
-    width: 755px;
-    height: 514px;
+    width: 70%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+  .works__images-img {
+    width: 80%;
   }
 }
 
