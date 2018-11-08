@@ -31,4 +31,4 @@ function addContainer() {
     }
 }
 
-window.addEventListener("resize", addContainer);
+window.addEventListener("load", addContainer);
