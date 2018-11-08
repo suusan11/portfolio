@@ -4,10 +4,23 @@
   width: 100%;
 
   .thumbnail {
+    position: relative;
     padding: 8% 0;
 
     img{
       width: 100%;
+    }
+
+    .border--hover {
+      position: absolute;
+      top: 15%;
+      left: 1%;
+      opacity: 1;
+      width: 98%;
+      height: 60%;
+      border: 3px solid $secondary-pink;
+      border-radius: 30% 5% 20% 3%/ 7% 20% 10% 30%;
+      transition: .5s;
     }
 
     p {
@@ -24,7 +37,6 @@
     text-align: right;
 
     img {
-      position: relative;
       width: 90%;
       height: 260px;
       border-radius: 3%;
@@ -32,26 +44,24 @@
     }
 
     .border--hover {
-      display: none;
       position: absolute;
       top: 15%;
       left: 9%;
-      //z-index: -1;
+      opacity: 0;
       width: 90%;
-      height: 260px;
+      height: 50%;
       border: 3px solid $secondary-pink;
-      border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
-      transition: .5s;
+      border-radius: 30% 5% 20% 3%/ 7% 20% 10% 30%;
+      transition: .3s;
     }
 
     &:hover .border--hover{
-      display: block;
-      //z-index: 10;
+      opacity: 1;
     }
 
     p {
       text-align: left;
-      margin-left: 10%;
+      margin: 3% 0 3% 10%;
     }
   }
 }

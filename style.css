@@ -517,11 +517,24 @@ html {
 }
 
 .works__thumbnails .thumbnail {
+  position: relative;
   padding: 8% 0;
 }
 
 .works__thumbnails .thumbnail img {
   width: 100%;
+}
+
+.works__thumbnails .thumbnail .border--hover {
+  position: absolute;
+  top: 15%;
+  left: 1%;
+  opacity: 1;
+  width: 98%;
+  height: 60%;
+  border: 3px solid #EE817B;
+  border-radius: 30% 5% 20% 3%/ 7% 20% 10% 30%;
+  transition: .5s;
 }
 
 .works__thumbnails .thumbnail p {
@@ -535,29 +548,28 @@ html {
     text-align: right;
   }
   .thumbnail img {
-    position: relative;
     width: 90%;
     height: 260px;
     border-radius: 3%;
     margin: -5px;
   }
   .thumbnail .border--hover {
-    display: none;
     position: absolute;
     top: 15%;
     left: 9%;
+    opacity: 0;
     width: 90%;
-    height: 260px;
+    height: 50%;
     border: 3px solid #EE817B;
-    border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
-    transition: .5s;
+    border-radius: 30% 5% 20% 3%/ 7% 20% 10% 30%;
+    transition: .3s;
   }
   .thumbnail:hover .border--hover {
-    display: block;
+    opacity: 1;
   }
   .thumbnail p {
     text-align: left;
-    margin-left: 10%;
+    margin: 3% 0 3% 10%;
   }
 }
 
