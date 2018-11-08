@@ -929,11 +929,12 @@ html {
 }
 
 .bg-color--blue {
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   background-color: rgba(126, 206, 252, 0.9);
   position: relative;
   margin: 10% auto;
+  padding: 0 2%;
   text-align: center;
   line-height: 300px;
 }
@@ -963,4 +964,31 @@ html {
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
+}
+
+@media (min-width: 1000px) {
+  .bg-color--blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 380px;
+    line-height: 380px;
+  }
+  .works__motto--flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .works__motto--flex-item {
+    width: 30%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+  .bg-color--blue {
+    width: 350px;
+    height: 350px;
+    line-height: 350px;
+  }
 }

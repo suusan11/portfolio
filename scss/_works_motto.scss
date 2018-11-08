@@ -1,53 +1,12 @@
 @import "variable", "mixin";
 
-//.bg-color--blue {
-//  width: 100%;
-//  padding: 3% 0;
-//  margin-left: auto;
-//  background-color: $complementary-blue;
-//
-//  p {
-//    margin: 5% 0;
-//  }
-//
-//  p:nth-child(1)::before {
-//    content: url("../images/inspire.svg");
-//    display: block;
-//    width: 50px;
-//    height: 50px;
-//  }
-//
-//  p:nth-child(2)::before {
-//    content: url("../images/concept.svg");
-//    display: block;
-//    width: 100px;
-//    height: 100px;
-//  }
-//
-//  p:nth-child(3)::before {
-//    content: url("../images/clear.svg");
-//    display: block;
-//    width: 100px;
-//    height: 100px;
-//  }
-//}
-//
-////responsive for pc
-//@include pcSize {
-//  .bg-color--blue {
-//    width: 550px;
-//    height: auto;
-//    border-radius: 5%;
-//    margin-left: auto;
-//  }
-//}
-
 .bg-color--blue {
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   background-color: $blue-opacity;
   position: relative;
   margin: 10% auto;
+  padding: 0 2%;
   text-align: center;
   line-height: 300px;
 
@@ -76,5 +35,37 @@
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
+  }
+}
+
+
+//responsive for pc
+@include pcSize {
+  .bg-color--blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 380px;
+    line-height: 380px;
+  }
+
+  .works__motto--flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-item {
+      width: 30%;
+    }
+  }
+}
+
+//responsive for middle size
+@include middleSize {
+  .bg-color--blue {
+    width: 350px;
+    height: 350px;
+    line-height: 350px;
   }
 }
