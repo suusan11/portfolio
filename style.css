@@ -580,6 +580,7 @@ html {
   height: auto;
   position: relative;
   background-color: #B2E0F2;
+  background-color: #B2E0F2;
   padding: 20px 20px 40px;
   margin: 15% auto;
   text-align: center;
@@ -625,8 +626,10 @@ html {
   .motto__flex .motto__block {
     width: 30%;
     height: 430px;
-    border-radius: 5%;
     margin: 10% auto;
+  }
+  .motto__flex .motto__block:nth-child(1) {
+    border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
   }
   .motto__flex .motto__block:nth-child(1)::before {
     content: url("../images/inspire.svg");
@@ -634,11 +637,17 @@ html {
     width: 100px;
     margin: 0 auto;
   }
+  .motto__flex .motto__block:nth-child(2) {
+    border-radius: 80% 30% 50% 70%/50%;
+  }
   .motto__flex .motto__block:nth-child(2)::before {
     content: url("../images/concept.svg");
     display: block;
     width: 100px;
     margin: 0 auto;
+  }
+  .motto__flex .motto__block:nth-child(3) {
+    border-radius: 40% 40% 50% 40%/30% 50% 40% 50%;
   }
   .motto__flex .motto__block:nth-child(3)::before {
     content: url("../images/clear.svg");
@@ -692,7 +701,7 @@ div.text__container p.bg-color--secondpink {
 
 .about img {
   width: 50%;
-  border-radius: 50%;
+  border-radius: 50% 50% 50% 50%/50% 50% 70% 90%;
   margin: 3% 0;
 }
 
