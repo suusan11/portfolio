@@ -933,6 +933,7 @@ html {
 .link h4 {
   display: inline-block;
   color: #EE817B;
+  position: relative;
 }
 
 .link h4::after {
@@ -940,7 +941,16 @@ html {
   content: '';
   border-bottom: 3px solid #EE817B;
   width: 30px;
-  margin: 40% auto 0;
+  margin: 10% auto 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s ease-in;
+}
+
+.link h4:hover::after {
+  margin-top: 30%;
+  opacity: 1;
+  visibility: visible;
 }
 
 .bg-color--blue {
