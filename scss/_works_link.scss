@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin: 10% 0 20%;
+  margin: 15% 0 20%;
 
   h4 {
     display: inline-block;
@@ -17,23 +17,27 @@
 }
 
 @include pcSize {
-  .link h4 {
-    position: relative;
+  .link {
+    justify-content: space-around;
 
-    &::after {
-      @include guideLineW($secondary-pink, 0, 0);
-      position: absolute;
-      top: -120%;
-      left: 22%;
-      opacity: 0;
-      visibility: hidden;
-      transition: .3s ease-in;
-    }
+    h4 {
+      position: relative;
 
-    &:hover::after {
-      top: -60%;
-      opacity: 1;
-      visibility: visible;
+      &::after {
+        @include guideLineW($secondary-pink, 0, 0);
+        position: absolute;
+        top: -120%;
+        left: 22%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s ease-in;
+      }
+
+      &:hover::after {
+        top: -60%;
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 }
