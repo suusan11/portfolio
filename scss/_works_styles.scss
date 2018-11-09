@@ -1,9 +1,11 @@
 @import "variable", "typography", "mixin";
 
 .style {
-  margin-top: 0;
-  padding: 3% 0;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2% 0;
   border: 5px solid $primary-pink;
+  border-radius: 3%;
   background-color: $white;
 
   &__flex {
@@ -25,7 +27,7 @@
     }
 
     .colors {
-      width: 50%;
+      width: 100%;
 
       span {
         display: inline-block;
@@ -39,7 +41,7 @@
     }
 
     .fonts {
-      width: 50%;
+      width: 100%;
 
       h2.font--lato {
         display: inline-block;
@@ -57,7 +59,7 @@
 @include pcSize {
   .style {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 90%;
     height: 210px;
@@ -71,3 +73,32 @@
     }
   }
 }
+
+
+//.style__circle {
+//  width: 280px;
+//  height: 300px;
+//  background-color: $blue-opacity;
+//  position: relative;
+//  margin: 10% auto;
+//  padding: 0 2%;
+//  text-align: center;
+//  line-height: 300px;
+//
+//  &:nth-child(1) {
+//    border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+//  }
+//
+//  &:nth-child(2) {
+//    border-radius: 80% 30% 50% 70%/50%;
+//  }
+//
+//  img {
+//    width: 60%;
+//    height: 60%;
+//    position: absolute;
+//    top: 20%;
+//    left: 20%;
+//    z-index: -1;
+//  }
+//}

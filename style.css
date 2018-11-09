@@ -890,9 +890,11 @@ html {
 }
 
 .style {
-  margin-top: 0;
-  padding: 3% 0;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2% 0;
   border: 5px solid #FCECEA;
+  border-radius: 3%;
   background-color: #FFFFFF;
 }
 
@@ -916,7 +918,7 @@ html {
 }
 
 .style__color .colors, .style__font .colors {
-  width: 50%;
+  width: 100%;
 }
 
 .style__color .colors span, .style__font .colors span {
@@ -930,7 +932,7 @@ html {
 }
 
 .style__color .fonts, .style__font .fonts {
-  width: 50%;
+  width: 100%;
 }
 
 .style__color .fonts h2.font--lato, .style__font .fonts h2.font--lato {
@@ -946,7 +948,7 @@ html {
 @media (min-width: 1000px) {
   .style {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 90%;
     height: 210px;
