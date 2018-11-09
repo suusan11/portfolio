@@ -892,6 +892,15 @@ html {
 .style {
   margin-top: 0;
   padding: 3% 0;
+  border: 5px solid #FCECEA;
+  background-color: #FFFFFF;
+}
+
+.style__flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .style__color, .style__font {
@@ -906,22 +915,31 @@ html {
   margin-right: 7%;
 }
 
-.style__color span, .style__font span {
+.style__color .colors, .style__font .colors {
+  width: 50%;
+}
+
+.style__color .colors span, .style__font .colors span {
   display: inline-block;
   width: 30px;
   height: 30px;
   background-color: #FFFFFF;
+  border: 1px solid #545454;
   border-radius: 50%;
-  margin-right: 3%;
+  margin: 3% 3% 0 0;
 }
 
-.style__color h2.font--lato, .style__font h2.font--lato {
+.style__color .fonts, .style__font .fonts {
+  width: 50%;
+}
+
+.style__color .fonts h2.font--lato, .style__font .fonts h2.font--lato {
   display: inline-block;
   font-family: "Lato", sans-serif;
   margin-right: 2%;
 }
 
-.style__color p, .style__font p {
+.style__color .fonts p, .style__font .fonts p {
   display: inline-block;
 }
 
@@ -935,7 +953,9 @@ html {
     margin: 0 auto;
   }
   .style__color, .style__font {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40%;
   }
 }

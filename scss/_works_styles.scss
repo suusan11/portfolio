@@ -3,6 +3,15 @@
 .style {
   margin-top: 0;
   padding: 3% 0;
+  border: 5px solid $primary-pink;
+  background-color: $white;
+
+  &__flex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   &__color, &__font {
     width: 80%;
@@ -15,23 +24,32 @@
       margin-right: 7%;
     }
 
-    span {
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      background-color: #FFFFFF;
-      border-radius: 50%;
-      margin-right: 3%;
+    .colors {
+      width: 50%;
+
+      span {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: #FFFFFF;
+        border: 1px solid $black;
+        border-radius: 50%;
+        margin: 3% 3% 0 0;
+      }
     }
 
-    h2.font--lato {
-      display: inline-block;
-      font-family: "Lato", sans-serif;
-      margin-right: 2%;
-    }
+    .fonts {
+      width: 50%;
 
-    p {
-      display: inline-block;
+      h2.font--lato {
+        display: inline-block;
+        font-family: "Lato", sans-serif;
+        margin-right: 2%;
+      }
+
+      p {
+        display: inline-block;
+      }
     }
   }
 }
@@ -46,9 +64,10 @@
     margin: 0 auto;
 
     &__color, &__font {
-      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 40%;
     }
   }
 }
-
