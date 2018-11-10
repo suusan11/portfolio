@@ -404,10 +404,10 @@ html {
   margin-top: 17px;
 }
 
-.nav-list {
+.circle__nav-list {
   display: none;
   position: absolute;
-  top: -40px;
+  top: 0;
   right: -200px;
   width: 50%;
   height: 650px;
@@ -416,26 +416,53 @@ html {
   border-radius: 50%;
   font-family: "Dosis", sans-serif;
   background-color: #EE817B;
-  text-align: center;
+  text-align: left;
 }
 
-.nav-list:nth-child(1) {
-  width: 10px;
+.circle__nav-list li {
+  padding: 3%;
 }
 
-.nav-list.open {
+.circle__nav-list a {
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.circle__nav-list.open {
   display: block;
-  -webkit-animation: showNav .5s;
-  -o-animation: showNav .5s;
-  animation: showNav .5s;
+  right: 50px;
+  width: 300px;
+  height: 300px;
+  background-color: coral;
+  z-index: -1;
+  animation: circleRotato 2s 1s alternate;
 }
 
-@keyframes showNav {
+@keyframes circleRotato {
   0% {
-    opacity: 0;
+    border-radius: 0 0 0 0;
+    background: coral;
+    transform: rotate(0deg);
+  }
+  25% {
+    border-radius: 0 0 0 0;
+    background: darksalmon;
+    transform: rotate(45deg);
+  }
+  50% {
+    border-radius: 0 0 0 0;
+    background: indianred;
+    transform: rotate(90deg);
+  }
+  75% {
+    border-radius: 0 0 0 0;
+    background: lightcoral;
+    transform: rotate(135deg);
   }
   100% {
-    opacity: 1;
+    border-radius: 0 0 0 0;
+    background: darksalmon;
+    transform: rotate(1080deg);
   }
 }
 
