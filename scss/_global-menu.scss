@@ -72,33 +72,54 @@
     right: 50px;
     width: 450px;
     height: 450px;
+    border-radius: 50%;
+    opacity: 0;
     background-color: $secondary-pink;
     z-index: -1;
-    -webkit-animation: circleRotato 2s 1s alternate;
-    -o-animation: circleRotato 2s 1s alternate;
-    animation: circleRotato 2s 1s alternate;
+    -webkit-animation: circleRotatoOpen 1s alternate forwards;
+    -o-animation: circleRotatoOpen 1s alternate forwards;
+    animation: circleRotatoOpen 1s alternate forwards;
   }
 
-  @keyframes circleRotato {
+  @-webkit-keyframes circleRotatoOpen {
     0%  {
-      border-radius: 50%;
-      transform: rotate(0deg);
-    }
-    25%  {
-      border-radius: 50%;
-      transform: rotate(45deg);
+      opacity: 0.2;
+      width: 50px;
+      height: 50px;
+      transform: rotate(2880deg);
     }
     50%  {
-      border-radius: 50%;
-      transform: rotate(90deg);
-    }
-    75%  {
-      border-radius: 50%;
-      transform: rotate(135deg);
+      opacity: 0.6;
+      width: 250px;
+      height: 250px;
+      transform: rotate(720deg);
     }
     100% {
-      border-radius: 50%;
-      transform: rotate(180deg);
+      opacity: 1;
+      width: 450px;
+      height: 450px;
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes circleRotatoOpen {
+    0%  {
+      opacity: 0.2;
+      width: 50px;
+      height: 50px;
+      transform: rotate(2880deg);
+    }
+    50%  {
+      opacity: 0.6;
+      width: 250px;
+      height: 250px;
+      transform: rotate(720deg);
+    }
+    100% {
+      opacity: 1;
+      width: 450px;
+      height: 450px;
+      transform: rotate(0deg);
     }
   }
 }
