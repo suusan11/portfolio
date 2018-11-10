@@ -444,50 +444,44 @@ html {
   opacity: 0;
   background-color: #EE817B;
   z-index: -1;
-  -webkit-animation: circleRotatoOpen 1s alternate forwards;
-  -o-animation: circleRotatoOpen 1s alternate forwards;
-  animation: circleRotatoOpen 1s alternate forwards;
+  -webkit-animation: circleRotatoOpen .8s ease-out forwards;
+  -o-animation: circleRotatoOpen .8s ease-out forwards;
+  animation: circleRotatoOpen .8s ease-out forwards;
 }
 
 @-webkit-keyframes circleRotatoOpen {
   0% {
     opacity: 0.2;
-    width: 50px;
-    height: 50px;
-    transform: rotate(2880deg);
+    width: 350px;
+    height: 350px;
   }
   50% {
     opacity: 0.6;
-    width: 250px;
-    height: 250px;
-    transform: rotate(720deg);
+    width: 400px;
+    height: 400px;
   }
   100% {
     opacity: 1;
     width: 450px;
     height: 450px;
-    transform: rotate(0deg);
   }
 }
 
 @keyframes circleRotatoOpen {
   0% {
     opacity: 0.2;
-    width: 50px;
-    height: 50px;
-    transform: rotate(2880deg);
+    width: 350px;
+    height: 350px;
   }
   50% {
     opacity: 0.6;
-    width: 250px;
-    height: 250px;
-    transform: rotate(720deg);
+    width: 400px;
+    height: 400px;
   }
   100% {
     opacity: 1;
     width: 450px;
     height: 450px;
-    transform: rotate(0deg);
   }
 }
 
