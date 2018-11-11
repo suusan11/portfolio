@@ -69,8 +69,8 @@
   &.open {
     display: block;
     right: 50px;
-    width: 450px;
-    height: 450px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     opacity: 0;
     background-color: $secondary-pink;
@@ -80,35 +80,35 @@
     animation: circleRotatoOpen .8s ease-out forwards;
   }
 
-  @-webkit-keyframes circleRotatoOpen {
-    0%  {
-      opacity: 0.2;
-      width: 350px;
-      height: 350px;
-    }
-    50%  {
-      opacity: 0.6;
-      width: 400px;
-      height: 400px;
-    }
-    100% {
-      opacity: 1;
-      width: 450px;
-      height: 450px;
-    }
-  }
+  //@-webkit-keyframes circleRotatoOpen {
+  //  0%  {
+  //    opacity: 0.2;
+  //    width: 350px;
+  //    height: 350px;
+  //  }
+  //  50%  {
+  //    opacity: 0.6;
+  //    width: 400px;
+  //    height: 400px;
+  //  }
+  //  100% {
+  //    opacity: 1;
+  //    width: 450px;
+  //    height: 450px;
+  //  }
+  //}
 
   @keyframes circleRotatoOpen {
     0%  {
       opacity: 0.2;
-      width: 350px;
-      height: 350px;
+      //width: 350px;
+      //height: 350px;
     }
-    50%  {
-      opacity: 0.6;
-      width: 400px;
-      height: 400px;
-    }
+    //50%  {
+    //  opacity: 0.6;
+    //  width: 400px;
+    //  height: 400px;
+    //}
     100% {
       opacity: 1;
       width: 450px;
