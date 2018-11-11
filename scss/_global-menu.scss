@@ -62,7 +62,7 @@
 
   a {
     text-align: left;
-    color: $white;
+    color: $black;
     font-weight: $font-weight-bold;
   }
 
@@ -73,42 +73,34 @@
     height: 200px;
     border-radius: 50%;
     opacity: 0;
-    background-color: $secondary-pink;
+    background-color: $primary-pink;
     z-index: -1;
-    -webkit-animation: circleRotatoOpen .8s ease-out forwards;
-    -o-animation: circleRotatoOpen .8s ease-out forwards;
-    animation: circleRotatoOpen .8s ease-out forwards;
+    -webkit-animation: circleRotatoOpen .6s ease-out forwards;
+    -o-animation: circleRotatoOpen .6s ease-out forwards;
+    animation: circleRotatoOpen .6s ease-out forwards;
   }
-
-  //@-webkit-keyframes circleRotatoOpen {
-  //  0%  {
-  //    opacity: 0.2;
-  //    width: 350px;
-  //    height: 350px;
-  //  }
-  //  50%  {
-  //    opacity: 0.6;
-  //    width: 400px;
-  //    height: 400px;
-  //  }
-  //  100% {
-  //    opacity: 1;
-  //    width: 450px;
-  //    height: 450px;
-  //  }
-  //}
 
   @keyframes circleRotatoOpen {
     0%  {
       opacity: 0.2;
-      //width: 350px;
-      //height: 350px;
     }
-    //50%  {
-    //  opacity: 0.6;
-    //  width: 400px;
-    //  height: 400px;
-    //}
+    50%  {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+      width: 450px;
+      height: 450px;
+    }
+  }
+
+  @keyframes circleRotatoOpen {
+    0%  {
+      opacity: 0.2;
+    }
+    50%  {
+      opacity: 0.6;
+    }
     100% {
       opacity: 1;
       width: 450px;

@@ -431,7 +431,7 @@ html {
 
 .circle__nav-list a {
   text-align: left;
-  color: #FFFFFF;
+  color: #545454;
   font-weight: 700;
 }
 
@@ -442,16 +442,33 @@ html {
   height: 200px;
   border-radius: 50%;
   opacity: 0;
-  background-color: #EE817B;
+  background-color: #FCECEA;
   z-index: -1;
-  -webkit-animation: circleRotatoOpen .8s ease-out forwards;
-  -o-animation: circleRotatoOpen .8s ease-out forwards;
-  animation: circleRotatoOpen .8s ease-out forwards;
+  -webkit-animation: circleRotatoOpen .6s ease-out forwards;
+  -o-animation: circleRotatoOpen .6s ease-out forwards;
+  animation: circleRotatoOpen .6s ease-out forwards;
 }
 
 @keyframes circleRotatoOpen {
   0% {
     opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@keyframes circleRotatoOpen {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
   }
   100% {
     opacity: 1;
