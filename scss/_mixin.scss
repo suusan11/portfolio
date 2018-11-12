@@ -6,9 +6,9 @@
   height: 3px;
   display: block;
   position: absolute;
-  top: $top;
+  margin-top: $top;
   background-color: $brown;
-  transition: transform .3s;
+  transition: transform 3s;
 }
 
 
