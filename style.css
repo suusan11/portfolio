@@ -362,7 +362,6 @@ html {
 .global-menu {
   display: block;
   right: 2%;
-  z-index: 1;
   height: 100px;
 }
 
@@ -389,94 +388,59 @@ html {
 }
 
 .global-menu .nav-toggle span::before {
-  display: block;
   content: '';
   width: 30px;
   height: 3px;
+  display: block;
+  position: absolute;
+  top: -300%;
   background-color: #928484;
-  margin-top: -10px;
+  transition: transform .3s;
 }
 
 .global-menu .nav-toggle span::after {
-  display: block;
   content: '';
   width: 30px;
   height: 3px;
-  background-color: #928484;
-  margin-top: 17px;
-}
-
-.circle__nav-list {
-  display: none;
+  display: block;
   position: absolute;
-  top: 0;
-  right: -200px;
-  width: 50%;
-  height: 650px;
-  padding-top: 2%;
-  line-height: 70px;
-  border-radius: 50%;
-  font-family: "Dosis", sans-serif;
-  background-color: #EE817B;
-  text-align: center;
+  top: 300%;
+  background-color: #928484;
+  transition: transform .3s;
 }
 
-.circle__nav-list li {
+.global-menu .nav-toggle.open span {
+  background-color: transparent;
+}
+
+.global-menu .nav-toggle.open span::before {
+  top: 80%;
+  transform: rotate(45deg);
+}
+
+.global-menu .nav-toggle.open span::after {
+  top: 80%;
+  transform: rotate(-45deg);
+}
+
+.global-menu ul.hidden {
+  visibility: hidden;
+}
+
+.global-menu ul.hidden li {
   padding: 3%;
 }
 
-.circle__nav-list li:hover::after {
+.global-menu ul.hidden li:hover::after {
   content: "";
   width: 100%;
   border-bottom: 1px solid #FFFFFF;
 }
 
-.circle__nav-list a {
+.global-menu ul.hidden a {
   text-align: left;
   color: #545454;
   font-weight: 700;
-}
-
-.circle__nav-list.open {
-  display: block;
-  right: 50px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  opacity: 0;
-  background-color: #FCECEA;
-  z-index: -1;
-  -webkit-animation: circleRotatoOpen .6s ease-out forwards;
-  -o-animation: circleRotatoOpen .6s ease-out forwards;
-  animation: circleRotatoOpen .6s ease-out forwards;
-}
-
-@keyframes circleRotatoOpen {
-  0% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-    width: 450px;
-    height: 450px;
-  }
-}
-
-@keyframes circleRotatoOpen {
-  0% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-    width: 450px;
-    height: 450px;
-  }
 }
 
 html {

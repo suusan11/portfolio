@@ -3,7 +3,7 @@
 .global-menu {
   display: block;
   right: 2%;
-  z-index: 1;
+  //z-index: 1;
   height: 100px;
 
   .nav-toggle {
@@ -16,7 +16,7 @@
     background-color: $primary-pink;
     cursor: pointer;
 
-     span {
+    span {
       display: block;
       position: absolute;
       top: 46%;
@@ -27,86 +27,102 @@
       z-index: 10;
 
       &::before {
-        @include menuTrigger(-10px);
+        @include menuTrigger(-300%);
       }
 
       &::after {
-        @include menuTrigger(17px);
+        @include menuTrigger(300%);
       }
     }
-  }
-}
+
+    &.open {
+      //display: block;
+      //right: 50px;
+      //width: 200px;
+      //height: 200px;
+      //border-radius: 50%;
+      //opacity: 0;
+      //background-color: $primary-pink;
+      //z-index: -1;
+      //-webkit-animation: circleRotatoOpen .6s ease-out forwards;
+      //-o-animation: circleRotatoOpen .6s ease-out forwards;
+      //animation: circleRotatoOpen .6s ease-out forwards;
+
+      span {
+        background-color: transparent;
 
 
-.circle__nav-list {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: -200px;
-  width: 50%;
-  height: 650px;
-  padding-top: 2%;
-  line-height: 70px;
-  border-radius: 50%;
-  font-family: $font-heading;
-  background-color: $secondary-pink;
-  text-align: center;
+        &::before {
+          top: 80%;
+          transform: rotate(45deg);
+        }
 
-  li {
-    padding: 3%;
-
-    &:hover::after {
-      content: "";
-      width: 100%;
-      border-bottom: 1px solid $white;
+        &::after {
+          top: 80%;
+          transform: rotate(-45deg);
+        }
+      }
     }
-  }
 
-  a {
-    text-align: left;
-    color: $black;
-    font-weight: $font-weight-bold;
-  }
-
-  &.open {
-    display: block;
-    right: 50px;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    opacity: 0;
-    background-color: $primary-pink;
-    z-index: -1;
-    -webkit-animation: circleRotatoOpen .6s ease-out forwards;
-    -o-animation: circleRotatoOpen .6s ease-out forwards;
-    animation: circleRotatoOpen .6s ease-out forwards;
-  }
-
-  @keyframes circleRotatoOpen {
-    0%  {
-      opacity: 0.2;
-    }
-    50%  {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-      width: 450px;
-      height: 450px;
-    }
+    //@keyframes circleRotatoOpen {
+    //  0% {
+    //    opacity: 0.2;
+    //  }
+    //  50% {
+    //    opacity: 0.6;
+    //  }
+    //  100% {
+    //    opacity: 1;
+    //    width: 450px;
+    //    height: 450px;
+    //  }
+    //}
+    //
+    //@keyframes circleRotatoOpen {
+    //  0% {
+    //    opacity: 0.2;
+    //  }
+    //  50% {
+    //    opacity: 0.6;
+    //  }
+    //  100% {
+    //    opacity: 1;
+    //    width: 450px;
+    //    height: 450px;
+    //  }
+    //}
   }
 
-  @keyframes circleRotatoOpen {
-    0%  {
-      opacity: 0.2;
+  ul.hidden {
+    //position: absolute;
+    //top: 0;
+    //right: -200px;
+    //width: 50%;
+    //height: 650px;
+    //padding-top: 2%;
+    //line-height: 70px;
+    //border-radius: 50%;
+    //font-family: $font-heading;
+    //background-color: $secondary-pink;
+    //text-align: center;
+    visibility: hidden;
+
+    li {
+      padding: 3%;
+
+      &:hover::after {
+        content: "";
+        width: 100%;
+        border-bottom: 1px solid $white;
+      }
     }
-    50%  {
-      opacity: 0.6;
+
+    a {
+      text-align: left;
+      color: $black;
+      font-weight: $font-weight-bold;
     }
-    100% {
-      opacity: 1;
-      width: 450px;
-      height: 450px;
-    }
+
+
   }
 }
