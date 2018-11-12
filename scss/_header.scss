@@ -2,19 +2,18 @@
 
 header {
   position: fixed;
-  top: 10px;
+  top: 50px;
   width: 100%;
   z-index: 10;
 
   .flex {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
     img {
       width: 30px;
       height: 35px;
     }
   }
-
 }
