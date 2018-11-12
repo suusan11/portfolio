@@ -1,12 +1,14 @@
 @import "variable";
 
 @mixin menuTrigger($top) {
-  display: block;
   content: '';
   width: 30px;
   height: 3px;
+  display: block;
+  position: absolute;
+  top: $top;
   background-color: $brown;
-  top: ($top);
+  transition: transform .3s;
 }
 
 
