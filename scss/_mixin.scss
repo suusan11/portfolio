@@ -1,13 +1,14 @@
 @import "variable";
 
-@mixin menuTrigger($marginTop) {
+@mixin menuTrigger($top) {
   display: block;
   content: '';
   width: 30px;
   height: 3px;
   background-color: $brown;
-  margin-top: ($marginTop);
+  top: ($top);
 }
+
 
 @mixin circle($top, $right, $bottom, $left) {
   content: '';
