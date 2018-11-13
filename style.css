@@ -396,68 +396,44 @@ html {
 }
 
 .hero {
+  width: 100%;
   min-height: 500px;
   margin-top: 0;
+  padding-top: 15%;
 }
 
-.hero h1 {
+.hero__txt h1 {
   position: relative;
   text-align: center;
   text-shadow: 5px 2px 7px rgba(138, 124, 124, 0.4);
   padding-bottom: 32px;
 }
 
-.hero h1::before {
-  position: absolute;
-  top: -100%;
-  left: 10%;
-  z-index: -1;
-  content: '';
-  width: 80%;
-  height: 500%;
-  border-radius: 45% 60% 60% 70%/80% 50% 80% 40%;
-  background-color: rgba(252, 236, 234, 0.5);
-}
-
-.hero h2 {
+.hero__txt h2 {
   text-align: center;
   color: #EE817B;
   text-shadow: 5px 2px 7px rgba(212, 115, 109, 0.4);
   padding-bottom: 10px;
 }
 
-.hero__flex--right {
-  width: 70%;
-  margin: 0 auto;
-}
-
 @media (min-width: 1000px) {
   .hero {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 13%;
   }
-  .hero__flex--left, .hero__flex--right {
-    width: 45%;
-  }
-  .hero__flex--left h1, .hero__flex--right h1 {
+  .hero__txt h1 {
     font-size: 2.5rem;
   }
-  .hero__flex--left h2, .hero__flex--right h2 {
+  .hero__txt h2 {
     font-size: 2rem;
   }
 }
 
-@media (min-width: 600px) and (max-width: 999px) {
-  .hero h1 {
+@media (min-width: 640px) and (max-width: 999px) {
+  .hero__txt h1 {
     font-size: 2.5rem;
   }
-  .hero h2 {
+  .hero__txt h2 {
     font-size: 2rem;
-  }
-  .hero__flex--right {
-    width: 50%;
   }
 }
 
@@ -606,7 +582,7 @@ html {
   }
 }
 
-@media (min-width: 600px) and (max-width: 999px) {
+@media (min-width: 640px) and (max-width: 999px) {
   .motto__block p {
     font-size: 20px;
   }
@@ -814,7 +790,7 @@ html {
   }
 }
 
-@media (min-width: 600px) and (max-width: 999px) {
+@media (min-width: 640px) and (max-width: 999px) {
   .works__images-img {
     width: 80%;
   }
@@ -1013,7 +989,7 @@ html {
   }
 }
 
-@media (min-width: 600px) and (max-width: 999px) {
+@media (min-width: 640px) and (max-width: 999px) {
   .bg-color--blue {
     width: 350px;
     height: 350px;
