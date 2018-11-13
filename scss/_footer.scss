@@ -14,6 +14,10 @@ footer {
       margin: 0 10px;
       stroke-width: 0;
       fill: $black;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 
@@ -21,6 +25,4 @@ footer {
     font-size: 0.65rem;
     margin-bottom: 30px;
   }
-
-
 }
