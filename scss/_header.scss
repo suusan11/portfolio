@@ -1,17 +1,18 @@
 @import "variable", "typography", "mixin";
 
 header {
-  position: fixed;
-  top: 50px;
   width: 100%;
-  z-index: 10;
 
   .flex {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    top: 50px;
 
     img {
+      position: fixed;
+      top: 50px;
+      z-index: 10;
       width: 30px;
       height: 35px;
     }

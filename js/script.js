@@ -11,8 +11,8 @@
 //         // toggleBtn.classList.add("close");
 //         navShow.classList.remove("open");
 //     }
-
-document.getElementById("js-nav-toggle").addEventListener("click", navToggle);
+//
+// document.getElementById("js-nav-toggle").addEventListener("click", navToggle);
 
 
 document.addEventListener('DOMContentLoaded', function(){
