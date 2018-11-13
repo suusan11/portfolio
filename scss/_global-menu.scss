@@ -1,14 +1,14 @@
 @import "variable", "typography", "mixin";
 
 .global-menu {
-  display: block;
+  visibility: hidden;
   margin-left: auto;
   text-align: right;
 
   .nav-list {
     li {
-      font-size: $font-size-base-pc - 3px;
-      padding-bottom: 15%;
+      font-size: $font-size-base-pc - 5px;
+      padding-bottom: 30%;
     }
 
     a {
@@ -18,5 +18,19 @@
         opacity: 0.5;
       }
     }
+  }
+}
+
+//responsive for pc
+@include pcSize {
+  .global-menu {
+    visibility: visible;
+  }
+}
+
+//responsive for before mb
+@include middleSize {
+  .global-menu {
+    visibility: visible;
   }
 }

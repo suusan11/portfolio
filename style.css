@@ -361,14 +361,14 @@ html {
 }
 
 .global-menu {
-  display: block;
+  visibility: hidden;
   margin-left: auto;
   text-align: right;
 }
 
 .global-menu .nav-list li {
-  font-size: 17px;
-  padding-bottom: 15%;
+  font-size: 15px;
+  padding-bottom: 20%;
 }
 
 .global-menu .nav-list a {
@@ -377,6 +377,18 @@ html {
 
 .global-menu .nav-list a:hover {
   opacity: 0.5;
+}
+
+@media (min-width: 1000px) {
+  .global-menu {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 999px) {
+  .global-menu {
+    visibility: visible;
+  }
 }
 
 html {
