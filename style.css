@@ -368,7 +368,7 @@ html {
 
 .global-menu .nav-list li {
   font-size: 17px;
-  padding: 8%;
+  padding-bottom: 8%;
 }
 
 .global-menu .nav-list a {
