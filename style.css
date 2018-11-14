@@ -647,8 +647,54 @@ div.text__container p.bg-color--secondpink {
   color: #FFFFFF;
 }
 
-.text__left {
-  text-align: left;
+.about__icons__flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about__icons__flex-top, .about__icons__flex-bottom {
+  display: inline-block;
+  width: 100%;
+  margin: 5% 0;
+}
+
+.about__icons__flex a {
+  position: relative;
+}
+
+.about__icons__flex a::before {
+  content: '';
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #EE817B;
+  background-color: #EE817B;
+  position: absolute;
+  bottom: 15%;
+  left: 16%;
+  z-index: -1;
+}
+
+.about__icons__flex a:hover::before {
+  transform: scale(0.9);
+  background-color: transparent;
+}
+
+.about__icons__flex .icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin: 10% 15%;
+  position: relative;
+  stroke-width: 0;
+  stroke: #FFFFFF;
+  fill: #FFFFFF;
+}
+
+.about__icons__flex .icon-piano {
+  stroke-width: 0.5;
 }
 
 @media (min-width: 1000px) {
@@ -677,20 +723,11 @@ div.text__container p.bg-color--secondpink {
   .about__icons {
     width: 100%;
   }
-  .about__icons a {
-    position: relative;
-  }
   .about__icons a::before {
-    content: '';
     width: 90px;
     height: 90px;
-    border-radius: 50%;
-    border: 3px solid #EE817B;
-    background-color: #EE817B;
-    position: absolute;
     bottom: 520%;
     left: 27%;
-    z-index: -1;
   }
   .about__icons a:hover::before {
     transform: scale(0.9);
