@@ -496,6 +496,11 @@ html {
     height: 250px;
     border-radius: 3%;
     margin: -5px;
+    filter: drop-shadow(2px 3px 7px #B0B0B0);
+    transition: all .5s ease-in;
+  }
+  .thumbnail img:hover {
+    transform: translateY(-20px);
   }
   .thumbnail p {
     display: inline-block;

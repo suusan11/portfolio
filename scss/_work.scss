@@ -14,10 +14,6 @@
       object-fit: cover;
     }
 
-    //.border--hover {
-    //  @include borderStyle(1, 15%, 1%, 98%, 60%);
-    //}
-
     p {
       display: inline-block;
       position: relative;
@@ -52,15 +48,13 @@
       height: 250px;
       border-radius: 3%;
       margin: -5px;
-    }
+      filter: drop-shadow(2px 3px 7px #B0B0B0);
+      transition: all .5s ease-in;
 
-    //.border--hover {
-    //  @include borderStyle(0, 15%, 21%, 78%, 50%);
-    //}
-    //
-    //&:hover .border--hover{
-    //  opacity: 1;
-    //}
+      &:hover {
+        transform: translateY(-20px);
+      }
+    }
 
     p {
       display: inline-block;
