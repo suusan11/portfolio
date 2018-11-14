@@ -1,5 +1,32 @@
 @import "variable", "mixin";
 
+.about {
+  text-align: center;
+
+  img {
+    width: 50%;
+    border-radius: 50% 50% 50% 50%/50% 50% 70% 90%;
+    margin: 3% 0;
+  }
+
+  .text__right {
+    text-align: center;
+
+    h3 {
+      margin-top: 5%;
+
+      &::after {
+        @include guideLineW($brown, 18px, 20px);
+      }
+    }
+
+    .text__container {
+      width: 70%;
+      margin: 5% auto;
+    }
+  }
+}
+
 div.text__container {
   margin: 15px 0;
 
@@ -16,25 +43,23 @@ div.text__container {
   }
 }
 
-
-.text__right {
-  text-align: right;
-
-  h3::after {
-      @include guideLineW($brown, 18px, 34px);
-  }
-}
-
 .text__left {
   text-align: left;
 }
 
-.about {
-  text-align: center;
 
-  img {
-    width: 50%;
-    border-radius: 50% 50% 50% 50%/50% 50% 70% 90%;
-    margin: 3% 0;
+@include pcSize {
+  .about_flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &-item {
+      width: 40%;
+    }
+
+    img {
+      width: 30%;
+    }
   }
 }
