@@ -466,9 +466,23 @@ html {
 }
 
 .works__thumbnails .thumbnail p {
-  text-align: left;
+  display: inline-block;
+  position: relative;
   padding: 5px 0 0 5px;
-  margin-left: 5%;
+  margin-right: 75%;
+}
+
+.works__thumbnails .thumbnail p::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 18%;
+  z-index: -1;
+  width: 100%;
+  border-bottom: 10px solid #EE817B;
+  border-radius: 5%;
+  opacity: 0.7;
 }
 
 @media (min-width: 1000px) {
@@ -486,7 +500,6 @@ html {
   .thumbnail p {
     display: inline-block;
     position: relative;
-    text-align: left;
     margin: 2% 100% 0 31%;
   }
   .thumbnail p::before {
