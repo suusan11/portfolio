@@ -455,28 +455,20 @@ html {
 
 .works__thumbnails .thumbnail {
   position: relative;
+  text-align: center;
   padding: 8% 0;
 }
 
 .works__thumbnails .thumbnail img {
-  width: 100%;
-}
-
-.works__thumbnails .thumbnail .border--hover {
-  position: absolute;
-  top: 15%;
-  left: 1%;
-  opacity: 1;
-  width: 98%;
-  height: 60%;
-  border: 3px solid #EE817B;
-  border-radius: 30% 5% 20% 3%/ 7% 20% 10% 30%;
-  transition: .3s;
-  pointer-events: none;
+  width: 90%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .works__thumbnails .thumbnail p {
+  text-align: left;
   padding: 5px 0 0 5px;
+  margin-left: 5%;
 }
 
 @media (min-width: 1000px) {

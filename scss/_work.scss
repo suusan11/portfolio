@@ -5,18 +5,23 @@
 
   .thumbnail {
     position: relative;
+    text-align: center;
     padding: 8% 0;
 
     img{
-      width: 100%;
+      width: 90%;
+      height: 200px;
+      object-fit: cover;
     }
 
-    .border--hover {
-      @include borderStyle(1, 15%, 1%, 98%, 60%);
-    }
+    //.border--hover {
+    //  @include borderStyle(1, 15%, 1%, 98%, 60%);
+    //}
 
     p {
+      text-align: left;
       padding: 5px 0 0 5px;
+      margin-left: 5%;
     }
   }
 }
