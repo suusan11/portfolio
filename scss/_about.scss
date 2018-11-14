@@ -88,11 +88,17 @@ div.text__container {
         width: 90px;
         height: 90px;
         border-radius: 50%;
+        border: 3px solid $secondary-pink;
         background-color: $secondary-pink;
         position: absolute;
         bottom: 520%;
-        left: 33.7%;
+        left: 27%;
         z-index: -1;
+      }
+
+      &:hover::before {
+        transform: scale(0.9);
+        background-color: transparent;
       }
     }
 
@@ -100,7 +106,7 @@ div.text__container {
       display: inline-block;
       width: 2.5rem;
       height: 2.5rem;
-      margin: 10% 8%;
+      margin: 10% 5%;
       position: relative;
       stroke-width: 0;
       stroke: $white;
