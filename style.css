@@ -652,16 +652,27 @@ div.text__container p.bg-color--secondpink {
 }
 
 @media (min-width: 1000px) {
-  .about_flex {
+  .about__flex {
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-  .about_flex-item {
-    width: 40%;
-  }
-  .about_flex img {
+  .about__flex-item--left {
     width: 30%;
+    margin-left: 10%;
+  }
+  .about__flex-item--left img {
+    width: 100%;
+  }
+  .about__flex-item--right {
+    width: 60%;
+  }
+  .about__flex-item--right.text__right {
+    text-align: right;
+  }
+  .about__flex-item--right.text__right .text__container {
+    width: 80%;
+    margin-right: 0;
   }
 }
 

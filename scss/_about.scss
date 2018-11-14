@@ -49,17 +49,31 @@ div.text__container {
 
 
 @include pcSize {
-  .about_flex {
+  .about__flex {
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-    &-item {
-      width: 40%;
+    &-item--left {
+      width: 30%;
+      margin-left: 10%;
+
+      img {
+        width: 100%;
+      }
     }
 
-    img {
-      width: 30%;
+    &-item--right {
+      width: 60%;
+
+      &.text__right {
+        text-align: right;
+
+        .text__container {
+          width: 80%;
+          margin-right: 0;
+        }
+      }
     }
   }
 }
