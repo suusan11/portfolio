@@ -49,8 +49,23 @@
     //}
 
     p {
+      display: inline-block;
+      position: relative;
       text-align: left;
-      margin: 3% 0 3% 31%;
+      margin: 2% 100% 0 31%;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 70%;
+        left: 10%;
+        z-index: -1;
+        width: 100%;
+        border-bottom: 10px solid $secondary-pink;
+        border-radius: 5%;
+        opacity: 0.7;
+      }
     }
   }
 }
