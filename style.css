@@ -461,7 +461,7 @@ html {
 
 .works__thumbnails .thumbnail img {
   width: 90%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
 }
 
