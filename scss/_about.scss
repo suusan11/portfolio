@@ -55,36 +55,36 @@ div.text__container {
     margin: 5% 0;
   }
 
-  a {
-    position: relative;
+  //a {
+  //  position: relative;
+  //
+  //  &::before {
+  //    content: '';
+  //    width: 80px;
+  //    height: 80px;
+  //    border-radius: 50%;
+  //    border: 3px solid $secondary-pink;
+  //    background-color: $white;
+  //    position: absolute;
+  //    top: -110px;
+  //    left: 98px;
+  //    z-index: -1;
+  //    filter: drop-shadow(1px 2px 2px #B0B0B0);
+  //  }
 
-    &::before {
-      content: '';
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      border: 3px solid $secondary-pink;
-      background-color: $white;
-      position: absolute;
-      bottom: 52%;
-      left: 18%;
-      z-index: -1;
-      filter: drop-shadow(1px 2px 2px #B0B0B0);
-    }
-
-    &:hover::before {
-      background-color: $secondary-pink;
-      filter: none;
-    }
-
-    &:hover .icon {
-      fill: $white;
-    }
-
-    &:hover .icon-piano {
-      stroke: $white;
-    }
-  }
+    //&:hover::before {
+    //  background-color: $secondary-pink;
+    //  filter: none;
+    //}
+    //
+    //&:hover .icon {
+    //  fill: $white;
+    //}
+    //
+    //&:hover .icon-piano {
+    //  stroke: $white;
+    //}
+  //}
 
   .icon {
     display: inline-block;
@@ -137,21 +137,30 @@ div.text__container {
     justify-content: center;
     width: 100%;
 
-    &-top, &-bottom {
-      width: 50%;
+    &-item {
+      width: 20%;
     }
 
-    a {
-      &::before {
-        width: 90px;
-        height: 90px;
-        bottom: 160%;
-        left: 33%;
+    .icon--bg-white {
+      @include iconBg(90px, 90px, $secondary-pink, $white)
+
+      .icon {
+        margin: 17% 20%;
+      }
+
+      &:hover .icon{
+        fill: $white;
+      }
+
+      &:hover .icon-piano {
+        stroke: $white;
+      }
+
+      &:hover {
+        background-color: $secondary-pink;
       }
     }
 
-    .icon {
-      margin: 10% 20%;
-    }
+
   }
 }
