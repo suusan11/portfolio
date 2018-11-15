@@ -710,12 +710,22 @@ div.text__container p.bg-color--secondpink {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 
-.about__icons__flex-top, .about__icons__flex-bottom {
-  display: inline-block;
-  width: 100%;
-  margin: 5% 0;
+.about__icons__flex-item {
+  width: 50%;
+}
+
+.about__icons__flex .icon--bg-white {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #EE817B;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  filter: drop-shadow(0 3px 2px #B0B0B0);
+  margin: 0;
 }
 
 .about__icons__flex .icon {
@@ -760,9 +770,11 @@ div.text__container p.bg-color--secondpink {
   .about__icons__flex {
     justify-content: center;
     width: 100%;
+    margin-top: 5%;
   }
   .about__icons__flex-item {
-    width: 20%;
+    width: 5%;
+    margin: 0 5%;
   }
   .about__icons__flex .icon--bg-white {
     width: 90px;
@@ -772,18 +784,20 @@ div.text__container p.bg-color--secondpink {
     background-color: #FFFFFF;
     margin: 0 auto;
     filter: drop-shadow(0 3px 2px #B0B0B0);
+    margin: 0 auto;
   }
   .about__icons__flex .icon--bg-white .icon {
     margin: 17% 20%;
+  }
+  .about__icons__flex .icon--bg-white:hover {
+    background-color: #EE817B;
+    filter: none;
   }
   .about__icons__flex .icon--bg-white:hover .icon {
     fill: #FFFFFF;
   }
   .about__icons__flex .icon--bg-white:hover .icon-piano {
     stroke: #FFFFFF;
-  }
-  .about__icons__flex .icon--bg-white:hover {
-    background-color: #EE817B;
   }
 }
 
@@ -809,7 +823,7 @@ div.text__container p.bg-color--secondpink {
 
 .icon--bg-pink img {
   width: 40px;
-  padding: 20px 0;
+  padding: 17px 0;
 }
 
 .icon--bg-pink:hover {
