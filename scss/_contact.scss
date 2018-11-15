@@ -12,11 +12,10 @@
 
 .icon--bg-pink {
   @include iconBg(80px, 80px, transparent, $secondary-pink);
-  margin: 0 auto;
 
   img {
     width: 40px;
-    padding: 20px 0;
+    padding: 17px 0;
   }
 
   &:hover {
