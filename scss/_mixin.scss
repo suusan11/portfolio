@@ -58,11 +58,11 @@
   pointer-events: none;
 }
 
-@mixin bgPink($width, $height) {
+@mixin iconBg($width, $height, $color) {
   width: $width;
   height: $height;
   border-radius: 50%;
-  background-color: $secondary-pink;
+  background-color: $color;
   margin: 0 auto;
   filter: drop-shadow(0 3px 2px #B0B0B0);
 }
