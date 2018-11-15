@@ -11,7 +11,7 @@
 }
 
 .icon--bg-pink {
-  @include iconBg(80px, 80px, transparent, $secondary-pink);
+  @include iconBg(80px, 80px, transparent, $secondary-pink, 0 auto);
 
   img {
     width: 40px;
