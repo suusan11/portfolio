@@ -10,16 +10,49 @@
 
     h1 {
       position: relative;
+      display: inline-block;
+      width: 100%;
       text-align: center;
-      text-shadow: 5px 2px 7px rgba(138, 124, 124, 0.4);
+      animation: textShadow 0.8s 2s forwards ease-in;
       padding-bottom: 32px;
     }
 
+    @keyframes textShadow {
+      0% {text-shadow: none;}
+      100% {text-shadow: 5px 2px 7px rgba(138, 124, 124, 0.4);}
+    }
+
+    span {
+      display: inline-block;
+      transform: translateY(-1000px);
+
+      &:nth-child(3) {
+        padding-right: 2%;
+      }
+    }
+
+    span.fallDown {
+      animation: fallDown 1s forwards ease-in;
+    }
+
+    @keyframes fallDown {
+      0% {transform: translateY(-1000px);}
+      50% {transform: translateY(-500px);}
+      100% {transform: translateY(0);}
+    }
+
     h2 {
+      opacity: 0;
       text-align: center;
       color: $secondary-pink;
       text-shadow: 5px 2px 7px rgba(212, 115, 109, 0.4);
       padding-bottom: 10px;
+      animation: showDelay 0.8s 2s forwards ease-in;
+    }
+
+    @keyframes showDelay {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
     }
   }
 }
@@ -30,11 +63,13 @@
 @include pcSize {
   .hero {
     padding-top: 13%;
+    text-align: center;
 
     &__txt {
 
       h1 {
         font-size: $font-size-h1-pc;
+        width: 80%;
       }
 
       h2 {
