@@ -689,6 +689,7 @@ div.text__container p.bg-color--secondpink {
 
 .about__icons__flex a:hover::before {
   background-color: #EE817B;
+  filter: none;
 }
 
 .about__icons__flex a:hover .icon {
@@ -772,6 +773,7 @@ div.text__container p.bg-color--secondpink {
   border-radius: 50%;
   background-color: #EE817B;
   margin: 0 auto;
+  filter: drop-shadow(0 3px 2px #B0B0B0);
 }
 
 .icon--bg-pink img {
@@ -781,6 +783,7 @@ div.text__container p.bg-color--secondpink {
 
 .icon--bg-pink:hover {
   opacity: 0.8;
+  filter: none;
 }
 
 html {

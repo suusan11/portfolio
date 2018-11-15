@@ -74,6 +74,7 @@ div.text__container {
 
     &:hover::before {
       background-color: $secondary-pink;
+      filter: none;
     }
 
     &:hover .icon {
