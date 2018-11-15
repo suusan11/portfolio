@@ -58,6 +58,15 @@
   pointer-events: none;
 }
 
+@mixin bgPink($width, $height) {
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+  background-color: $secondary-pink;
+  margin: 0 auto;
+  filter: drop-shadow(0 3px 2px #B0B0B0);
+}
+
 //for responsive
 @mixin pcSize {
   @media (min-width: (1000px)) {
