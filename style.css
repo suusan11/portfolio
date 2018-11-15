@@ -496,10 +496,10 @@ html {
     height: 250px;
     border-radius: 3%;
     margin: -5px;
-    filter: drop-shadow(2px 3px 7px #B0B0B0);
-    transition: all .5s ease-in;
+    transition: all .3s ease-in;
   }
   .thumbnail img:hover {
+    filter: drop-shadow(2px 3px 7px #B0B0B0);
     transform: translateY(-20px);
   }
   .thumbnail p {
@@ -679,31 +679,40 @@ div.text__container p.bg-color--secondpink {
   height: 80px;
   border-radius: 50%;
   border: 3px solid #EE817B;
-  background-color: #EE817B;
+  background-color: #FFFFFF;
   position: absolute;
-  bottom: 15%;
-  left: 16%;
+  bottom: 52%;
+  left: 18%;
   z-index: -1;
+  filter: drop-shadow(1px 2px 2px #B0B0B0);
 }
 
 .about__icons__flex a:hover::before {
-  transform: scale(0.9);
-  background-color: transparent;
+  background-color: #EE817B;
+}
+
+.about__icons__flex a:hover .icon {
+  fill: #FFFFFF;
+}
+
+.about__icons__flex a:hover .icon-piano {
+  stroke: #FFFFFF;
 }
 
 .about__icons__flex .icon {
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   margin: 10% 15%;
   position: relative;
   stroke-width: 0;
   stroke: #FFFFFF;
-  fill: #FFFFFF;
+  fill: #EE817B;
 }
 
 .about__icons__flex .icon-piano {
-  stroke-width: 0.5;
+  stroke-width: 0.4;
+  stroke: #EE817B;
 }
 
 @media (min-width: 1000px) {
@@ -729,31 +738,21 @@ div.text__container p.bg-color--secondpink {
     width: 80%;
     margin-right: 0;
   }
-  .about__icons {
+  .about__icons__flex {
+    justify-content: center;
     width: 100%;
   }
-  .about__icons a::before {
+  .about__icons__flex-top, .about__icons__flex-bottom {
+    width: 50%;
+  }
+  .about__icons__flex a::before {
     width: 90px;
     height: 90px;
-    bottom: 520%;
-    left: 27%;
+    bottom: 160%;
+    left: 33%;
   }
-  .about__icons a:hover::before {
-    transform: scale(0.9);
-    background-color: transparent;
-  }
-  .about__icons .icon {
-    display: inline-block;
-    width: 2.5rem;
-    height: 2.5rem;
-    margin: 10% 5%;
-    position: relative;
-    stroke-width: 0;
-    stroke: #FFFFFF;
-    fill: #FFFFFF;
-  }
-  .about__icons .icon-piano {
-    stroke-width: 0.5;
+  .about__icons__flex .icon {
+    margin: 10% 20%;
   }
 }
 

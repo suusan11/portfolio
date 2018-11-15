@@ -64,31 +64,40 @@ div.text__container {
       height: 80px;
       border-radius: 50%;
       border: 3px solid $secondary-pink;
-      background-color: $secondary-pink;
+      background-color: $white;
       position: absolute;
-      bottom: 15%;
-      left: 16%;
+      bottom: 52%;
+      left: 18%;
       z-index: -1;
+      filter: drop-shadow(1px 2px 2px #B0B0B0);
     }
 
     &:hover::before {
-      transform: scale(0.9);
-      background-color: transparent;
+      background-color: $secondary-pink;
+    }
+
+    &:hover .icon {
+      fill: $white;
+    }
+
+    &:hover .icon-piano {
+      stroke: $white;
     }
   }
 
   .icon {
     display: inline-block;
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     margin: 10% 15%;
     position: relative;
     stroke-width: 0;
     stroke: $white;
-    fill: $white;
+    fill: $secondary-pink;
 
     &-piano {
-      stroke-width: 0.5;
+      stroke-width: 0.4;
+      stroke: $secondary-pink;
     }
   }
 }
@@ -123,36 +132,25 @@ div.text__container {
     }
   }
 
-  .about__icons {
+  .about__icons__flex {
+    justify-content: center;
     width: 100%;
+
+    &-top, &-bottom {
+      width: 50%;
+    }
 
     a {
       &::before {
         width: 90px;
         height: 90px;
-        bottom: 520%;
-        left: 27%;
-      }
-
-      &:hover::before {
-        transform: scale(0.9);
-        background-color: transparent;
+        bottom: 160%;
+        left: 33%;
       }
     }
 
     .icon {
-      display: inline-block;
-      width: 2.5rem;
-      height: 2.5rem;
-      margin: 10% 5%;
-      position: relative;
-      stroke-width: 0;
-      stroke: $white;
-      fill: $white;
-
-      &-piano {
-        stroke-width: 0.5;
-      }
+      margin: 10% 20%;
     }
   }
 }
