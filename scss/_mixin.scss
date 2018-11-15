@@ -58,13 +58,12 @@
   pointer-events: none;
 }
 
-@mixin iconBg($width, $height, $borderColor, $bgColor, $topBottom, $rightLeft) {
+@mixin iconBg($width, $height, $borderColor, $bgColor) {
   width: $width;
   height: $height;
   border-radius: 50%;
   border: 3px solid $borderColor;
   background-color: $bgColor;
-  margin: $topBottom $rightLeft;
   filter: drop-shadow(0 3px 2px #B0B0B0);
 }
 
