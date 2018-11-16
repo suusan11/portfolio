@@ -148,8 +148,15 @@ div.text__container {
     border-radius: 5%;
     cursor: pointer;
 
+    a{
+      color: $black;
+    }
+
     &:hover {
       background-color: $secondary-pink;
+    }
+
+    &:hover a {
       color: $white;
       font-weight: $font-weight-bold;
     }

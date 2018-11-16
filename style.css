@@ -823,8 +823,13 @@ div.text__container p.bg-color--secondpink {
     border-radius: 5%;
     cursor: pointer;
   }
+  .about__button a {
+    color: #545454;
+  }
   .about__button:hover {
     background-color: #EE817B;
+  }
+  .about__button:hover a {
     color: #FFFFFF;
     font-weight: 700;
   }
