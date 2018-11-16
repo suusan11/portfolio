@@ -1219,3 +1219,10 @@ html {
   width: 30px;
   height: 35px;
 }
+
+.icons {
+  width: 100%;
+  min-height: 560px;
+  background-color: #FCECEA;
+  margin: 2% 0 0 0;
+}
