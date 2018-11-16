@@ -1276,35 +1276,35 @@ html {
 }
 
 @-webkit-keyframes scrollIn {
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
   from {
     transform: translateY(500px);
     opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 @-o-keyframes scrollIn {
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
   from {
     transform: translateY(500px);
     opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 @keyframes scrollIn {
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
   from {
     transform: translateY(500px);
     opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -1365,33 +1365,33 @@ html {
     font-size: 20px;
   }
   @-webkit-keyframes scrollIn {
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
     from {
       transform: translateY(500px);
       opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
     }
   }
   @-o-keyframes scrollIn {
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
     from {
       transform: translateY(500px);
       opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
     }
   }
   @keyframes scrollIn {
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
     from {
       transform: translateY(500px);
       opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 }
