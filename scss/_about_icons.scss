@@ -3,7 +3,7 @@
 .about__part {
   width: 100%;
   background-color: $primary-pink;
-  padding: 10% 0;
+  padding: 5% 0;
   margin: 2% 0 0 0;
 
   h2 {
@@ -51,12 +51,10 @@
   .about__part {
 
     h2 {
-      font-size: $font-size-h2-mb;
       padding: 3% 0 0 0;
     }
 
     &__flex {
-      height: 450px;
       justify-content: space-around;
 
       &-item {
@@ -79,6 +77,27 @@
           &:hover .icon-piano {
             stroke: $white;
           }
+        }
+
+        p {
+          font-size: $font-size-base-pc;
+        }
+      }
+    }
+  }
+}
+
+
+@include middleSize {
+  .about__part {
+    &__flex {
+      justify-content: space-around;
+
+      &-item {
+        width: 40%;
+
+        .icon--bg-white {
+          margin: 0 auto;
         }
 
         p {
