@@ -1221,6 +1221,31 @@ html {
 .about__part__flex-item {
   width: 80%;
   margin: 10% auto;
+  opacity: 0;
+}
+
+.about__part__flex-item:nth-child(1) {
+  -webkit-animation: scrollIn 1s forwards;
+  -o-animation: scrollIn 1s forwards;
+  animation: scrollIn 1s forwards;
+}
+
+.about__part__flex-item:nth-child(2) {
+  -webkit-animation: scrollIn 1s 1s forwards;
+  -o-animation: scrollIn 1s 1s forwards;
+  animation: scrollIn 1s 1s forwards;
+}
+
+.about__part__flex-item:nth-child(3) {
+  -webkit-animation: scrollIn 1s 2s forwards;
+  -o-animation: scrollIn 1s 2s forwards;
+  animation: scrollIn 1s 2s forwards;
+}
+
+.about__part__flex-item:nth-child(4) {
+  -webkit-animation: scrollIn 1s 3s forwards;
+  -o-animation: scrollIn 1s 3s forwards;
+  animation: scrollIn 1s 3s forwards;
 }
 
 .about__part__flex-item .icon--bg-white {
@@ -1250,7 +1275,43 @@ html {
   margin-top: 10%;
 }
 
+@-webkit-keyframes scrollIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  from {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+}
+
+@-o-keyframes scrollIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  from {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+}
+
+@keyframes scrollIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  from {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+}
+
 @media (min-width: 1000px) {
+  .about__part {
+    padding: 0;
+  }
   .about__part h2 {
     padding: 3% 0 0 0;
   }
@@ -1259,6 +1320,27 @@ html {
   }
   .about__part__flex-item {
     width: 20%;
+    opacity: 0;
+  }
+  .about__part__flex-item:nth-child(1) {
+    -webkit-animation: scrollIn 1s forwards;
+    -o-animation: scrollIn 1s forwards;
+    animation: scrollIn 1s forwards;
+  }
+  .about__part__flex-item:nth-child(2) {
+    -webkit-animation: scrollIn 1s 1s forwards;
+    -o-animation: scrollIn 1s 1s forwards;
+    animation: scrollIn 1s 1s forwards;
+  }
+  .about__part__flex-item:nth-child(3) {
+    -webkit-animation: scrollIn 1s 2s forwards;
+    -o-animation: scrollIn 1s 2s forwards;
+    animation: scrollIn 1s 2s forwards;
+  }
+  .about__part__flex-item:nth-child(4) {
+    -webkit-animation: scrollIn 1s 3s forwards;
+    -o-animation: scrollIn 1s 3s forwards;
+    animation: scrollIn 1s 3s forwards;
   }
   .about__part__flex-item .icon--bg-white {
     width: 90px;
@@ -1281,6 +1363,36 @@ html {
   }
   .about__part__flex-item p {
     font-size: 20px;
+  }
+  @-webkit-keyframes scrollIn {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    from {
+      transform: translateY(500px);
+      opacity: 0;
+    }
+  }
+  @-o-keyframes scrollIn {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    from {
+      transform: translateY(500px);
+      opacity: 0;
+    }
+  }
+  @keyframes scrollIn {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    from {
+      transform: translateY(500px);
+      opacity: 0;
+    }
   }
 }
 
