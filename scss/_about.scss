@@ -140,3 +140,10 @@ div.text__container {
     }
   }
 }
+
+@include middleSize {
+  .about__icons__flex-item {
+    width: 8%;
+    margin: 0 5%;
+  }
+}

@@ -802,6 +802,13 @@ div.text__container p.bg-color--secondpink {
   }
 }
 
+@media (min-width: 640px) and (max-width: 999px) {
+  .about__icons__flex-item {
+    width: 8%;
+    margin: 0 5%;
+  }
+}
+
 .contact {
   text-align: center;
 }
