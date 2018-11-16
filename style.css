@@ -1429,6 +1429,9 @@ html {
   }
   .about__part__flex-item p {
     font-size: 20px;
+    text-align: justify;
+    line-height: 150%;
+    letter-spacing: 0.5px;
   }
   @-webkit-keyframes scrollIn {
     from {
