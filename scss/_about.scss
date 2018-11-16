@@ -4,7 +4,7 @@
   text-align: center;
 
   img {
-    width: 50%;
+    width: 40%;
     border-radius: 50% 40% 50% 50%/50% 50% 30% 40%;
     margin: 3% 0;
   }
@@ -89,7 +89,7 @@ div.text__container {
       margin-left: 10%;
 
       img {
-        width: 100%;
+        width: 80%;
       }
     }
 
@@ -137,6 +137,22 @@ div.text__container {
       &:hover .icon-piano {
         stroke: $white;
       }
+    }
+  }
+
+  .about__button {
+    width: 13%;
+    margin-top: 3%;
+    margin-right: 5%;
+    padding: 1% 0;
+    border: 3px solid $complementary-blue;
+    border-radius: 5%;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $complementary-blue;
+      color: $white;
+      font-weight: $font-weight-bold;
     }
   }
 }

@@ -663,7 +663,7 @@ html {
 }
 
 .about img {
-  width: 50%;
+  width: 40%;
   border-radius: 50% 40% 50% 50%/50% 50% 30% 40%;
   margin: 3% 0;
 }
@@ -726,7 +726,6 @@ div.text__container p.bg-color--secondpink {
   border: 3px solid #EE817B;
   background-color: #FFFFFF;
   margin: 0 auto;
-  filter: drop-shadow(0 3px 2px #B0B0B0);
 }
 
 .about__icons__flex .icon {
@@ -756,7 +755,7 @@ div.text__container p.bg-color--secondpink {
     margin-left: 10%;
   }
   .about__flex-item--left img {
-    width: 100%;
+    width: 80%;
   }
   .about__flex-item--right {
     width: 60%;
@@ -784,7 +783,6 @@ div.text__container p.bg-color--secondpink {
     border: 3px solid #EE817B;
     background-color: #FFFFFF;
     margin: 0 auto;
-    filter: drop-shadow(0 3px 2px #B0B0B0);
     margin: 0 auto;
   }
   .about__icons__flex .icon--bg-white .icon {
@@ -799,6 +797,20 @@ div.text__container p.bg-color--secondpink {
   }
   .about__icons__flex .icon--bg-white:hover .icon-piano {
     stroke: #FFFFFF;
+  }
+  .about__button {
+    width: 13%;
+    margin-top: 3%;
+    margin-right: 5%;
+    padding: 1% 0;
+    border: 3px solid #B2E0F2;
+    border-radius: 5%;
+    cursor: pointer;
+  }
+  .about__button:hover {
+    background-color: #B2E0F2;
+    color: #FFFFFF;
+    font-weight: 700;
   }
 }
 
@@ -826,7 +838,6 @@ div.text__container p.bg-color--secondpink {
   border: 3px solid transparent;
   background-color: #EE817B;
   margin: 0 auto;
-  filter: drop-shadow(0 3px 2px #B0B0B0);
 }
 
 .icon--bg-pink img {
