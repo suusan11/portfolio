@@ -11,6 +11,7 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -145,7 +146,7 @@ h4 {
 }
 
 p {
-  font-family: 16px;
+  font-size: 16px;
 }
 
 a {
@@ -1220,9 +1221,84 @@ html {
   height: 35px;
 }
 
-.icons {
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-variant-ligatures: common-ligatures;
+  color: #545454;
+}
+
+@media (min-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+.about__part {
   width: 100%;
   min-height: 560px;
   background-color: #FCECEA;
   margin: 2% 0 0 0;
+}
+
+.about__part h2 {
+  font-size: 1.562rem;
+  padding-top: 3%;
+}
+
+.about__part__flex {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about__part__flex-item {
+  width: 20%;
+}
+
+.about__part__flex-item .icon--bg-white {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #EE817B;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  margin: 0 auto;
+}
+
+.about__part__flex-item .icon--bg-white .icon {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  stroke-width: 0;
+  stroke: #FFFFFF;
+  fill: #EE817B;
+  margin: 17% 20%;
+}
+
+.about__part__flex-item .icon--bg-white:hover {
+  background-color: #EE817B;
+  filter: none;
+}
+
+.about__part__flex-item .icon--bg-white:hover .icon {
+  fill: #FFFFFF;
+}
+
+.about__part__flex-item .icon--bg-white:hover .icon-piano {
+  stroke: #FFFFFF;
+}
+
+.about__part__flex-item p {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10%;
 }
