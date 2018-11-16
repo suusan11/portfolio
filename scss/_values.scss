@@ -1,6 +1,6 @@
 @import "variable", "mixin";
 
-.motto__block {
+.values__block {
   width: 90%;
   height: auto;
   position: relative;
@@ -11,15 +11,15 @@
   text-align: center;
 
   &:nth-child(1)::before {
-    @include mottoIcons(url("../images/inspire.svg"));
+    @include valuesIcons(url("../images/inspire.svg"));
   }
 
   &:nth-child(2)::before {
-    @include mottoIcons(url("../images/concept.svg"));
+    @include valuesIcons(url("../images/concept.svg"));
   }
 
   &:nth-child(3)::before {
-    @include mottoIcons(url("../images/clear.svg"));
+    @include valuesIcons(url("../images/clear.svg"));
   }
 
   h3 {
@@ -33,13 +33,13 @@
 }
 
 @include pcSize {
-  .motto__flex {
+  .values__flex {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
 
-    .motto__block {
+    .values__block {
       width: 30%;
       height: 430px;
       margin: 10% auto;
@@ -48,7 +48,7 @@
         border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
 
         &::before {
-          @include mottoIcons(url("../images/inspire.svg"));
+          @include valuesIcons(url("../images/inspire.svg"));
         }
       }
 
@@ -56,7 +56,7 @@
         border-radius: 80% 30% 50% 70%/50%;
 
         &::before {
-          @include mottoIcons(url("../images/concept.svg"));
+          @include valuesIcons(url("../images/concept.svg"));
         }
       }
 
@@ -64,7 +64,7 @@
         border-radius: 40% 40% 50% 40%/30% 50% 40% 50%;
 
         &::before {
-          @include mottoIcons(url("../images/clear.svg"));
+          @include valuesIcons(url("../images/clear.svg"));
         }
       }
     }
@@ -72,7 +72,7 @@
 }
 
 @include middleSize {
-  .motto__block p {
+  .values__block p {
     font-size: 20px;
   }
 }

@@ -638,7 +638,7 @@ html {
   }
 }
 
-.motto__block {
+.values__block {
   width: 90%;
   height: auto;
   position: relative;
@@ -649,70 +649,70 @@ html {
   text-align: center;
 }
 
-.motto__block:nth-child(1)::before {
+.values__block:nth-child(1)::before {
   content: url("../images/inspire.svg");
   display: block;
   width: 100px;
   margin: 0 auto;
 }
 
-.motto__block:nth-child(2)::before {
+.values__block:nth-child(2)::before {
   content: url("../images/concept.svg");
   display: block;
   width: 100px;
   margin: 0 auto;
 }
 
-.motto__block:nth-child(3)::before {
+.values__block:nth-child(3)::before {
   content: url("../images/clear.svg");
   display: block;
   width: 100px;
   margin: 0 auto;
 }
 
-.motto__block h3 {
+.values__block h3 {
   color: #FFFFFF;
   padding: 50px 0 20px;
 }
 
-.motto__block p {
+.values__block p {
   line-height: 30px;
 }
 
 @media (min-width: 1000px) {
-  .motto__flex {
+  .values__flex {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
   }
-  .motto__flex .motto__block {
+  .values__flex .values__block {
     width: 30%;
     height: 430px;
     margin: 10% auto;
   }
-  .motto__flex .motto__block:nth-child(1) {
+  .values__flex .values__block:nth-child(1) {
     border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
   }
-  .motto__flex .motto__block:nth-child(1)::before {
+  .values__flex .values__block:nth-child(1)::before {
     content: url("../images/inspire.svg");
     display: block;
     width: 100px;
     margin: 0 auto;
   }
-  .motto__flex .motto__block:nth-child(2) {
+  .values__flex .values__block:nth-child(2) {
     border-radius: 80% 30% 50% 70%/50%;
   }
-  .motto__flex .motto__block:nth-child(2)::before {
+  .values__flex .values__block:nth-child(2)::before {
     content: url("../images/concept.svg");
     display: block;
     width: 100px;
     margin: 0 auto;
   }
-  .motto__flex .motto__block:nth-child(3) {
+  .values__flex .values__block:nth-child(3) {
     border-radius: 40% 40% 50% 40%/30% 50% 40% 50%;
   }
-  .motto__flex .motto__block:nth-child(3)::before {
+  .values__flex .values__block:nth-child(3)::before {
     content: url("../images/clear.svg");
     display: block;
     width: 100px;
@@ -721,7 +721,7 @@ html {
 }
 
 @media (min-width: 640px) and (max-width: 999px) {
-  .motto__block p {
+  .values__block p {
     font-size: 20px;
   }
 }
