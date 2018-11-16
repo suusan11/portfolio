@@ -421,8 +421,28 @@ html {
   display: inline-block;
   width: 100%;
   text-align: center;
+  -webkit-animation: textShadow 0.8s 2s forwards ease-in;
+  -o-animation: textShadow 0.8s 2s forwards ease-in;
   animation: textShadow 0.8s 2s forwards ease-in;
   padding-bottom: 32px;
+}
+
+@-webkit-keyframes textShadow {
+  0% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 5px 2px 7px rgba(138, 124, 124, 0.4);
+  }
+}
+
+@-o-keyframes textShadow {
+  0% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 5px 2px 7px rgba(138, 124, 124, 0.4);
+  }
 }
 
 @keyframes textShadow {
@@ -444,7 +464,33 @@ html {
 }
 
 .hero__txt span.fallDown {
+  -webkit-animation: fallDown 1s forwards ease-in;
+  -o-animation: fallDown 1s forwards ease-in;
   animation: fallDown 1s forwards ease-in;
+}
+
+@-webkit-keyframes fallDown {
+  0% {
+    transform: translateY(-1000px);
+  }
+  50% {
+    transform: translateY(-500px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-o-keyframes fallDown {
+  0% {
+    transform: translateY(-1000px);
+  }
+  50% {
+    transform: translateY(-500px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes fallDown {
@@ -465,7 +511,27 @@ html {
   color: #EE817B;
   text-shadow: 5px 2px 7px rgba(212, 115, 109, 0.4);
   padding-bottom: 10px;
+  -webkit-animation: showDelay 0.8s 2s forwards ease-in;
+  -o-animation: showDelay 0.8s 2s forwards ease-in;
   animation: showDelay 0.8s 2s forwards ease-in;
+}
+
+@-webkit-keyframes showDelay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes showDelay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes showDelay {
