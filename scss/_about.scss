@@ -1,4 +1,4 @@
-@import "variable", "mixin";
+@import "variable", "mixin", "typography";
 
 .about {
   text-align: center;
@@ -38,8 +38,7 @@ div.text__container {
   }
 
   p.bg-color--secondpink {
-    background-color: $secondary-pink;
-    color: #FFFFFF;
+    background-color: $complementary-blue;
   }
 }
 
@@ -142,15 +141,15 @@ div.text__container {
 
   .about__button {
     width: 13%;
-    margin-top: 3%;
+    margin-top: 2%;
     margin-right: 5%;
-    padding: 1% 0;
-    border: 3px solid $complementary-blue;
+    padding: 0.8% 0;
+    border: 3px solid $secondary-pink;
     border-radius: 5%;
     cursor: pointer;
 
     &:hover {
-      background-color: $complementary-blue;
+      background-color: $secondary-pink;
       color: $white;
       font-weight: $font-weight-bold;
     }
