@@ -803,25 +803,27 @@ html {
   background-color: #FCECEA;
 }
 
-.about-item--right .about__button {
-  width: 50%;
+.about .about__button {
+  width: 180px;
+  height: auto;
   margin: 5% auto;
-  padding: 5% 0;
+  padding: 15px 0;
   border: 3px solid #EE817B;
   border-radius: 5%;
   text-align: center;
+  vertical-align: middle;
 }
 
-.about-item--right .about__button a {
+.about .about__button a {
   color: #545454;
   font-weight: 700;
 }
 
-.about-item--right .about__button:hover {
+.about .about__button:hover {
   background-color: #EE817B;
 }
 
-.about-item--right .about__button:hover a {
+.about .about__button:hover a {
   color: #FFFFFF;
   font-weight: 700;
 }
@@ -862,7 +864,7 @@ html {
     position: absolute;
     bottom: 0;
     left: 55%;
-    width: 23%;
+    width: 25%;
     margin-top: 2%;
     margin-right: 5%;
     padding: 2% 0;
@@ -885,7 +887,15 @@ html {
 
 @media (min-width: 640px) and (max-width: 999px) {
   .about__flex-item--right .text__container {
-    padding: 0;
+    padding: 5%;
+  }
+  .about__flex-item--right .about__button {
+    width: 200px;
+    height: auto;
+    padding: 15px 0;
+  }
+  .about__flex-item--right .about__button a {
+    font-size: 20px;
   }
 }
 
