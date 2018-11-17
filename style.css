@@ -194,6 +194,20 @@ a:hover {
   margin: 110px 13px 0 0;
 }
 
+.scrollEffect h2 {
+  transition: .8s;
+  transition-delay: .8s;
+}
+
+.scrollEffect h2::before {
+  transition: .8s;
+}
+
+.scrollEffect h2::after {
+  transition: .8s;
+  transition-delay: .16s;
+}
+
 .heading__right {
   text-align: right;
 }
@@ -752,15 +766,15 @@ html {
   margin: 3% 0;
 }
 
-.about .text__right {
+.about .text__align {
   text-align: center;
 }
 
-.about .text__right h3 {
+.about .text__align h3 {
   margin-top: 5%;
 }
 
-.about .text__right h3::after {
+.about .text__align h3::after {
   display: block;
   content: '';
   border-bottom: 3px solid #928484;
@@ -768,24 +782,25 @@ html {
   margin: 18px auto 20px;
 }
 
-.about .text__right .text__container {
-  width: 70%;
+.about .text__align .text__container {
+  width: 90%;
   margin: 5% auto;
+  padding: 10%;
+  text-align: center;
+  border-radius: 5%;
 }
 
-div.text__container {
-  margin: 15px 0;
-}
-
-div.text__container p {
-  display: inline;
+.about .text__align .text__container p {
   line-height: 2em;
-  padding: 3px;
-  background-color: #FCECEA;
+  padding: 3%;
 }
 
-div.text__container p.bg-color--secondpink {
+.about .text__align .text__container--blue {
   background-color: #B2E0F2;
+}
+
+.about .text__align .text__container--pink {
+  background-color: #FCECEA;
 }
 
 @media (min-width: 1000px) {
@@ -799,65 +814,54 @@ div.text__container p.bg-color--secondpink {
     margin-left: 10%;
   }
   .about__flex-item--left img {
-    width: 80%;
+    width: 100%;
   }
   .about__flex-item--right {
     width: 60%;
+    position: relative;
   }
-  .about__flex-item--right.text__right {
+  .about__flex-item--right.text__align {
     text-align: right;
   }
-  .about__flex-item--right.text__right .text__container {
-    width: 80%;
+  .about__flex-item--right.text__align .text__container {
+    width: 60%;
     margin-right: 0;
   }
-  .about__icons__flex {
-    justify-content: center;
-    width: 100%;
-    margin-top: 5%;
+  .about__flex-item--right.text__align div.text__container--blue p {
+    text-align: justify;
+    line-height: 2em;
+    padding: 3%;
+    background-color: #B2E0F2;
   }
-  .about__icons__flex-item {
-    width: 5%;
-    margin: 0 5%;
+  .about__flex-item--right.text__align div.text__container--pink {
+    margin: 15px 0 15px 80px;
   }
-  .about__icons__flex .icon--bg-white {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    border: 3px solid #EE817B;
-    background-color: #FFFFFF;
-    margin: 0 auto;
-    margin: 0 auto;
+  .about__flex-item--right.text__align div.text__container--pink p {
+    text-align: justify;
+    line-height: 2em;
+    padding: 3%;
+    background-color: #FCECEA;
   }
-  .about__icons__flex .icon--bg-white .icon {
-    margin: 17% 20%;
-  }
-  .about__icons__flex .icon--bg-white:hover {
-    background-color: #EE817B;
-    filter: none;
-  }
-  .about__icons__flex .icon--bg-white:hover .icon {
-    fill: #FFFFFF;
-  }
-  .about__icons__flex .icon--bg-white:hover .icon-piano {
-    stroke: #FFFFFF;
-  }
-  .about__button {
-    width: 13%;
+  .about__flex-item--right .about__button {
+    position: absolute;
+    bottom: 0;
+    left: 65%;
+    width: 23%;
     margin-top: 2%;
     margin-right: 5%;
-    padding: 0.8% 0;
+    padding: 2% 0;
     border: 3px solid #EE817B;
     border-radius: 5%;
+    text-align: center;
     cursor: pointer;
   }
-  .about__button a {
+  .about__flex-item--right .about__button a {
     color: #545454;
   }
-  .about__button:hover {
+  .about__flex-item--right .about__button:hover {
     background-color: #EE817B;
   }
-  .about__button:hover a {
+  .about__flex-item--right .about__button:hover a {
     color: #FFFFFF;
     font-weight: 700;
   }

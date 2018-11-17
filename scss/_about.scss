@@ -9,7 +9,7 @@
     margin: 3% 0;
   }
 
-  .text__right {
+  .text__align {
     text-align: center;
 
     h3 {
@@ -21,26 +21,30 @@
     }
 
     .text__container {
-      width: 70%;
+      width: 90%;
       margin: 5% auto;
+      padding: 10%;
+      text-align: center;
+      border-radius: 5%;
+
+      p {
+        line-height: 2em;
+        padding: 3%;
+      }
+
+      &--blue {
+        background-color: $complementary-blue;
+      }
+
+      &--pink {
+        background-color: $primary-pink;
+      }
     }
   }
 }
 
-div.text__container {
-  margin: 15px 0;
 
-  p {
-    display: inline;
-    line-height: 2em;
-    padding: 3px;
-    background-color: $primary-pink;
-  }
 
-  p.bg-color--secondpink {
-    background-color: $complementary-blue;
-  }
-}
 
 
 @include pcSize {
@@ -54,79 +58,74 @@ div.text__container {
       margin-left: 10%;
 
       img {
-        width: 80%;
+        width: 100%;
       }
     }
 
     &-item--right {
       width: 60%;
+      position: relative;
 
-      &.text__right {
+      &.text__align {
         text-align: right;
 
         .text__container {
-          width: 80%;
+          width: 60%;
           margin-right: 0;
+        }
+
+        div.text__container--blue {
+
+          p {
+            text-align: justify;
+            line-height: 2em;
+            padding: 3%;
+            background-color: $complementary-blue;
+          }
+        }
+
+        div.text__container--pink {
+          margin: 15px 0 15px 80px;
+
+          p {
+            text-align: justify;
+            line-height: 2em;
+            padding: 3%;
+            background-color: $primary-pink;
+          }
+        }
+      }
+
+      .about__button {
+        position: absolute;
+        bottom: 0;
+        left: 65%;
+        width: 23%;
+        margin-top: 2%;
+        margin-right: 5%;
+        padding: 2% 0;
+        border: 3px solid $secondary-pink;
+        border-radius: 5%;
+        text-align: center;
+        cursor: pointer;
+
+        a{
+          color: $black;
+        }
+
+        &:hover {
+          background-color: $secondary-pink;
+        }
+
+        &:hover a {
+          color: $white;
+          font-weight: $font-weight-bold;
         }
       }
     }
   }
 
-  .about__icons__flex {
-    justify-content: center;
-    width: 100%;
-    margin-top: 5%;
 
-    &-item {
-      width: 5%;
-      margin: 0 5%;
-    }
-
-    .icon--bg-white {
-      @include iconBg(90px, 90px, $secondary-pink, $white);
-      margin: 0 auto;
-
-      .icon {
-        margin: 17% 20%;
-      }
-
-      &:hover {
-        background-color: $secondary-pink;
-        filter: none;
-      }
-
-      &:hover .icon {
-        fill: $white;
-      }
-
-      &:hover .icon-piano {
-        stroke: $white;
-      }
-    }
-  }
-
-  .about__button {
-    width: 13%;
-    margin-top: 2%;
-    margin-right: 5%;
-    padding: 0.8% 0;
-    border: 3px solid $secondary-pink;
-    border-radius: 5%;
-    cursor: pointer;
-
-    a{
-      color: $black;
-    }
-
-    &:hover {
-      background-color: $secondary-pink;
-    }
-
-    &:hover a {
-      color: $white;
-      font-weight: $font-weight-bold;
-    }
-  }
 }
 
 @include middleSize {
