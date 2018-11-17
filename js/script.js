@@ -45,7 +45,7 @@ textEffect('fallDown');
 //
 // document.getElementById("js-nav-toggle").addEventListener("click", navToggle);
 
-
+//
 document.addEventListener('DOMContentLoaded', function(){
     const pcSize = window.matchMedia('screen and (min-width: 1000px)');
     const widthMargin = document.getElementById("js-container");
@@ -83,5 +83,24 @@ document.addEventListener('DOMContentLoaded', function(){
 // }
 //
 // document.getElementById('js-container').addEventListener("DOMContentLoaded", addContainer);
+
+
+//scrolll effect
+$(function() {
+    $('.scrollEffect h2', '.scrollEffect h2::before', '.scrollEffect h2::after').css('opacity', '0');
+    $(window).scroll(function(){
+        $(".scrollEffect").each(function(){
+            const position = $(this).offset().top();
+            const scroll = $(window).scrollTop();
+            const windowHeight = $(window).height();
+
+            if(scroll > position - windowHeight + windowHeight / 5) {
+                $("h2, h2::before, h2::after", this).css('opacity', '1');
+            } else {
+                $("h2, h2::before, h2::after", this).css('opacity', '0');
+            }
+        })
+    })
+});
 
 
