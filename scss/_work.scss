@@ -46,13 +46,13 @@
     img {
       width: 70%;
       height: 250px;
-      border-radius: 3%;
+      border: 1px solid $black;
+      border-radius: 30px;
       margin: -5px;
-      transition: all .3s ease-in;
+      transition: all .3s ease-out;
 
       &:hover {
         filter: drop-shadow(2px 3px 7px #B0B0B0);
-        transform: translateY(-20px);
       }
     }
 

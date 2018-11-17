@@ -625,13 +625,13 @@ html {
   .thumbnail img {
     width: 70%;
     height: 250px;
-    border-radius: 3%;
+    border: 1px solid #545454;
+    border-radius: 30px;
     margin: -5px;
-    transition: all .3s ease-in;
+    transition: all .3s ease-out;
   }
   .thumbnail img:hover {
     filter: drop-shadow(2px 3px 7px #B0B0B0);
-    transform: translateY(-20px);
   }
   .thumbnail p {
     display: inline-block;
