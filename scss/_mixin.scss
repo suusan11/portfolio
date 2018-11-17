@@ -61,7 +61,7 @@
 @mixin iconBg($width, $height, $borderColor, $bgColor) {
   width: $width;
   height: $height;
-  border-radius: 50%;
+  border-radius: 30px;
   border: 3px solid $borderColor;
   background-color: $bgColor;
   margin: 0 auto;
