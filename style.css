@@ -706,7 +706,7 @@ html {
     margin: 10% auto;
   }
   .values__flex .values__block:nth-child(1) {
-    border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+    border-radius: 30px;
   }
   .values__flex .values__block:nth-child(1)::before {
     content: url("../images/inspire.svg");
@@ -715,7 +715,7 @@ html {
     margin: 0 auto;
   }
   .values__flex .values__block:nth-child(2) {
-    border-radius: 80% 30% 50% 70%/50%;
+    border-radius: 30px;
   }
   .values__flex .values__block:nth-child(2)::before {
     content: url("../images/concept.svg");
@@ -724,7 +724,7 @@ html {
     margin: 0 auto;
   }
   .values__flex .values__block:nth-child(3) {
-    border-radius: 40% 40% 50% 40%/30% 50% 40% 50%;
+    border-radius: 30px;
   }
   .values__flex .values__block:nth-child(3)::before {
     content: url("../images/clear.svg");
