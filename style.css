@@ -766,15 +766,15 @@ html {
   margin: 3% 0;
 }
 
-.about .text__align {
+.about__flex-item--right {
   text-align: center;
 }
 
-.about .text__align h3 {
+.about__flex-item--right h3 {
   margin-top: 5%;
 }
 
-.about .text__align h3::after {
+.about__flex-item--right h3::after {
   display: block;
   content: '';
   border-bottom: 3px solid #928484;
@@ -782,7 +782,7 @@ html {
   margin: 18px auto 20px;
 }
 
-.about .text__align .text__container {
+.about .text__container {
   width: 90%;
   margin: 5% auto;
   padding: 10%;
@@ -790,20 +790,20 @@ html {
   border-radius: 5%;
 }
 
-.about .text__align .text__container p {
+.about .text__container p {
   line-height: 2em;
   padding: 3%;
 }
 
-.about .text__align .text__container--blue {
+.about .text__container--blue {
   background-color: #B2E0F2;
 }
 
-.about .text__align .text__container--pink {
+.about .text__container--pink {
   background-color: #FCECEA;
 }
 
-.about .text__align-item--right .about__button {
+.about-item--right .about__button {
   width: 50%;
   margin: 5% auto;
   padding: 5% 0;
@@ -812,16 +812,16 @@ html {
   text-align: center;
 }
 
-.about .text__align-item--right .about__button a {
+.about-item--right .about__button a {
   color: #545454;
   font-weight: 700;
 }
 
-.about .text__align-item--right .about__button:hover {
+.about-item--right .about__button:hover {
   background-color: #EE817B;
 }
 
-.about .text__align-item--right .about__button:hover a {
+.about-item--right .about__button:hover a {
   color: #FFFFFF;
   font-weight: 700;
 }
@@ -840,35 +840,28 @@ html {
     width: 100%;
   }
   .about__flex-item--right {
-    width: 60%;
+    width: 70%;
     position: relative;
-  }
-  .about__flex-item--right.text__align {
     text-align: right;
   }
-  .about__flex-item--right.text__align .text__container {
-    width: 60%;
+  .about__flex-item--right .text__container {
+    width: 50%;
     margin-right: 0;
-  }
-  .about__flex-item--right.text__align div.text__container--blue p {
     text-align: justify;
     line-height: 2em;
-    padding: 3%;
+    padding: 8%;
+  }
+  .about__flex-item--right .text__container--blue {
     background-color: #B2E0F2;
   }
-  .about__flex-item--right.text__align div.text__container--pink {
+  .about__flex-item--right .text__container--pink {
     margin: 15px 0 15px 80px;
-  }
-  .about__flex-item--right.text__align div.text__container--pink p {
-    text-align: justify;
-    line-height: 2em;
-    padding: 3%;
     background-color: #FCECEA;
   }
   .about__flex-item--right .about__button {
     position: absolute;
     bottom: 0;
-    left: 65%;
+    left: 55%;
     width: 23%;
     margin-top: 2%;
     margin-right: 5%;
@@ -891,9 +884,8 @@ html {
 }
 
 @media (min-width: 640px) and (max-width: 999px) {
-  .about__icons__flex-item {
-    width: 8%;
-    margin: 0 5%;
+  .about__flex-item--right .text__container {
+    padding: 0;
   }
 }
 

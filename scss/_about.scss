@@ -9,7 +9,7 @@
     margin: 3% 0;
   }
 
-  .text__align {
+  &__flex-item--right {
     text-align: center;
 
     h3 {
@@ -19,50 +19,50 @@
         @include guideLineW($brown, 18px, 20px);
       }
     }
+  }
 
-    .text__container {
-      width: 90%;
-      margin: 5% auto;
-      padding: 10%;
-      text-align: center;
-      border-radius: 5%;
+  .text__container {
+    width: 90%;
+    margin: 5% auto;
+    padding: 10%;
+    text-align: center;
+    border-radius: 5%;
 
-      p {
-        line-height: 2em;
-        padding: 3%;
-      }
-
-      &--blue {
-        background-color: $complementary-blue;
-      }
-
-      &--pink {
-        background-color: $primary-pink;
-      }
+    p {
+      line-height: 2em;
+      padding: 3%;
     }
 
-    &-item--right {
-      .about__button {
-        width: 50%;
-        margin: 5% auto;
-        padding: 5% 0;
-        border: 3px solid $secondary-pink;
-        border-radius: 5%;
-        text-align: center;
+    &--blue {
+      background-color: $complementary-blue;
+    }
 
-        a{
-          color: $black;
-          font-weight: $font-weight-bold;
-        }
+    &--pink {
+      background-color: $primary-pink;
+    }
+  }
 
-        &:hover {
-          background-color: $secondary-pink;
-        }
+  &-item--right {
+    .about__button {
+      width: 50%;
+      margin: 5% auto;
+      padding: 5% 0;
+      border: 3px solid $secondary-pink;
+      border-radius: 5%;
+      text-align: center;
 
-        &:hover a {
-          color: $white;
-          font-weight: $font-weight-bold;
-        }
+      a{
+        color: $black;
+        font-weight: $font-weight-bold;
+      }
+
+      &:hover {
+        background-color: $secondary-pink;
+      }
+
+      &:hover a {
+        color: $white;
+        font-weight: $font-weight-bold;
       }
     }
   }
@@ -88,43 +88,31 @@
     }
 
     &-item--right {
-      width: 60%;
+      width: 70%;
       position: relative;
-
-      &.text__align {
-        text-align: right;
+      text-align: right;
 
         .text__container {
-          width: 60%;
+          width: 50%;
           margin-right: 0;
-        }
+          text-align: justify;
+          line-height: 2em;
+          padding: 8%;
 
-        div.text__container--blue {
-
-          p {
-            text-align: justify;
-            line-height: 2em;
-            padding: 3%;
+          &--blue {
             background-color: $complementary-blue;
           }
-        }
 
-        div.text__container--pink {
-          margin: 15px 0 15px 80px;
-
-          p {
-            text-align: justify;
-            line-height: 2em;
-            padding: 3%;
+          &--pink {
+            margin: 15px 0 15px 80px;
             background-color: $primary-pink;
           }
         }
-      }
 
       .about__button {
         position: absolute;
         bottom: 0;
-        left: 65%;
+        left: 55%;
         width: 23%;
         margin-top: 2%;
         margin-right: 5%;
@@ -154,8 +142,9 @@
 }
 
 @include middleSize {
-  .about__icons__flex-item {
-    width: 8%;
-    margin: 0 5%;
+  .about__flex-item--right {
+    .text__container {
+      padding: 0;
+    }
   }
 }
