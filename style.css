@@ -281,6 +281,8 @@ a:hover {
 .heading__center h2 {
   display: inline-block;
   position: relative;
+  letter-spacing: 5px;
+  line-height: 35px;
 }
 
 .heading__center h2::before {
@@ -293,7 +295,7 @@ a:hover {
   margin: 0 0 0 0;
   position: absolute;
   top: -50px;
-  left: -30px;
+  left: 0;
   z-index: -1;
 }
 
@@ -303,6 +305,22 @@ a:hover {
   border-bottom: 3px solid #928484;
   width: 30px;
   margin: 18px auto 0;
+}
+
+@media (min-width: 640px) and (max-width: 999px) {
+  .heading__center h2::before {
+    content: '';
+    display: block;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: #FCECEA;
+    margin: 0 0 0 0;
+    position: absolute;
+    top: -50px;
+    left: -30px;
+    z-index: -1;
+  }
 }
 
 .bg-color--primarypink {
