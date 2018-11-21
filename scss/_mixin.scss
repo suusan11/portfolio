@@ -40,9 +40,10 @@
 
 @mixin valuesIcons($img) {
   content: $img;
-  display: block;
-  width: 100px;
-  margin: 0 auto;
+  display: inline-block;
+  width: 60px;
+  margin-right: 2%;
+  border-left: 5px solid $complementary-blue;
 }
 
 @mixin borderStyle($opacity, $top, $left, $width, $height) {
