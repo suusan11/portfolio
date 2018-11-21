@@ -177,7 +177,17 @@ a {
   }
 }
 
-@include pcSize @include middleSize {
+@include pcSize {
+  .heading__center h2::before {
+    @include circle(0, 0, 0, 0);
+    position: absolute;
+    top: -50px;
+    left: -30px;
+    z-index: -1;
+  }
+}
+
+@include middleSize {
   .heading__center h2::before {
     @include circle(0, 0, 0, 0);
     position: absolute;
