@@ -38,10 +38,10 @@
   margin: $top auto $bottom;
 }
 
-@mixin valuesIcons($img) {
+@mixin valuesIcons($width, $img) {
   content: $img;
   display: inline-block;
-  width: 60px;
+  width: $width;
   margin-right: 2%;
   border-left: 5px solid $complementary-blue;
 }
