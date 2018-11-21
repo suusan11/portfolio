@@ -1072,8 +1072,9 @@ html {
   font-weight: 700;
   color: #EE817B;
   border: 2px solid #EE817B;
+  border-radius: 20px;
   background-color: #FFFFFF;
-  box-shadow: 0 3px 8px #BEB9B9;
+  cursor: pointer;
 }
 
 .introduction button:hover {

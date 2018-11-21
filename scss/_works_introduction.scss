@@ -34,8 +34,9 @@
     font-weight: $font-weight-bold;
     color: $secondary-pink;
     border: 2px solid $secondary-pink;
+    border-radius: 20px;
     background-color: $white;
-    box-shadow: 0 3px 8px #BEB9B9;
+    cursor: pointer;
 
     &:hover {
       color: $white;
