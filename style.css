@@ -195,20 +195,6 @@ a:hover {
   margin: 110px 13px 0 0;
 }
 
-.scrollEffect h2 {
-  transition: .8s;
-  transition-delay: .8s;
-}
-
-.scrollEffect h2::before {
-  transition: .8s;
-}
-
-.scrollEffect h2::after {
-  transition: .8s;
-  transition-delay: .16s;
-}
-
 .heading__right {
   text-align: right;
 }

@@ -102,21 +102,6 @@ a {
   }
 }
 
-//for scroll effect
-.scrollEffect h2 {
-  transition: .8s;
-  transition-delay: .8s;
-
-  &::before {
-    transition: .8s;
-  }
-
-  &::after {
-    transition: .8s;
-    transition-delay: .16s;
-  }
-}
-
 .heading__right {
   text-align: right;
 
