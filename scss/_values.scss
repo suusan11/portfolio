@@ -1,78 +1,71 @@
-@import "variable", "mixin";
+@import "variable", "mixin", "typography";
+  .values__block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    margin: 5% auto 5% 0;
 
-.values__block {
-  width: 90%;
-  height: auto;
-  position: relative;
-  background-color: $complementary-blue;
-  border-radius: 5%;
-  padding: 20px 20px 40px;
-  margin: 15% auto;
-  text-align: center;
+    h3 {
+      font-size: $font-size-base-mb;
+    }
 
-  &:nth-child(1)::before {
-    @include valuesIcons(url("../images/inspire.svg"));
+    &:nth-child(1)::before {
+      @include valuesIcons(20%, url("../images/inspire.svg"));
+    }
+
+    &:nth-child(2)::before {
+      @include valuesIcons(20%, url("../images/concept.svg"));
+    }
+
+    &:nth-child(3)::before {
+      @include valuesIcons(20%, url("../images/clear.svg"));
+    }
   }
-
-  &:nth-child(2)::before {
-    @include valuesIcons(url("../images/concept.svg"));
-  }
-
-  &:nth-child(3)::before {
-    @include valuesIcons(url("../images/clear.svg"));
-  }
-
-  h3 {
-    color: $white;
-    padding: 50px 0 20px;
-  }
-
-  p {
-    line-height: 30px;
-  }
-}
 
 @include pcSize {
-  .values__flex {
+  .values__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 100%;
+  }
+  .values__block {
 
-    .values__block {
-      width: 30%;
-      height: 430px;
-      margin: 10% auto;
+    h3 {
+      font-size: $font-size-base-pc;
+    }
 
-      &:nth-child(1) {
-        border-radius: 30px;
+    &:nth-child(1)::before {
+      @include valuesIcons(100px, url("../images/inspire.svg"));
+    }
 
-        &::before {
-          @include valuesIcons(url("../images/inspire.svg"));
-        }
-      }
+    &:nth-child(2)::before {
+      @include valuesIcons(100px, url("../images/concept.svg"));
+    }
 
-      &:nth-child(2) {
-        border-radius: 30px;
-
-        &::before {
-          @include valuesIcons(url("../images/concept.svg"));
-        }
-      }
-
-      &:nth-child(3) {
-        border-radius: 30px;
-
-        &::before {
-          @include valuesIcons(url("../images/clear.svg"));
-        }
-      }
+    &:nth-child(3)::before {
+      @include valuesIcons(100px, url("../images/clear.svg"));
     }
   }
 }
 
 @include middleSize {
-  .values__block p {
-    font-size: 20px;
+  .values__block {
+
+    h3 {
+      font-size: $font-size-base-pc;
+    }
+
+    &:nth-child(1)::before {
+      @include valuesIcons(100px, url("../images/inspire.svg"));
+    }
+
+    &:nth-child(2)::before {
+      @include valuesIcons(100px, url("../images/concept.svg"));
+    }
+
+    &:nth-child(3)::before {
+      @include valuesIcons(100px, url("../images/clear.svg"));
+    }
   }
 }
