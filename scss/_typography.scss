@@ -9,16 +9,16 @@ $font-base: 'Lato', sans-serif;
 $font-heading: 'Dosis', sans-serif;
 
 // font-size: mobile
-$font-size-base-mb: 16px;
-$font-size-h1-mb: 1.875rem; //30px
-$font-size-h2-mb: 1.562rem; //25px
-$font-size-h3-mb: 1.562rem; //25px
-$font-size-h4-mb: 1.25rem; //20px
+$font-size-base: 16px;
+$font-size-h1: 1.875rem; //30px
+$font-size-h2: 1.562rem; //25px
+$font-size-h3: 1.562rem; //25px
+$font-size-h4: 1.25rem; //20px
 
 // font-size: PC
-$font-size-base-pc: 20px;
-$font-size-h1-pc: 2.5rem; //50px
-$font-size-h2-pc: 2rem; //40px
+//$font-size-base-pc: 20px;
+//$font-size-h1-pc: 2.5rem; //50px
+//$font-size-h2-pc: 2rem; //40px
 
 //font-weight
 $font-weight-bold: 700;
@@ -27,7 +27,7 @@ $font-weight-light: 400;
 
 html {
   font-family: $font-base;
-  font-size: $font-size-base-mb;
+  font-size: $font-size-base;
   line-height: 1.2;
   font-weight: 400;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -37,6 +37,6 @@ html {
 
 @include pcSize {
   html {
-    font-size: $font-size-base-pc;
+    font-size: $font-size-base * 1.6;
   }
 }
