@@ -43,7 +43,6 @@
   display: inline-block;
   width: $width;
   margin-right: 2%;
-  border-left: 5px solid $complementary-blue;
 }
 
 @mixin borderStyle($opacity, $top, $left, $width, $height) {

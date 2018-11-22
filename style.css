@@ -696,7 +696,7 @@ html {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin: 5% auto 5% 0;
 }
 
@@ -709,7 +709,6 @@ html {
   display: inline-block;
   width: 20%;
   margin-right: 2%;
-  border-left: 5px solid #B2E0F2;
 }
 
 .values__block:nth-child(2)::before {
@@ -717,7 +716,6 @@ html {
   display: inline-block;
   width: 20%;
   margin-right: 2%;
-  border-left: 5px solid #B2E0F2;
 }
 
 .values__block:nth-child(3)::before {
@@ -725,38 +723,40 @@ html {
   display: inline-block;
   width: 20%;
   margin-right: 2%;
-  border-left: 5px solid #B2E0F2;
 }
 
 @media (min-width: 1000px) {
-  .values__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .values__block::before {
+    border-left: 5px solid #B2E0F2;
   }
   .values__block h3 {
     font-size: 1.5rem;
+    width: 500px;
   }
   .values__block:nth-child(1)::before {
     content: url("../images/inspire.svg");
     display: inline-block;
-    width: 100px;
+    width: 70px;
     margin-right: 2%;
-    border-left: 5px solid #B2E0F2;
   }
   .values__block:nth-child(2)::before {
     content: url("../images/concept.svg");
     display: inline-block;
-    width: 100px;
+    width: 70px;
     margin-right: 2%;
-    border-left: 5px solid #B2E0F2;
   }
   .values__block:nth-child(3)::before {
     content: url("../images/clear.svg");
     display: inline-block;
-    width: 100px;
+    width: 70px;
     margin-right: 2%;
-    border-left: 5px solid #B2E0F2;
+  }
+  .values__block--detail {
+    margin-left: 5%;
+  }
+  .values__block--detail li {
+    list-style-type: disc;
+    padding: 2% 0;
   }
 }
 
@@ -769,21 +769,18 @@ html {
     display: inline-block;
     width: 100px;
     margin-right: 2%;
-    border-left: 5px solid #B2E0F2;
   }
   .values__block:nth-child(2)::before {
     content: url("../images/concept.svg");
     display: inline-block;
     width: 100px;
     margin-right: 2%;
-    border-left: 5px solid #B2E0F2;
   }
   .values__block:nth-child(3)::before {
     content: url("../images/clear.svg");
     display: inline-block;
     width: 100px;
     margin-right: 2%;
-    border-left: 5px solid #B2E0F2;
   }
 }
 

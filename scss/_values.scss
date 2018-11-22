@@ -3,7 +3,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 90%;
+    width: 100%;
     margin: 5% auto 5% 0;
 
     h3 {
@@ -24,29 +24,41 @@
   }
 
 @include pcSize {
-  .values__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   .values__block {
+
+    &::before {
+
+      border-left: 5px solid $complementary-blue;
+    }
 
     h3 {
       font-size: $font-size-h3-pc;
+      width: 500px;
     }
 
     &:nth-child(1)::before {
-      @include valuesIcons(100px, url("../images/inspire.svg"));
+      @include valuesIcons(70px, url("../images/inspire.svg"));
     }
 
     &:nth-child(2)::before {
-      @include valuesIcons(100px, url("../images/concept.svg"));
+      @include valuesIcons(70px, url("../images/concept.svg"));
     }
 
     &:nth-child(3)::before {
-      @include valuesIcons(100px, url("../images/clear.svg"));
+      @include valuesIcons(70px, url("../images/clear.svg"));
+    }
+
+    &--detail {
+      margin-left: 5%;
+
+      li {
+        list-style-type: disc;
+        padding: 2% 0;
+      }
     }
   }
+
+
 }
 
 @include middleSize {
