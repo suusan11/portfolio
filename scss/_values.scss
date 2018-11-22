@@ -59,7 +59,7 @@
       border-left: 5px solid #B2E0F2;
 
       h3::before {
-        @include valuesIcons(70px, url("../images/inspire.svg"));
+        @include valuesIcons(70px, url("../images/microphone.svg"));
       }
     }
 
@@ -67,7 +67,7 @@
       border-left: 5px solid #96DADB;
 
       h3::before {
-        @include valuesIcons(70px, url("../images/inspire.svg"));
+        @include valuesIcons(70px, url("../images/detail.svg"));
       }
     }
 
@@ -75,7 +75,7 @@
       border-left: 5px solid #ABBAF9;
 
       h3::before {
-        @include valuesIcons(70px, url("../images/inspire.svg"));
+        @include valuesIcons(70px, url("../images/design.svg"));
       }
     }
 
