@@ -704,49 +704,17 @@ html {
   font-size: 1.562rem;
 }
 
-.values__block:nth-child(1)::before {
-  content: url("../images/inspire.svg");
-  display: inline-block;
-  width: 20%;
-  margin-right: 2%;
-}
-
-.values__block:nth-child(2)::before {
-  content: url("../images/concept.svg");
-  display: inline-block;
-  width: 20%;
-  margin-right: 2%;
-}
-
-.values__block:nth-child(3)::before {
-  content: url("../images/clear.svg");
-  display: inline-block;
-  width: 20%;
-  margin-right: 2%;
-}
-
 @media (min-width: 1000px) {
-  .values__block::before {
+  .values__block {
     border-left: 5px solid #B2E0F2;
+    margin-left: 3%;
   }
   .values__block h3 {
     font-size: 1.5rem;
     width: 500px;
   }
-  .values__block:nth-child(1)::before {
+  .values__block h3::before {
     content: url("../images/inspire.svg");
-    display: inline-block;
-    width: 70px;
-    margin-right: 2%;
-  }
-  .values__block:nth-child(2)::before {
-    content: url("../images/concept.svg");
-    display: inline-block;
-    width: 70px;
-    margin-right: 2%;
-  }
-  .values__block:nth-child(3)::before {
-    content: url("../images/clear.svg");
     display: inline-block;
     width: 70px;
     margin-right: 2%;
