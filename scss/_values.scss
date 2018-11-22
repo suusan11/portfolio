@@ -25,29 +25,36 @@
 
 @include pcSize {
   .values__block {
-    border-left: 5px solid $complementary-blue;
     margin-left: 3%;
 
     h3 {
       font-size: $font-size-h3-pc;
       width: 500px;
+    }
 
-      &::before {
+    &:nth-child(1) {
+      border-left: 5px solid $complementary-blue;
+
+      h3::before {
         @include valuesIcons(70px, url("../images/inspire.svg"));
       }
     }
 
-    //&:nth-child(1)::before {
-    //  @include valuesIcons(70px, url("../images/inspire.svg"));
-    //}
-    //
-    //&:nth-child(2)::before {
-    //  @include valuesIcons(70px, url("../images/concept.svg"));
-    //}
-    //
-    //&:nth-child(3)::before {
-    //  @include valuesIcons(70px, url("../images/clear.svg"));
-    //}
+    &:nth-child(2) {
+      border-left: 5px solid $complementary-blue;
+
+      h3::before {
+        @include valuesIcons(70px, url("../images/inspire.svg"));
+      }
+    }
+
+    &:nth-child(3) {
+      border-left: 5px solid $complementary-blue;
+
+      h3::before {
+        @include valuesIcons(70px, url("../images/inspire.svg"));
+      }
+    }
 
     &--detail {
       margin-left: 5%;
