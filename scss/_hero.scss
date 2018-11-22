@@ -2,9 +2,9 @@
 
 .hero {
   width: 100%;
-  min-height: 500px;
+  min-height: 600px;
   margin-top: 0;
-  padding-top: 15%;
+  padding-top: 80%;
 
   &__txt {
 
@@ -100,7 +100,7 @@
 //responsive for PC
 @include pcSize {
   .hero {
-    padding-top: 13%;
+    padding-top: 25%;
     text-align: center;
 
     &__txt {
