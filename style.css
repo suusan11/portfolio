@@ -697,8 +697,20 @@ html {
   margin: 5% auto 15% 0;
 }
 
-.values__block h3 {
-  display: block;
+.values__block--heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.values__block--heading .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 2%;
+}
+
+.values__block--heading h3 {
   font-size: 1.562rem;
 }
 
@@ -729,14 +741,17 @@ html {
     justify-content: flex-start;
     align-items: center;
     margin: 8% auto 0 3%;
+    padding: 2% 0;
+  }
+  .values__block--heading {
+    margin-bottom: 0;
   }
   .values__block h3 {
     font-size: 1.5rem;
     width: 500px;
-    line-height: 80px;
   }
   .values__block--detail {
-    margin-left: 5%;
+    margin: 0 0 0 5%;
   }
 }
 
