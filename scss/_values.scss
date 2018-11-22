@@ -7,7 +7,7 @@
     margin: 5% auto 5% 0;
 
     h3 {
-      font-size: $font-size-base;
+      font-size: $font-size-h3-mb;
     }
 
     &:nth-child(1)::before {
@@ -31,9 +31,9 @@
   }
   .values__block {
 
-    //h3 {
-    //  font-size: $font-size-base * ;
-    //}
+    h3 {
+      font-size: $font-size-h3-pc;
+    }
 
     &:nth-child(1)::before {
       @include valuesIcons(100px, url("../images/inspire.svg"));
@@ -52,9 +52,9 @@
 @include middleSize {
   .values__block {
 
-    //h3 {
-    //  font-size: $font-size-base * 1.6;
-    //}
+    h3 {
+      font-size: $font-size-h3-pc;
+    }
 
     &:nth-child(1)::before {
       @include valuesIcons(100px, url("../images/inspire.svg"));

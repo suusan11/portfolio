@@ -78,7 +78,7 @@ html {
 
 @media (min-width: 1000px) {
   html {
-    font-size: 25.6px;
+    font-size: 20px;
   }
 }
 
@@ -144,7 +144,7 @@ h3 {
 
 @media (min-width: 1000px) {
   h3 {
-    font-size: 2.4992rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -154,7 +154,7 @@ h4 {
 
 @media (min-width: 1000px) {
   h4 {
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -164,7 +164,7 @@ p {
 
 @media (min-width: 1000px) {
   p {
-    font-size: 25.6px;
+    font-size: 20px;
   }
 }
 
@@ -362,7 +362,7 @@ html {
 
 @media (min-width: 1000px) {
   html {
-    font-size: 25.6px;
+    font-size: 20px;
   }
 }
 
@@ -378,7 +378,7 @@ html {
 
 @media (min-width: 1000px) {
   html {
-    font-size: 25.6px;
+    font-size: 20px;
   }
 }
 
@@ -413,7 +413,7 @@ html {
 
 @media (min-width: 1000px) {
   html {
-    font-size: 25.6px;
+    font-size: 20px;
   }
 }
 
@@ -424,7 +424,7 @@ html {
 }
 
 .global-menu .nav-list li {
-  font-size: 20.6px;
+  font-size: 11px;
   padding-bottom: 30%;
 }
 
@@ -460,7 +460,7 @@ html {
 
 @media (min-width: 1000px) {
   html {
-    font-size: 25.6px;
+    font-size: 20px;
   }
 }
 
@@ -604,20 +604,20 @@ html {
     text-align: center;
   }
   .hero__txt h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     width: 80%;
   }
   .hero__txt h2 {
-    font-size: 2.4992rem;
+    font-size: 2rem;
   }
 }
 
 @media (min-width: 640px) and (max-width: 999px) {
   .hero__txt h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .hero__txt h2 {
-    font-size: 2.4992rem;
+    font-size: 2rem;
   }
 }
 
@@ -688,7 +688,7 @@ html {
 
 @media (min-width: 1000px) {
   html {
-    font-size: 25.6px;
+    font-size: 20px;
   }
 }
 
@@ -701,7 +701,7 @@ html {
 }
 
 .values__block h3 {
-  font-size: 16px;
+  font-size: 1.562rem;
 }
 
 .values__block:nth-child(1)::before {
@@ -734,6 +734,9 @@ html {
     justify-content: center;
     align-items: center;
   }
+  .values__block h3 {
+    font-size: 1.5rem;
+  }
   .values__block:nth-child(1)::before {
     content: url("../images/inspire.svg");
     display: inline-block;
@@ -758,6 +761,9 @@ html {
 }
 
 @media (min-width: 640px) and (max-width: 999px) {
+  .values__block h3 {
+    font-size: 1.5rem;
+  }
   .values__block:nth-child(1)::before {
     content: url("../images/inspire.svg");
     display: inline-block;
@@ -793,7 +799,7 @@ html {
 
 @media (min-width: 1000px) {
   html {
-    font-size: 25.6px;
+    font-size: 20px;
   }
 }
 
@@ -936,7 +942,7 @@ html {
     padding: 15px 0;
   }
   .about__flex-item--right .about__button a {
-    font-size: 25.6px;
+    font-size: 20px;
   }
 }
 
@@ -981,7 +987,7 @@ html {
 
 @media (min-width: 1000px) {
   html {
-    font-size: 25.6px;
+    font-size: 20px;
   }
 }
 
@@ -1024,7 +1030,7 @@ html {
 
 @media (min-width: 1000px) {
   html {
-    font-size: 25.6px;
+    font-size: 20px;
   }
 }
 
@@ -1125,7 +1131,7 @@ html {
 
 @media (min-width: 1000px) {
   html {
-    font-size: 25.6px;
+    font-size: 20px;
   }
 }
 
@@ -1331,7 +1337,7 @@ html {
 
 @media (min-width: 1000px) {
   html {
-    font-size: 25.6px;
+    font-size: 20px;
   }
 }
 
@@ -1501,7 +1507,7 @@ html {
     stroke: #FFFFFF;
   }
   .about__part__flex-item p {
-    font-size: 25.6px;
+    font-size: 20px;
     text-align: justify;
     line-height: 170%;
     letter-spacing: 0.5px;
@@ -1549,7 +1555,7 @@ html {
     margin: 0 auto;
   }
   .about__part__flex-item p {
-    font-size: 25.6px;
+    font-size: 20px;
     letter-spacing: 0.5px;
     margin-top: 5%;
   }

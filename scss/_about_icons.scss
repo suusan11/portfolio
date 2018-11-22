@@ -7,7 +7,7 @@
   margin: 2% 0 0 0;
 
   h2 {
-    font-size: $font-size-h2;
+    font-size: $font-size-h2-mb;
     padding-bottom: 5%;
   }
 
@@ -64,7 +64,7 @@
       }
 
       p {
-        font-size: $font-size-base;
+        font-size: $font-size-base-mb;
         font-weight: $font-weight-light;
         line-height: 200%;
         letter-spacing: 1px;
@@ -167,7 +167,7 @@
         }
 
         p {
-          font-size: $font-size-base * 1.6;
+          font-size: $font-size-base-pc;
           text-align: justify;
           line-height: 170%;
           letter-spacing: 0.5px;
@@ -224,7 +224,7 @@
         }
 
         p {
-          font-size: $font-size-base * 1.6;
+          font-size: $font-size-base-pc;
           letter-spacing: 0.5px;
           margin-top: 5%;
         }

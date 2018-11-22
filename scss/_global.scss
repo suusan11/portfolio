@@ -35,14 +35,14 @@ section {
 }
 
 h1 {
-  font-size: $font-size-h1;
+  font-size: $font-size-h1-mb;
   font-family: $font-heading;
   font-weight: $font-weight-bold;
   letter-spacing: 0.3em;
 }
 
 h2 {
-  font-size: $font-size-h2;
+  font-size: $font-size-h2-mb;
   font-family: $font-heading;
   font-weight: $font-weight-bold;
 }
@@ -58,32 +58,32 @@ h2.text--upright {
 
 h3 {
   display: inline-block;
-  font-size: $font-size-h3;
+  font-size: $font-size-h3-mb;
 }
 
 @include pcSize {
   h3 {
-    font-size: $font-size-h3 * 1.6;
+    font-size: $font-size-h3-pc;
   }
 }
 
 h4 {
-  font-size: $font-size-h4;
+  font-size: $font-size-h4-mb;
 }
 
 @include pcSize {
   h4 {
-    font-size: $font-size-h4 * 1.6;
+    font-size: $font-size-h4-pc;
   }
 }
 
 p {
-  font-size: $font-size-base;
+  font-size: $font-size-base-mb;
 }
 
 @include pcSize {
   p {
-    font-size: $font-size-base * 1.6;
+    font-size: $font-size-base-pc;
   }
 }
 
