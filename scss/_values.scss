@@ -83,27 +83,4 @@
       margin-left: 5%;
     }
   }
-
-
-}
-
-@include middleSize {
-  .values__block {
-
-    h3 {
-      font-size: $font-size-h3-pc;
-    }
-
-    &:nth-child(1)::before {
-      @include valuesIcons(100px, url("../images/inspire.svg"));
-    }
-
-    &:nth-child(2)::before {
-      @include valuesIcons(100px, url("../images/concept.svg"));
-    }
-
-    &:nth-child(3)::before {
-      @include valuesIcons(100px, url("../images/clear.svg"));
-    }
-  }
 }
