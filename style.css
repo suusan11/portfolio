@@ -706,33 +706,12 @@ html {
   border-left: 5px solid #B2E0F2;
 }
 
-.values__block:nth-child(1) h3::before {
-  content: url("../images/inspire.svg");
-  display: inline-block;
-  width: 50px;
-  margin-right: 2%;
-}
-
 .values__block:nth-child(2) {
   border-left: 5px solid #96DADB;
 }
 
-.values__block:nth-child(2) h3::before {
-  content: url("../images/inspire.svg");
-  display: inline-block;
-  width: 50px;
-  margin-right: 2%;
-}
-
 .values__block:nth-child(3) {
   border-left: 5px solid #ABBAF9;
-}
-
-.values__block:nth-child(3) h3::before {
-  content: url("../images/inspire.svg");
-  display: inline-block;
-  width: 50px;
-  margin-right: 2%;
 }
 
 .values__block--detail {
@@ -755,33 +734,6 @@ html {
     font-size: 1.5rem;
     width: 500px;
     line-height: 80px;
-  }
-  .values__block:nth-child(1) {
-    border-left: 5px solid #B2E0F2;
-  }
-  .values__block:nth-child(1) h3::before {
-    content: url("../images/microphone.svg");
-    display: inline-block;
-    width: 70px;
-    margin-right: 2%;
-  }
-  .values__block:nth-child(2) {
-    border-left: 5px solid #96DADB;
-  }
-  .values__block:nth-child(2) h3::before {
-    content: url("../images/detail.svg");
-    display: inline-block;
-    width: 70px;
-    margin-right: 2%;
-  }
-  .values__block:nth-child(3) {
-    border-left: 5px solid #ABBAF9;
-  }
-  .values__block:nth-child(3) h3::before {
-    content: url("../images/design.svg");
-    display: inline-block;
-    width: 70px;
-    margin-right: 2%;
   }
   .values__block--detail {
     margin-left: 5%;
