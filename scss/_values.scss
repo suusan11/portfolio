@@ -7,7 +7,7 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      margin-bottom: 10%;
+      margin-bottom: 5%;
 
       .icon {
         width: 2.5rem;
@@ -38,7 +38,7 @@
 
       li {
         list-style-type: disc;
-        padding: 2% 0;
+        padding: 3% 0;
       }
     }
   }
@@ -63,5 +63,11 @@
     &--detail {
       margin: 0 0 0 5%;
     }
+  }
+}
+
+@include middleSize {
+  .values__block--heading {
+    margin-bottom: 0;
   }
 }

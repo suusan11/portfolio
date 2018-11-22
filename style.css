@@ -701,7 +701,7 @@ html {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .values__block--heading .icon {
@@ -732,7 +732,7 @@ html {
 
 .values__block--detail li {
   list-style-type: disc;
-  padding: 2% 0;
+  padding: 3% 0;
 }
 
 @media (min-width: 1000px) {
@@ -752,6 +752,12 @@ html {
   }
   .values__block--detail {
     margin: 0 0 0 5%;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 999px) {
+  .values__block--heading {
+    margin-bottom: 0;
   }
 }
 
