@@ -98,7 +98,6 @@ body {
   -moz-osx-font-smoothing: auto;
   background-color: #FFFFFF;
   width: 100%;
-  padding-top: 50px;
 }
 
 main {
@@ -384,17 +383,23 @@ html {
 
 header {
   width: 100%;
+  height: 80px;
+  position: fixed;
+  z-index: 10;
+  background-color: #FFFFFF;
 }
 
-header .flex {
+header .header__flex {
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  position: absolute;
   top: 50px;
+  background-color: #FFFFFF;
 }
 
-header .flex img {
-  position: fixed;
+header .header__flex img {
   top: 50px;
   z-index: 10;
   width: 30px;
