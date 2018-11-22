@@ -395,7 +395,7 @@ header .header__flex {
   justify-content: space-between;
   align-items: flex-start;
   position: absolute;
-  top: 50px;
+  top: 30px;
   background-color: #FFFFFF;
 }
 
