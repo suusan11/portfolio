@@ -30,32 +30,20 @@ textEffect('fallDown');
 
 
 //global menu
-// function navToggle() {
-//     var toggleBtn = document.getElementById("js-nav-toggle");
-//     var navShow = document.getElementById("js-circle-nav-list");
-//
-//     if(toggleBtn.classList.contains("open") === false) {
-//         toggleBtn.classList.add("open");
-//         navShow.classList.add("open");
-//     }else {
-//         toggleBtn.classList.remove("open").add("close");
-//         // toggleBtn.classList.add("close");
-//         navShow.classList.remove("open");
-//     }
-//
-// document.getElementById("js-nav-toggle").addEventListener("click", navToggle);
+function navToggle() {
+    var toggleBtn = document.getElementById("js-nav-toggle");
+    var navShow = document.getElementById("js-global-nav-list");
 
+    if(toggleBtn.classList.contains("open") === false) {
+        toggleBtn.classList.add("open");
+        navShow.classList.add("open");
+    }else {
+        toggleBtn.classList.remove("open");
+        navShow.classList.remove("open");
+    }
 
-//show name
-// $(window).scroll(function(){
-//     var t = $('.form').offset().top; // ターゲットの位置取得
-//     var p = t - $(window).height();  // 画面下部からのターゲットの位置
-//     if($(window).scrollTop() > p){
-//         $('.button').hide(); // ボタンを非表示
-//     }else{
-//         $('.button').show(); // ボタンを表示
-//     }
-// });
+document.getElementById("js-nav-toggle").addEventListener("click", navToggle);
+
 
 //get scroll position
 // function debounce(func, wait = 20, immediate = true) {
@@ -112,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function(){
     pcSize.addListener(checkBreakPoint);
 
     checkBreakPoint(pcSize);
-});
+})
 
 // function addContainer() {
 //     const pcSize = window.matchMedia('screen and (min-width: 1000px)');
