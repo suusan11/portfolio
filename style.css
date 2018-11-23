@@ -399,11 +399,21 @@ header .header__flex {
   background-color: #FFFFFF;
 }
 
-header .header__flex img {
+header .header__flex--left {
+  width: 50%;
+}
+
+header .header__flex--left img {
   top: 50px;
   z-index: 10;
   width: 30px;
   height: 35px;
+}
+
+header .header__flex--left .header__text {
+  display: inline-block;
+  margin-left: 5%;
+  letter-spacing: 0.2rem;
 }
 
 html {
