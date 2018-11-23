@@ -2,11 +2,11 @@
 
 @mixin menuTrigger($top) {
   content: '';
-  width: 30px;
+  width: 60%;
   height: 3px;
   display: block;
   position: absolute;
-  margin-top: $top;
+  top: $top;
   background-color: $brown;
   transition: transform 3s;
 }
