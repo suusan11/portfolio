@@ -42,7 +42,7 @@ header {
       width: 50%;
       text-align: right;
 
-      .nav-button {
+      .nav-toggle {
         display: inline-block;
         position: relative;
         width: 50px;
@@ -59,11 +59,11 @@ header {
           border-radius: 30px;
 
           &::before {
-            @include menuTrigger(-13px);
+            @include menuTrigger(-10px);
           }
 
           &::after {
-            @include menuTrigger(13px);
+            @include menuTrigger(10px);
           }
         }
       }
