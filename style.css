@@ -391,6 +391,7 @@ header {
 
 header .header__flex {
   width: 90%;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -423,6 +424,7 @@ header .header__flex--left .header__text.active {
 
 header .header__flex--right {
   width: 50%;
+  height: 50px;
   text-align: right;
 }
 
@@ -431,6 +433,7 @@ header .header__flex--right .nav-toggle {
   position: relative;
   width: 50px;
   height: 50px;
+  cursor: pointer;
 }
 
 header .header__flex--right .nav-toggle span {
