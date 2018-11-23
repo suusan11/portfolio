@@ -45,7 +45,55 @@ textEffect('fallDown');
 //
 // document.getElementById("js-nav-toggle").addEventListener("click", navToggle);
 
-//
+
+//show name
+// $(window).scroll(function(){
+//     var t = $('.form').offset().top; // ターゲットの位置取得
+//     var p = t - $(window).height();  // 画面下部からのターゲットの位置
+//     if($(window).scrollTop() > p){
+//         $('.button').hide(); // ボタンを非表示
+//     }else{
+//         $('.button').show(); // ボタンを表示
+//     }
+// });
+
+//get scroll position
+function debounce(func, wait = 20, immediate = true) {
+    var timeout;
+    return function() {
+        var context = this, args = arguments;
+        var later = function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+    };
+};
+
+const breakPointText = document.getElementById('.js-breakPoint');
+const scrollShow = document.getElementById('js-scroll-show');
+
+function checkSlide() {
+    breakPointText.forEach(breakPointText => {
+        const textBottom = breakPointText.offsetTop + breakPointText.height;
+        // const isHalfShown = slideInAt > sliderImage.offsetTop;
+        const isNotScrolledPast = window.scrollY < breakPointText;
+        if (textBottom && isNotScrolledPast) {
+            scrollShow.classList.add('active');
+        } else {
+            scrollShow.classList.remove('active');
+        }
+    });
+}
+
+window.addEventListener('scroll', debounce(checkSlide));
+
+
+
+//add container by browser size
 document.addEventListener('DOMContentLoaded', function(){
     const pcSize = window.matchMedia('screen and (min-width: 1000px)');
     const widthMargin = document.getElementById("js-container");
