@@ -34,14 +34,15 @@ function navToggle() {
     var toggleBtn = document.getElementById("js-nav-toggle");
     var navShow = document.getElementById("js-global-nav-list");
 
-    if(toggleBtn.classList.contains("open") === false) {
+    if (toggleBtn.classList.contains("open") === false) {
         toggleBtn.classList.add("open");
         navShow.classList.add("open");
-    }else {
+        console.log("run");
+    } else {
         toggleBtn.classList.remove("open");
         navShow.classList.remove("open");
     }
-
+}
 document.getElementById("js-nav-toggle").addEventListener("click", navToggle);
 
 
@@ -83,24 +84,24 @@ document.getElementById("js-nav-toggle").addEventListener("click", navToggle);
 
 
 //add container by browser size
-document.addEventListener('DOMContentLoaded', function(){
-    const pcSize = window.matchMedia('screen and (min-width: 1000px)');
-    const widthMargin = document.getElementById("js-container");
-
-    function checkBreakPoint(pcSize) {
-        if(pcSize.matches) {
-            widthMargin.classList.add('container');
-            widthMargin.classList.remove('works__thumbnails');
-        }else {
-            widthMargin.classList.add('works__thumbnails');
-            widthMargin.classList.remove('container');
-        }
-    }
-
-    pcSize.addListener(checkBreakPoint);
-
-    checkBreakPoint(pcSize);
-})
+// document.addEventListener('DOMContentLoaded', function(){
+//     const pcSize = window.matchMedia('screen and (min-width: 1000px)');
+//     const widthMargin = document.getElementById("js-container");
+//
+//     function checkBreakPoint(pcSize) {
+//         if(pcSize.matches) {
+//             widthMargin.classList.add('container');
+//             widthMargin.classList.remove('works__thumbnails');
+//         }else {
+//             widthMargin.classList.add('works__thumbnails');
+//             widthMargin.classList.remove('container');
+//         }
+//     }
+//
+//     pcSize.addListener(checkBreakPoint);
+//
+//     checkBreakPoint(pcSize);
+// })
 
 // function addContainer() {
 //     const pcSize = window.matchMedia('screen and (min-width: 1000px)');
