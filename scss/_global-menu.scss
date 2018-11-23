@@ -5,18 +5,20 @@
   margin-left: auto;
   text-align: right;
 
-  .nav-list {
-    li {
-      font-size: $font-size-base-mb - 5px;
-      padding-bottom: 30%;
-    }
+  li {
+    font-size: $font-size-base-mb - 5px;
+    padding-bottom: 30%;
+  }
 
-    a {
-      color: $black;
+  a {
+    color: $black;
 
-      &:hover {
-        opacity: 0.5;
-      }
+    &:hover {
+      opacity: 0.5;
     }
+  }
+
+  &.open {
+    visibility: visible;
   }
 }

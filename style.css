@@ -471,6 +471,26 @@ header .header__flex--right .nav-toggle span::after {
   transition: transform 3s;
 }
 
+header .header__flex--right .nav-toggle.open span {
+  background-color: transparent;
+}
+
+header .header__flex--right .nav-toggle.open span::before {
+  -webkit-transform: translateY(10px) rotate(-45deg);
+  -moz-transform: translateY(10px) rotate(-45deg);
+  -ms-transform: translateY(10px) rotate(-45deg);
+  -o-transform: translateY(10px) rotate(-45deg);
+  transform: translateY(10px) rotate(-45deg);
+}
+
+header .header__flex--right .nav-toggle.open span::after {
+  -webkit-transform: translateY(-10px) rotate(45deg);
+  -moz-transform: translateY(-10px) rotate(45deg);
+  -ms-transform: translateY(-10px) rotate(45deg);
+  -o-transform: translateY(-10px) rotate(45deg);
+  transform: translateY(-10px) rotate(45deg);
+}
+
 html {
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -493,17 +513,21 @@ html {
   text-align: right;
 }
 
-.global-nav .nav-list li {
+.global-nav li {
   font-size: 11px;
   padding-bottom: 30%;
 }
 
-.global-nav .nav-list a {
+.global-nav a {
   color: #545454;
 }
 
-.global-nav .nav-list a:hover {
+.global-nav a:hover {
   opacity: 0.5;
+}
+
+.global-nav.open {
+  visibility: visible;
 }
 
 html {

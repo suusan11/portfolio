@@ -69,6 +69,28 @@ header {
             @include menuTrigger(10px);
           }
         }
+
+        &.open {
+          span {
+            background-color: transparent;
+
+            &::before {
+              -webkit-transform: translateY(10px) rotate(-45deg);
+              -moz-transform: translateY(10px) rotate(-45deg);
+              -ms-transform: translateY(10px) rotate(-45deg);
+              -o-transform: translateY(10px) rotate(-45deg);
+              transform: translateY(10px) rotate(-45deg);
+            }
+
+            &::after {
+              -webkit-transform: translateY(-10px) rotate(45deg);
+              -moz-transform: translateY(-10px) rotate(45deg);
+              -ms-transform: translateY(-10px) rotate(45deg);
+              -o-transform: translateY(-10px) rotate(45deg);
+              transform: translateY(-10px) rotate(45deg);
+            }
+          }
+        }
       }
     }
 
