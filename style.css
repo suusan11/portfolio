@@ -889,7 +889,7 @@ html {
   margin: 5% auto;
   padding: 15px 0;
   border: 3px solid #EE817B;
-  border-radius: 30px;
+  border-radius: 20px;
   text-align: center;
   vertical-align: middle;
 }
@@ -949,7 +949,7 @@ html {
     margin-right: 5%;
     padding: 2% 0;
     border: 3px solid #EE817B;
-    border-radius: 30px;
+    border-radius: 20px;
     text-align: center;
     cursor: pointer;
   }
