@@ -445,6 +445,7 @@ header .header__flex--right .nav-toggle span {
   height: 3px;
   background-color: #928484;
   border-radius: 30px;
+  transition: .5s transform ease-out;
 }
 
 header .header__flex--right .nav-toggle span::before {
@@ -457,6 +458,7 @@ header .header__flex--right .nav-toggle span::before {
   background-color: #928484;
   border-radius: 30px;
   transition: transform 3s;
+  transition: .5s transform ease-out;
 }
 
 header .header__flex--right .nav-toggle span::after {
@@ -469,6 +471,7 @@ header .header__flex--right .nav-toggle span::after {
   background-color: #928484;
   border-radius: 30px;
   transition: transform 3s;
+  transition: .5s transform ease-out;
 }
 
 header .header__flex--right .nav-toggle.open span {
