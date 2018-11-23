@@ -58,38 +58,39 @@ textEffect('fallDown');
 // });
 
 //get scroll position
-function debounce(func, wait = 20, immediate = true) {
-    var timeout;
-    return function() {
-        var context = this, args = arguments;
-        var later = function() {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-        };
-        var callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func.apply(context, args);
-    };
-};
-
-const breakPointText = document.getElementById('.js-breakPoint');
-const scrollShow = document.getElementById('js-scroll-show');
-
-function checkSlide() {
-    breakPointText.forEach(breakPointText => {
-        const textBottom = breakPointText.offsetTop + breakPointText.height;
-        // const isHalfShown = slideInAt > sliderImage.offsetTop;
-        const isNotScrolledPast = window.scrollY < breakPointText;
-        if (textBottom && isNotScrolledPast) {
-            scrollShow.classList.add('active');
-        } else {
-            scrollShow.classList.remove('active');
-        }
-    });
-}
-
-window.addEventListener('scroll', debounce(checkSlide));
+// function debounce(func, wait = 20, immediate = true) {
+//     var timeout;
+//     return function() {
+//         var context = this, args = arguments;
+//         var later = function() {
+//             timeout = null;
+//             if (!immediate) func.apply(context, args);
+//         };
+//         var callNow = immediate && !timeout;
+//         clearTimeout(timeout);
+//         timeout = setTimeout(later, wait);
+//         if (callNow) func.apply(context, args);
+//     };
+// };
+//
+// const breakPointText = document.getElementById('.js-breakPoint');
+// const scrollShow = document.getElementById('js-scroll-show');
+//
+// function checkSlide() {
+//     breakPointText.forEach(breakPointText => {
+//         const slideInAt = (window.scrollY + window.innerHeight) - breakPointText.height / 2;
+//         const textBottom = breakPointText.offsetTop + breakPointText.height;
+//         const isHalfShown = slideInAt > breakPointText.offsetTop;
+//         const isNotScrolledPast = window.scrollY < textBottom;
+//         if (isHalfShown && isNotScrolledPast) {
+//             scrollShow.classList.add('active');
+//         } else {
+//             scrollShow.classList.remove('active');
+//         }
+//     });
+// }
+//
+// window.addEventListener('scroll', debounce(checkSlide));
 
 
 

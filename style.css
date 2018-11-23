@@ -414,6 +414,11 @@ header .header__flex--left .header__text {
   display: inline-block;
   margin-left: 5%;
   letter-spacing: 0.2rem;
+  opacity: 0;
+}
+
+header .header__flex--left .header__text.active {
+  opacity: 1;
 }
 
 html {

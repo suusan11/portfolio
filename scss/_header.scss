@@ -30,6 +30,11 @@ header {
         display: inline-block;
         margin-left: 5%;
         letter-spacing: 0.2rem;
+        opacity: 0;
+
+        &.active {
+          opacity: 1;
+        }
       }
     }
   }
