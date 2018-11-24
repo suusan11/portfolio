@@ -1,13 +1,12 @@
 @import "variable", "typography", "mixin";
 
 .global-nav {
-  visibility: hidden;
+  //visibility: hidden;
   margin-left: auto;
   text-align: right;
 
   li {
     font-size: $font-size-base-mb - 5px;
-    padding-bottom: 30%;
   }
 
   a {
@@ -20,5 +19,41 @@
 
   &.open {
     visibility: visible;
+  }
+}
+
+@include pcSize {
+  .global-nav {
+    visibility: hidden;
+    width: 100px;
+    margin-left: auto;
+    text-align: right;
+    background-color: $white;
+    transform: translateX(100%);
+    transition: .5s transform ease-out;
+
+    li {
+      display: inline-block;
+      width: 100%;
+      font-size: $font-size-base-pc - 5px;
+      font-weight: $font-weight-light;
+      padding: 10% 0;
+
+      a {
+        color: $black;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+
+      &.open {
+        visibility: visible;
+      }
+    }
+
+    &.open {
+      transform: translateX(0);
+    }
   }
 }

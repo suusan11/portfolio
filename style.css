@@ -511,14 +511,12 @@ html {
 }
 
 .global-nav {
-  visibility: hidden;
   margin-left: auto;
   text-align: right;
 }
 
 .global-nav li {
   font-size: 11px;
-  padding-bottom: 30%;
 }
 
 .global-nav a {
@@ -531,6 +529,37 @@ html {
 
 .global-nav.open {
   visibility: visible;
+}
+
+@media (min-width: 1000px) {
+  .global-nav {
+    visibility: hidden;
+    width: 100px;
+    margin-left: auto;
+    text-align: right;
+    background-color: #FFFFFF;
+    transform: translateX(100%);
+    transition: .5s transform ease-out;
+  }
+  .global-nav li {
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10% 0;
+  }
+  .global-nav li a {
+    color: #545454;
+  }
+  .global-nav li a:hover {
+    opacity: 0.5;
+  }
+  .global-nav li.open {
+    visibility: visible;
+  }
+  .global-nav.open {
+    transform: translateX(0);
+  }
 }
 
 html {
