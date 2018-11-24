@@ -550,8 +550,16 @@ html {
     margin-left: auto;
     text-align: right;
     background-color: #FFFFFF;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
     transform: translateX(100%);
-    transition: .5s transform ease-out;
+    -webkit-transition: 0.5s transform ease-out;
+    -moz-transition: 0.5s transform ease-out;
+    -ms-transition: 0.5s transform ease-out;
+    -o-transition: 0.5s transform ease-out;
+    transition: 0.5s transform ease-out;
   }
   .global-nav li {
     display: inline-block;
@@ -570,6 +578,10 @@ html {
     visibility: visible;
   }
   .global-nav.open {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
     transform: translateX(0);
   }
 }

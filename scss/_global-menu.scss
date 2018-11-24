@@ -29,8 +29,8 @@
     margin-left: auto;
     text-align: right;
     background-color: $white;
-    transform: translateX(100%);
-    transition: .5s transform ease-out;
+    @include vendorPrefix(transform, translateX(100%));
+    @include vendorPrefix(transition, .5s transform ease-out);
 
     li {
       display: inline-block;
@@ -53,7 +53,7 @@
     }
 
     &.open {
-      transform: translateX(0);
+      @include vendorPrefix(transform, translateX(0));
     }
   }
 }
