@@ -2,7 +2,7 @@
 
 .global-nav {
   visibility: hidden;
-  width: 100px;
+  width: 80px;
   margin-top: -5px;
   margin-left: auto;
   text-align: right;
@@ -15,7 +15,7 @@
     width: 100%;
     font-size: $font-size-base-pc - 5px;
     font-weight: $font-weight-light;
-    padding: 20% 0;
+    padding: 15% 0;
 
     a {
       color: $black;
