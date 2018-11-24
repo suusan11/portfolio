@@ -46,39 +46,25 @@ document.getElementById("js-nav-toggle").addEventListener("click", navToggle);
 
 
 //get scroll position
-// function debounce(func, wait = 20, immediate = true) {
-//     var timeout;
-//     return function() {
-//         var context = this, args = arguments;
-//         var later = function() {
-//             timeout = null;
-//             if (!immediate) func.apply(context, args);
-//         };
-//         var callNow = immediate && !timeout;
-//         clearTimeout(timeout);
-//         timeout = setTimeout(later, wait);
-//         if (callNow) func.apply(context, args);
-//     };
-// };
-//
-// const breakPointText = document.getElementById('.js-breakPoint');
-// const scrollShow = document.getElementById('js-scroll-show');
-//
-// function checkSlide() {
-//     breakPointText.forEach(breakPointText => {
-//         const slideInAt = (window.scrollY + window.innerHeight) - breakPointText.height / 2;
-//         const textBottom = breakPointText.offsetTop + breakPointText.height;
-//         const isHalfShown = slideInAt > breakPointText.offsetTop;
-//         const isNotScrolledPast = window.scrollY < textBottom;
-//         if (isHalfShown && isNotScrolledPast) {
-//             scrollShow.classList.add('active');
-//         } else {
-//             scrollShow.classList.remove('active');
-//         }
-//     });
-// }
-//
-// window.addEventListener('scroll', debounce(checkSlide));
+function scrollCheck() {
+    const scrollValue = window.scrollY;//上からのスクロール値
+    const headerHeight = document.getElementById('js-header').clientHeight; //headerの高さをとる
+    const scrollTotal = scrollValue + headerHeight; //headerを含んだ高さの取得
+
+    const breakPoint = document.getElementById('js-breakPoint').clientHeight;
+    const objectTop = document.getElementById('js-breakPoint').offsetTop;
+    const breakPointTotall = breakPoint + objectTop;
+
+    const show = document.getElementById('js-scroll-show');
+
+    if(scrollTotal > breakPointTotall) {
+        show.classList.remove('is-show');
+    }else {
+        show.classList.add('is-show');
+    }
+}
+
+window.addEventListener('scroll', scrollCheck);
 
 
 
