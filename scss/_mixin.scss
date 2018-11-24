@@ -68,6 +68,12 @@
   margin: 0 auto;
 }
 
+@mixin vendorPrefix($property, $value) {
+  @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+    #{$prefix}#{$property}: $value;
+  }
+}
+
 //for responsive
 @mixin pcSize {
   @media (min-width: (1000px)) {
