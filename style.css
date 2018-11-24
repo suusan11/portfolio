@@ -547,6 +547,7 @@ html {
   .global-nav {
     visibility: hidden;
     width: 100px;
+    margin-top: -5px;
     margin-left: auto;
     text-align: right;
     background-color: #FFFFFF;
@@ -566,7 +567,7 @@ html {
     width: 100%;
     font-size: 15px;
     font-weight: 400;
-    padding: 10% 0;
+    padding: 20% 0;
   }
   .global-nav li a {
     color: #545454;
