@@ -57,7 +57,7 @@ function scrollCheck() {
 
     const show = document.getElementById('js-scroll-show');
 
-    if(scrollTotal < breakPointTotall) {
+    if(scrollTotal > breakPointTotall) {
         show.classList.add('is-show');
     }else {
         show.classList.remove('is-show');
