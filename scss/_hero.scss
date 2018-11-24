@@ -13,7 +13,7 @@
       display: inline-block;
       width: 100%;
       text-align: center;
-      @include vendorPrefix(animation, textshadow .8s 2s forwards ease-in);
+      @include vendorPrefix(animation, textShadow .8s 2s forwards ease-in);
       padding-bottom: 32px;
     }
 

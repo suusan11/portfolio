@@ -602,11 +602,11 @@ html {
   display: inline-block;
   width: 100%;
   text-align: center;
-  -webkit-animation: textshadow 0.8s 2s forwards ease-in;
-  -moz-animation: textshadow 0.8s 2s forwards ease-in;
-  -ms-animation: textshadow 0.8s 2s forwards ease-in;
-  -o-animation: textshadow 0.8s 2s forwards ease-in;
-  animation: textshadow 0.8s 2s forwards ease-in;
+  -webkit-animation: textShadow 0.8s 2s forwards ease-in;
+  -moz-animation: textShadow 0.8s 2s forwards ease-in;
+  -ms-animation: textShadow 0.8s 2s forwards ease-in;
+  -o-animation: textShadow 0.8s 2s forwards ease-in;
+  animation: textShadow 0.8s 2s forwards ease-in;
   padding-bottom: 32px;
 }
 
