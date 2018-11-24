@@ -13,9 +13,7 @@
       display: inline-block;
       width: 100%;
       text-align: center;
-      -webkit-animation: textShadow 0.8s 2s forwards ease-in;
-      -o-animation: textShadow 0.8s 2s forwards ease-in;
-      animation: textShadow 0.8s 2s forwards ease-in;
+      @include vendorPrefix(animation, textshadow .8s 2s forwards ease-in);
       padding-bottom: 32px;
     }
 
@@ -44,9 +42,7 @@
     }
 
     span.fallDown {
-      -webkit-animation: fallDown 1s forwards ease-in;
-      -o-animation: fallDown 1s forwards ease-in;
-      animation: fallDown 1s forwards ease-in;
+      @include vendorPrefix(animation, fallDown 1s forwards ease-in);
     }
 
     @-webkit-keyframes fallDown {
@@ -74,9 +70,7 @@
       color: $secondary-pink;
       text-shadow: 5px 2px 7px rgba(212, 115, 109, 0.4);
       padding-bottom: 10px;
-      -webkit-animation: showDelay 0.8s 2s forwards ease-in;
-      -o-animation: showDelay 0.8s 2s forwards ease-in;
-      animation: showDelay 0.8s 2s forwards ease-in;
+      @include vendorPrefix(animation, showDelay 0.8s 2s forwards ease-in);
     }
 
     @-webkit-keyframes showDelay {

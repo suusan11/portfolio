@@ -24,27 +24,19 @@
       opacity: 0;
 
       &:nth-child(1) {
-        -webkit-animation: scrollIn 1s forwards;
-        -o-animation: scrollIn 1s forwards;
-        animation: scrollIn 1s forwards;
+        @include vendorPrefix(animation, scrollIn 1s forwards);
       }
 
       &:nth-child(2) {
-        -webkit-animation: scrollIn 1s 1s forwards;
-        -o-animation: scrollIn 1s 1s forwards;
-        animation: scrollIn 1s 1s forwards;
+        @include vendorPrefix(animation, scrollIn 1s 1s forwards);
       }
 
       &:nth-child(3) {
-        -webkit-animation: scrollIn 1s 2s forwards;
-        -o-animation: scrollIn 1s 2s forwards;
-        animation: scrollIn 1s 2s forwards;
+        @include vendorPrefix(animation, scrollIn 1s 2s forwards);
       }
 
       &:nth-child(4) {
-        -webkit-animation: scrollIn 1s 3s forwards;
-        -o-animation: scrollIn 1s 3s forwards;
-        animation: scrollIn 1s 3s forwards;
+        @include vendorPrefix(animation, scrollIn 1s 3s forwards);
       }
 
       .icon--bg-white {
@@ -74,33 +66,33 @@
 
     @-webkit-keyframes scrollIn {
       from {
-        transform: translateY(500px);
+        @include vendorPrefix(transform, translateY(500px));
         opacity: 0;
       }
       to {
-        transform: translateY(0);
+        @include vendorPrefix(transform, translateY(0));
         opacity: 1;
       }
     }
 
     @-o-keyframes scrollIn {
       from {
-        transform: translateY(500px);
+        @include vendorPrefix(transform, translateY(500px));
         opacity: 0;
       }
       to {
-        transform: translateY(0);
+        @include vendorPrefix(transform, translateY(0));
         opacity: 1;
       }
     }
 
     @keyframes scrollIn {
       from {
-        transform: translateY(500px);
+        @include vendorPrefix(transform, translateY(500px));
         opacity: 0;
       }
       to {
-        transform: translateY(0);
+        @include vendorPrefix(transform, translateY(0));
         opacity: 1;
       }
     }
@@ -124,27 +116,19 @@
         opacity: 0;
 
         &:nth-child(1) {
-          -webkit-animation: scrollIn 1s forwards;
-          -o-animation: scrollIn 1s forwards;
-          animation: scrollIn 1s forwards;
+          @include vendorPrefix(animation, scrollIn 1s forwards);
         }
 
         &:nth-child(2) {
-          -webkit-animation: scrollIn 1s 1s forwards;
-          -o-animation: scrollIn 1s 1s forwards;
-          animation: scrollIn 1s 1s forwards;
+          @include vendorPrefix(animation, scrollIn 1s 1s forwards);
         }
 
         &:nth-child(3) {
-          -webkit-animation: scrollIn 1s 2s forwards;
-          -o-animation: scrollIn 1s 2s forwards;
-          animation: scrollIn 1s 2s forwards;
+          @include vendorPrefix(animation, scrollIn 1s 2s forwards);
         }
 
         &:nth-child(4) {
-          -webkit-animation: scrollIn 1s 3s forwards;
-          -o-animation: scrollIn 1s 3s forwards;
-          animation: scrollIn 1s 3s forwards;
+          @include vendorPrefix(animation, scrollIn 1s 3s forwards);
         }
 
         .icon--bg-white {
@@ -176,33 +160,33 @@
 
       @-webkit-keyframes scrollIn {
         from {
-          transform: translateY(500px);
+          @include vendorPrefix(transform, translateY(500px));
           opacity: 0;
         }
         to {
-          transform: translateY(0);
+          @include vendorPrefix(transform, translateY(0));
           opacity: 1;
         }
       }
 
       @-o-keyframes scrollIn {
         from {
-          transform: translateY(500px);
+          @include vendorPrefix(transform, translateY(500px));
           opacity: 0;
         }
         to {
-          transform: translateY(0);
+          @include vendorPrefix(transform, translateY(0));
           opacity: 1;
         }
       }
 
       @keyframes scrollIn {
         from {
-          transform: translateY(500px);
+          @include vendorPrefix(transform, translateY(500px));
           opacity: 0;
         }
         to {
-          transform: translateY(0);
+          @include vendorPrefix(transform, translateY(0));
           opacity: 1;
         }
       }
