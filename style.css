@@ -572,43 +572,19 @@ html {
 
 @media (min-width: 1000px) {
   .global-nav {
-    visibility: hidden;
     width: 100px;
-    margin-top: -5px;
-    margin-left: auto;
-    text-align: right;
-    background-color: #FFFFFF;
-    -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
-    transform: translateX(100%);
-    -webkit-transition: 0.5s transform ease-out;
-    -moz-transition: 0.5s transform ease-out;
-    -ms-transition: 0.5s transform ease-out;
-    -o-transition: 0.5s transform ease-out;
-    transition: 0.5s transform ease-out;
   }
   .global-nav li {
-    display: inline-block;
-    width: 100%;
-    font-size: 15px;
-    font-weight: 400;
     padding: 20% 0;
   }
-  .global-nav li a {
-    color: #545454;
+}
+
+@media (min-width: 640px) and (max-width: 999px) {
+  .global-nav {
+    width: 100px;
   }
-  .global-nav li a:hover {
-    opacity: 0.5;
-  }
-  .global-nav.open {
-    visibility: visible;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
+  .global-nav li {
+    padding: 20% 0;
   }
 }
 
