@@ -1,24 +1,34 @@
 @import "variable", "typography", "mixin";
 
 .global-nav {
-  //visibility: hidden;
+  visibility: hidden;
+  width: 100px;
+  margin-top: -5px;
   margin-left: auto;
   text-align: right;
+  background-color: $white;
+  @include vendorPrefix(transform, translateX(100%));
+  @include vendorPrefix(transition, .5s transform ease-out);
 
   li {
-    font-size: $font-size-base-mb - 5px;
-  }
+    display: inline-block;
+    width: 100%;
+    font-size: $font-size-base-pc - 5px;
+    font-weight: $font-weight-light;
+    padding: 20% 0;
 
-  a {
-    color: $black;
+    a {
+      color: $black;
 
-    &:hover {
-      opacity: 0.5;
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 
   &.open {
     visibility: visible;
+    @include vendorPrefix(transform, translateX(0));
   }
 }
 
@@ -47,13 +57,10 @@
           opacity: 0.5;
         }
       }
-
-      &.open {
-        visibility: visible;
-      }
     }
 
     &.open {
+      visibility: visible;
       @include vendorPrefix(transform, translateX(0));
     }
   }
