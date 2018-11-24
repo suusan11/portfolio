@@ -439,7 +439,7 @@ header .header__flex--right .nav-toggle {
 header .header__flex--right .nav-toggle span {
   display: inline-block;
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 0;
   width: 60%;
   height: 3px;
@@ -458,7 +458,7 @@ header .header__flex--right .nav-toggle span::before {
   height: 3px;
   display: block;
   position: absolute;
-  top: -10px;
+  top: 10px;
   background-color: #928484;
   border-radius: 30px;
   transition: transform 3s;
@@ -475,7 +475,7 @@ header .header__flex--right .nav-toggle span::after {
   height: 3px;
   display: block;
   position: absolute;
-  top: 10px;
+  top: 20px;
   background-color: #928484;
   border-radius: 30px;
   transition: transform 3s;
@@ -487,23 +487,27 @@ header .header__flex--right .nav-toggle span::after {
 }
 
 header .header__flex--right .nav-toggle.open span {
-  background-color: transparent;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
 }
 
 header .header__flex--right .nav-toggle.open span::before {
-  -webkit-transform: translateY(10px) rotate(-45deg);
-  -moz-transform: translateY(10px) rotate(-45deg);
-  -ms-transform: translateY(10px) rotate(-45deg);
-  -o-transform: translateY(10px) rotate(-45deg);
-  transform: translateY(10px) rotate(-45deg);
+  -webkit-transform: translateX(-5px);
+  -moz-transform: translateX(-5px);
+  -ms-transform: translateX(-5px);
+  -o-transform: translateX(-5px);
+  transform: translateX(-5px);
 }
 
 header .header__flex--right .nav-toggle.open span::after {
-  -webkit-transform: translateY(-10px) rotate(45deg);
-  -moz-transform: translateY(-10px) rotate(45deg);
-  -ms-transform: translateY(-10px) rotate(45deg);
-  -o-transform: translateY(-10px) rotate(45deg);
-  transform: translateY(-10px) rotate(45deg);
+  -webkit-transform: translateX(-10px);
+  -moz-transform: translateX(-10px);
+  -ms-transform: translateX(-10px);
+  -o-transform: translateX(-10px);
+  transform: translateX(-10px);
 }
 
 html {

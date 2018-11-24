@@ -54,7 +54,7 @@ header {
         span {
           display: inline-block;
           position: absolute;
-          top: 20px;
+          top: 10px;
           right: 0;
           width: 60%;
           height: 3px;
@@ -63,34 +63,26 @@ header {
           @include vendorPrefix(transition, .3s transform ease-out);
 
           &::before {
-            @include menuTrigger(-10px);
+            @include menuTrigger(10px);
             @include vendorPrefix(transition, .3s transform ease-out);
           }
 
           &::after {
-            @include menuTrigger(10px);
+            @include menuTrigger(20px);
             @include vendorPrefix(transition, .3s transform ease-out);
           }
         }
 
         &.open {
           span {
-            background-color: transparent;
+            @include vendorPrefix(transform, translateX(0));
 
             &::before {
-              -webkit-transform: translateY(10px) rotate(-45deg);
-              -moz-transform: translateY(10px) rotate(-45deg);
-              -ms-transform: translateY(10px) rotate(-45deg);
-              -o-transform: translateY(10px) rotate(-45deg);
-              transform: translateY(10px) rotate(-45deg);
+              @include vendorPrefix(transform, translateX(-5px));
             }
 
             &::after {
-              -webkit-transform: translateY(-10px) rotate(45deg);
-              -moz-transform: translateY(-10px) rotate(45deg);
-              -ms-transform: translateY(-10px) rotate(45deg);
-              -o-transform: translateY(-10px) rotate(45deg);
-              transform: translateY(-10px) rotate(45deg);
+              @include vendorPrefix(transform, translateX(-10px));
             }
           }
         }
