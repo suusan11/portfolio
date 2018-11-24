@@ -964,18 +964,6 @@ html {
   text-align: center;
 }
 
-.about__flex-item--right h3 {
-  margin-top: 5%;
-}
-
-.about__flex-item--right h3::after {
-  display: block;
-  content: '';
-  border-bottom: 3px solid #928484;
-  width: 30px;
-  margin: 18px auto 20px;
-}
-
 .about .text__container {
   width: 90%;
   margin: 5% auto;
@@ -1041,23 +1029,23 @@ html {
     text-align: right;
   }
   .about__flex-item--right .text__container {
-    width: 50%;
+    width: 90%;
     margin-right: 0;
     text-align: left;
     line-height: 2em;
-    padding: 8%;
+    padding: 3%;
   }
   .about__flex-item--right .text__container--blue {
     background-color: #B2E0F2;
   }
   .about__flex-item--right .text__container--pink {
-    margin: 15px 0 15px 80px;
+    margin-top: 5%;
     background-color: #FCECEA;
   }
   .about__flex-item--right .about__button {
     position: absolute;
-    bottom: 0;
-    left: 55%;
+    bottom: -5%;
+    left: 70%;
     width: 25%;
     margin-top: 2%;
     margin-right: 5%;
