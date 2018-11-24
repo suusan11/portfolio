@@ -445,7 +445,11 @@ header .header__flex--right .nav-toggle span {
   height: 3px;
   background-color: #928484;
   border-radius: 30px;
-  transition: .3s transform ease-out;
+  -webkit-transition: 0.3s transform ease-out;
+  -moz-transition: 0.3s transform ease-out;
+  -ms-transition: 0.3s transform ease-out;
+  -o-transition: 0.3s transform ease-out;
+  transition: 0.3s transform ease-out;
 }
 
 header .header__flex--right .nav-toggle span::before {
@@ -458,7 +462,11 @@ header .header__flex--right .nav-toggle span::before {
   background-color: #928484;
   border-radius: 30px;
   transition: transform 3s;
-  transition: .3s transform ease-out;
+  -webkit-transition: 0.3s transform ease-out;
+  -moz-transition: 0.3s transform ease-out;
+  -ms-transition: 0.3s transform ease-out;
+  -o-transition: 0.3s transform ease-out;
+  transition: 0.3s transform ease-out;
 }
 
 header .header__flex--right .nav-toggle span::after {
@@ -471,7 +479,11 @@ header .header__flex--right .nav-toggle span::after {
   background-color: #928484;
   border-radius: 30px;
   transition: transform 3s;
-  transition: .3s transform ease-out;
+  -webkit-transition: 0.3s transform ease-out;
+  -moz-transition: 0.3s transform ease-out;
+  -ms-transition: 0.3s transform ease-out;
+  -o-transition: 0.3s transform ease-out;
+  transition: 0.3s transform ease-out;
 }
 
 header .header__flex--right .nav-toggle.open span {

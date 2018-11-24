@@ -60,16 +60,16 @@ header {
           height: 3px;
           background-color: $brown;
           border-radius: 30px;
-          transition: .3s transform ease-out;
+          @include vendorPrefix(transition, .3s transform ease-out);
 
           &::before {
             @include menuTrigger(-10px);
-            transition: .3s transform ease-out;
+            @include vendorPrefix(transition, .3s transform ease-out);
           }
 
           &::after {
             @include menuTrigger(10px);
-            transition: .3s transform ease-out;
+            @include vendorPrefix(transition, .3s transform ease-out);
           }
         }
 
