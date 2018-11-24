@@ -401,6 +401,8 @@ header .header__flex {
 }
 
 header .header__flex--left {
+  display: flex;
+  align-items: center;
   width: 50%;
 }
 
@@ -412,14 +414,13 @@ header .header__flex--left img {
 }
 
 header .header__flex--left .header__text {
-  display: inline-block;
+  display: none;
   margin-left: 5%;
   letter-spacing: 0.2rem;
-  opacity: 0;
 }
 
-header .header__flex--left .header__text.active {
-  opacity: 1;
+header .header__flex--left .header__text.is-show {
+  display: inline-block;
 }
 
 header .header__flex--right {

@@ -18,6 +18,8 @@ header {
     background-color: $white;
 
     &--left {
+      display: flex;
+      align-items: center;
       width: 50%;
 
       img {
@@ -28,13 +30,12 @@ header {
       }
 
       .header__text {
-        display: inline-block;
+        display: none;
         margin-left: 5%;
         letter-spacing: 0.2rem;
-        opacity: 0;
 
-        &.active {
-          opacity: 1;
+        &.is-show {
+          display: inline-block;
         }
       }
     }
