@@ -114,14 +114,17 @@
 
 //responsive for before mb
 @include middleSize {
-  .hero__txt {
+  .hero {
+    padding-top: 50%;
 
-    h1 {
-      font-size: $font-size-h1-pc;
-    }
+    &__txt {
+      h1 {
+        font-size: $font-size-h1-pc;
+      }
 
-    h2 {
-      font-size: $font-size-h2-pc;
+      h2 {
+        font-size: $font-size-h2-pc;
+      }
     }
   }
 }

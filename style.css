@@ -800,6 +800,9 @@ html {
 }
 
 @media (min-width: 640px) and (max-width: 999px) {
+  .hero {
+    padding-top: 50%;
+  }
   .hero__txt h1 {
     font-size: 2.5rem;
   }
