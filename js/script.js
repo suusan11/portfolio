@@ -37,7 +37,6 @@ function navToggle() {
     if (toggleBtn.classList.contains("open") === false) {
         toggleBtn.classList.add("open");
         navShow.classList.add("open");
-        console.log("run");
     } else {
         toggleBtn.classList.remove("open");
         navShow.classList.remove("open");
