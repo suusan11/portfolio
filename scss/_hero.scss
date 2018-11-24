@@ -34,7 +34,7 @@
 
     span {
       display: inline-block;
-      transform: translateY(-1000px);
+      @include vendorPrefix(transform, translateY(-1000px));
 
       &:nth-child(3) {
         padding-right: 2%;
@@ -46,21 +46,21 @@
     }
 
     @-webkit-keyframes fallDown {
-      0% {transform: translateY(-1000px);}
-      50% {transform: translateY(-500px);}
-      100% {transform: translateY(0);}
+      0% {@include vendorPrefix(transform, translateY(-1000px));}
+      50% {@include vendorPrefix(transform, translateY(-500px));}
+      100% {@include vendorPrefix(transform, translateY(0));}
     }
 
     @-o-keyframes fallDown {
-      0% {transform: translateY(-1000px);}
-      50% {transform: translateY(-500px);}
-      100% {transform: translateY(0);}
+      0% {@include vendorPrefix(transform, translateY(-1000px));}
+      50% {@include vendorPrefix(transform, translateY(-500px));}
+      100% {@include vendorPrefix(transform, translateY(0));}
     }
 
     @keyframes fallDown {
-      0% {transform: translateY(-1000px);}
-      50% {transform: translateY(-500px);}
-      100% {transform: translateY(0);}
+      0% {@include vendorPrefix(transform, translateY(-1000px));}
+      50% {@include vendorPrefix(transform, translateY(-500px));}
+      100% {@include vendorPrefix(transform, translateY(0));}
     }
 
     h2 {
