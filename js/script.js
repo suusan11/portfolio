@@ -51,8 +51,8 @@ function scrollCheck() {
     const headerHeight = document.getElementById('js-header').clientHeight; //headerの高さをとる
     const scrollTotal = scrollValue + headerHeight; //headerを含んだ高さの取得
 
-    const breakPoint = document.getElementById('js-breakPoint').clientHeight;
-    const objectTop = document.getElementById('js-breakPoint').offsetTop;
+    const breakPoint = document.getElementById('js-breakPoint').clientHeight; //objectの高さ
+    const objectTop = document.getElementById('js-breakPoint').offsetTop; //objectの座標高さ
     const breakPointTotall = breakPoint + objectTop;
 
     const show = document.getElementById('js-scroll-show');
