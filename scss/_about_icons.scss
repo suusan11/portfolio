@@ -102,6 +102,7 @@
 @include pcSize {
   .about__part {
     padding: 0;
+    margin-top: 10%;
 
     h2 {
       padding: 3% 0 0 0;
@@ -196,6 +197,8 @@
 
 @include middleSize {
   .about__part {
+    margin-top: 10%;
+
     &__flex {
       justify-content: space-around;
 

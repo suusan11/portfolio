@@ -1640,6 +1640,7 @@ html {
 @media (min-width: 1000px) {
   .about__part {
     padding: 0;
+    margin-top: 10%;
   }
   .about__part h2 {
     padding: 3% 0 0 0;
@@ -1761,6 +1762,9 @@ html {
 }
 
 @media (min-width: 640px) and (max-width: 999px) {
+  .about__part {
+    margin-top: 10%;
+  }
   .about__part__flex {
     justify-content: space-around;
   }
