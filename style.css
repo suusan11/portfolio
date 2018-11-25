@@ -1478,11 +1478,6 @@ html {
   }
 }
 
-.about__header img {
-  width: 30px;
-  height: 35px;
-}
-
 html {
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -1503,7 +1498,6 @@ html {
   width: 100%;
   background-color: #FCECEA;
   padding: 5% 0;
-  margin: 2% 0 0 0;
 }
 
 .about__part h2 {
@@ -1516,7 +1510,7 @@ html {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  text-align: center;
+  text-align: left;
 }
 
 .about__part__flex-item {
@@ -1706,7 +1700,7 @@ html {
   }
   .about__part__flex-item p {
     font-size: 20px;
-    text-align: justify;
+    text-align: left;
     line-height: 170%;
     letter-spacing: 0.5px;
   }
