@@ -3,7 +3,7 @@
 .works__introduction {
   width: 100%;
   padding: 10% 0;
-  margin-top: 10%;
+  margin-top: 30%;
   background-color: $primary-pink;
 
   &__container {
@@ -35,7 +35,7 @@
     font-weight: $font-weight-bold;
     color: $secondary-pink;
     border: 2px solid $secondary-pink;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: $white;
     cursor: pointer;
 
@@ -53,6 +53,8 @@
     width: 550px;
     height: auto;
     border-radius: 5%;
+    padding: 5% 0;
+    margin-top: 15%;
     margin-left: 10%;
   }
 }
