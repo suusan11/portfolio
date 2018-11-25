@@ -345,10 +345,6 @@ a:hover {
   }
 }
 
-.bg-color--primarypink {
-  background-color: #FCECEA;
-}
-
 html {
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -1195,6 +1191,7 @@ html {
   width: 100%;
   padding: 10% 0;
   margin-top: 10%;
+  background-color: #FCECEA;
 }
 
 .introduction__container {
