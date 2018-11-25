@@ -1,6 +1,6 @@
 @import "variable", "mixin";
 
-.link {
+.works__link {
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -17,7 +17,7 @@
 }
 
 @include pcSize {
-  .link {
+  .works__link {
     justify-content: space-around;
 
     h4 {

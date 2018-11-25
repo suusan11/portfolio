@@ -1187,25 +1187,25 @@ html {
   }
 }
 
-.introduction {
+.works__introduction {
   width: 100%;
   padding: 10% 0;
   margin-top: 10%;
   background-color: #FCECEA;
 }
 
-.introduction__container {
+.works__introduction__container {
   width: 80%;
   text-align: left;
   margin: 0 auto;
 }
 
-.introduction__container h1 {
+.works__introduction__container h1 {
   display: inline-block;
   padding-bottom: 10%;
 }
 
-.introduction__container h1::after {
+.works__introduction__container h1::after {
   display: block;
   content: '';
   border-bottom: 3px solid #928484;
@@ -1213,11 +1213,11 @@ html {
   margin: 12px auto 12px;
 }
 
-.introduction__container p {
+.works__introduction__container p {
   line-height: 24px;
 }
 
-.introduction button {
+.works__introduction button {
   display: block;
   width: 180px;
   height: 50px;
@@ -1232,14 +1232,14 @@ html {
   cursor: pointer;
 }
 
-.introduction button:hover {
+.works__introduction button:hover {
   color: #FFFFFF;
   background-color: #EE817B;
   transition: .3s ease-out;
 }
 
 @media (min-width: 1000px) {
-  .introduction {
+  .works__introduction {
     width: 550px;
     height: auto;
     border-radius: 5%;
@@ -1289,7 +1289,7 @@ html {
   }
 }
 
-.style {
+.works__style {
   width: 90%;
   margin: 0 auto;
   padding: 2% 0;
@@ -1298,30 +1298,30 @@ html {
   background-color: #FFFFFF;
 }
 
-.style__flex {
+.works__style__flex {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.style__color, .style__font {
+.works__style__color, .works__style__font {
   width: 80%;
   margin: 3% auto;
   text-align: left;
 }
 
-.style__color h4, .style__font h4 {
+.works__style__color h4, .works__style__font h4 {
   display: inline-block;
   padding: 7% 0;
   margin-right: 7%;
 }
 
-.style__color .colors, .style__font .colors {
+.works__style__color .colors, .works__style__font .colors {
   width: 100%;
 }
 
-.style__color .colors span, .style__font .colors span {
+.works__style__color .colors span, .works__style__font .colors span {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -1331,22 +1331,22 @@ html {
   margin: 3% 3% 0 0;
 }
 
-.style__color .fonts, .style__font .fonts {
+.works__style__color .fonts, .works__style__font .fonts {
   width: 100%;
 }
 
-.style__color .fonts h2.font--lato, .style__font .fonts h2.font--lato {
+.works__style__color .fonts h2.font--lato, .works__style__font .fonts h2.font--lato {
   display: inline-block;
   font-family: "Lato", sans-serif;
   margin-right: 2%;
 }
 
-.style__color .fonts p, .style__font .fonts p {
+.works__style__color .fonts p, .works__style__font .fonts p {
   display: inline-block;
 }
 
 @media (min-width: 1000px) {
-  .style {
+  .works__style {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1354,7 +1354,7 @@ html {
     height: 210px;
     margin: 0 auto;
   }
-  .style__color, .style__font {
+  .works__style__color, .works__style__font {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1362,19 +1362,19 @@ html {
   }
 }
 
-.link {
+.works__link {
   display: flex;
   justify-content: space-between;
   text-align: center;
   margin: 15% 0 20%;
 }
 
-.link h4 {
+.works__link h4 {
   display: inline-block;
   color: #EE817B;
 }
 
-.link h4::after {
+.works__link h4::after {
   display: block;
   content: '';
   border-bottom: 3px solid #EE817B;
@@ -1383,13 +1383,13 @@ html {
 }
 
 @media (min-width: 1000px) {
-  .link {
+  .works__link {
     justify-content: space-around;
   }
-  .link h4 {
+  .works__link h4 {
     position: relative;
   }
-  .link h4::after {
+  .works__link h4::after {
     display: block;
     content: '';
     border-bottom: 3px solid #EE817B;
@@ -1402,7 +1402,7 @@ html {
     visibility: hidden;
     transition: .3s ease-in;
   }
-  .link h4:hover::after {
+  .works__link h4:hover::after {
     top: -60%;
     opacity: 1;
     visibility: visible;

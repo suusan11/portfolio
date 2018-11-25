@@ -1,6 +1,6 @@
 @import "variable", "typography", "mixin";
 
-.style {
+.works__style {
   width: 90%;
   margin: 0 auto;
   padding: 2% 0;
@@ -57,7 +57,7 @@
 }
 
 @include pcSize {
-  .style {
+  .works__style {
     display: flex;
     justify-content: center;
     align-items: center;

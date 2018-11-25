@@ -1,6 +1,6 @@
 @import "variable", "mixin", "typography";
 
-.introduction {
+.works__introduction {
   width: 100%;
   padding: 10% 0;
   margin-top: 10%;
@@ -49,7 +49,7 @@
 
 //responsive for PC
 @include pcSize {
-  .introduction {
+  .works__introduction {
     width: 550px;
     height: auto;
     border-radius: 5%;
