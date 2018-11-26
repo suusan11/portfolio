@@ -1202,17 +1202,10 @@ html {
   margin: 0 auto;
 }
 
-.works__introduction__container h1 {
+.works__introduction__container h2 {
   display: inline-block;
+  letter-spacing: 0.15em;
   padding-bottom: 10%;
-}
-
-.works__introduction__container h1::after {
-  display: block;
-  content: '';
-  border-bottom: 3px solid #928484;
-  width: 30px;
-  margin: 12px auto 12px;
 }
 
 .works__introduction__container p {
@@ -1248,6 +1241,11 @@ html {
     padding: 5% 0;
     margin-top: 15%;
     margin-left: 10%;
+  }
+  .works__introduction .information {
+    border-left: 5px solid #EE817B;
+    padding-left: 5%;
+    margin-bottom: 5%;
   }
 }
 

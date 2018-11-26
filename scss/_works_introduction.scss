@@ -11,13 +11,10 @@
     text-align: left;
     margin: 0 auto;
 
-    h1 {
+    h2 {
       display: inline-block;
+      letter-spacing: 0.15em;
       padding-bottom: 10%;
-
-      &::after {
-        @include guideLineW($brown, 12px, 12px);
-      }
     }
 
     p {
@@ -56,5 +53,11 @@
     padding: 5% 0;
     margin-top: 15%;
     margin-left: 10%;
+
+    .information {
+      border-left: 5px solid $secondary-pink;
+      padding-left: 5%;
+      margin-bottom: 5%;
+    }
   }
 }
