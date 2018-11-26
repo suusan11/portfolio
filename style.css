@@ -2,17 +2,17 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
-@import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
-@import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
-@import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
-@import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
-@import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
-@import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
-@import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
-@import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
-@import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
-@import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato:400,700" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700|Lato:300,400,700" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700|Lato:300,400,700" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700|Lato:300,400,700" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700|Lato:300,400,700" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700|Lato:300,400,700" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700|Lato:300,400,700" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700|Lato:300,400,700" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700|Lato:300,400,700" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700|Lato:300,400,700" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700|Lato:300,400,700" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700|Lato:300,400,700" rel="stylesheet');
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -553,7 +553,7 @@ html {
   display: inline-block;
   width: 100%;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 300;
   padding: 15% 0;
 }
 
@@ -1247,6 +1247,13 @@ html {
     padding-left: 5%;
     margin-bottom: 5%;
   }
+  .works__introduction .information p {
+    line-height: 1.5em;
+  }
+  .works__introduction .description {
+    font-weight: 300;
+    letter-spacing: 0.05em;
+  }
 }
 
 .works__images {
@@ -1578,7 +1585,7 @@ html {
 
 .about__part__flex-item p {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 200%;
   letter-spacing: 1px;
   margin-top: 10%;

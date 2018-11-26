@@ -58,6 +58,15 @@
       border-left: 5px solid $secondary-pink;
       padding-left: 5%;
       margin-bottom: 5%;
+
+      p {
+        line-height: 1.5em;
+      }
+    }
+
+    .description {
+      font-weight: $font-weight-light;
+      letter-spacing: 0.05em;
     }
   }
 }
