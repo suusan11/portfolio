@@ -1262,6 +1262,7 @@ html {
   height: auto;
   background-color: #fafafa;
   text-align: center;
+  margin: 10% 0;
 }
 
 .works__images .image__frame img {
@@ -1269,8 +1270,15 @@ html {
 }
 
 @media (min-width: 1000px) {
+  .works__images {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .works__images .image__frame {
+    margin: 10% auto;
+  }
   .works__images .image__frame img {
-    width: 70%;
+    width: 50%;
   }
 }
 
