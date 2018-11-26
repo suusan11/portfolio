@@ -42,7 +42,13 @@ function navToggle() {
         navShow.classList.remove("open");
     }
 }
+
 document.getElementById("js-nav-toggle").addEventListener("click", navToggle);
+document.getElementById("js-global-nav-list1").addEventListener("click", navToggle);
+document.getElementById("js-global-nav-list2").addEventListener("click", navToggle);
+document.getElementById("js-global-nav-list3").addEventListener("click", navToggle);
+document.getElementById("js-global-nav-list4").addEventListener("click", navToggle);
+
 
 
 //get scroll position

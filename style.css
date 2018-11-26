@@ -576,7 +576,7 @@ html {
 
 @media (min-width: 1000px) {
   .global-nav {
-    width: 100px;
+    width: 300px;
   }
   .global-nav li {
     padding: 20% 0;
