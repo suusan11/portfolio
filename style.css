@@ -538,8 +538,6 @@ html {
   visibility: hidden;
   width: 80px;
   margin-top: -5px;
-  margin-left: auto;
-  text-align: right;
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
   -ms-transform: translateX(100%);
