@@ -853,7 +853,8 @@ html {
   content: '';
   display: block;
   width: 100%;
-  border-bottom: 10px solid #EE817B;
+  border-bottom: 5px solid #EE817B;
+  border-radius: 20px;
 }
 
 @media (min-width: 1000px) {
@@ -884,7 +885,8 @@ html {
     content: '';
     display: block;
     width: 0;
-    border-bottom: 10px solid #EE817B;
+    border-bottom: 5px solid #EE817B;
+    border-radius: 20px;
     transition: width .3s ease-in;
   }
   .thumbnail:hover h4::after {

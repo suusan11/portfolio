@@ -22,7 +22,8 @@
         content: '';
         display: block;
         width: 100%;
-        border-bottom: 10px solid $secondary-pink;
+        border-bottom: 5px solid $secondary-pink;
+        border-radius: 20px;
       }
     }
   }
@@ -58,7 +59,8 @@
         content: '';
         display: block;
         width: 0;
-        border-bottom: 10px solid $secondary-pink;
+        border-bottom: 5px solid $secondary-pink;
+        border-radius: 20px;
         transition: width .3s ease-in;
       }
     }
