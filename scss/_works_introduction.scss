@@ -17,8 +17,21 @@
       padding-bottom: 10%;
     }
 
-    p {
-      line-height: 24px;
+    .information {
+      border-left: 5px solid $secondary-pink;
+      padding-left: 5%;
+      margin-bottom: 5%;
+
+      p {
+        line-height: 1.5em;
+      }
+    }
+
+    .description {
+      font-weight: $font-weight-light;
+      letter-spacing: 0.05em;
+      line-height: 1.5em;
+      font-size: $font-size-base-mb - 2px;
     }
   }
 
@@ -54,6 +67,10 @@
     margin-top: 15%;
     margin-left: 10%;
 
+    h2 {
+      padding-bottom: 10%;
+    }
+
     .information {
       border-left: 5px solid $secondary-pink;
       padding-left: 5%;
@@ -67,6 +84,33 @@
     .description {
       font-weight: $font-weight-light;
       letter-spacing: 0.05em;
+      font-size: $font-size-base-pc - 3px;
+    }
+  }
+}
+
+//responsive for middle size
+@include middleSize {
+  .works__introduction {
+    margin: 15% 0;
+
+    h2 {
+      font-size: $font-size-h2-pc;
+      padding-bottom: 5%;
+    }
+
+    .information {
+      padding-left: 3%;
+      margin-bottom: 5%;
+
+      p {
+        font-size: $font-size-base-pc;
+        line-height: 1.5em;
+      }
+    }
+
+    .description {
+      font-size: $font-size-base-pc - 3px;
     }
   }
 }
