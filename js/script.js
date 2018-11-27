@@ -61,12 +61,18 @@ function scrollCheck() {
     const objectTop = document.getElementById('js-breakPoint').offsetTop; //objectの座標高さ
     const breakPointTotall = breakPoint + objectTop;
 
-    const show = document.getElementById('js-scroll-show');
+    const textShow = document.getElementById('js-scroll-show');
+    const expand = document.getElementById('js-logo-container');
+    const navHide = document.getElementById('js-nav-container');
 
     if(scrollTotal > breakPointTotall) {
-        show.classList.add('is-show');
+        textShow.classList.add('is-show');
+        expand.classList.add('is-expand');
+        navHide.classList.add('is-hide');
     }else {
-        show.classList.remove('is-show');
+        textShow.classList.remove('is-show');
+        expand.classList.remove('is-expand');
+        navHide.classList.remove('is-hide');
     }
 }
 
