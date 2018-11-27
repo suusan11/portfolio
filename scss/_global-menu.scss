@@ -4,6 +4,7 @@
   visibility: hidden;
   width: 80px;
   margin-top: -5px;
+  margin-left: auto;
   @include vendorPrefix(transform, translateX(100%));
   @include vendorPrefix(transition, .5s transform ease-out);
 
