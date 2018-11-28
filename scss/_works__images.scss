@@ -14,6 +14,7 @@
 
     img {
       width: 100%;
+      margin: 2% auto;
     }
   }
 }
@@ -26,11 +27,16 @@
     margin: 0 auto;
 
     .image__frame {
+      height: 400px;
       border-radius: 30px;
       margin: 10% auto;
+      vertical-align: middle;
 
       img {
+        display: inline-block;
         width: 50%;
+        height: 90%;
+        object-fit: cover;
       }
     }
   }
