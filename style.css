@@ -988,6 +988,9 @@ html {
 }
 
 @media (min-width: 1000px) {
+  .values__block {
+    margin-left: 3%;
+  }
   .values__block--heading {
     margin-bottom: 2%;
   }
@@ -1101,7 +1104,8 @@ html {
     width: 100%;
   }
   .about__flex-item--right {
-    width: 70%;
+    width: 60%;
+    margin-right: 3%;
     position: relative;
     text-align: right;
   }
