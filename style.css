@@ -843,6 +843,7 @@ html {
 .works__thumbnails .thumbnail {
   height: 150px;
   text-align: right;
+  margin: 0 auto 30%;
   padding: 8% 0;
 }
 
@@ -855,14 +856,6 @@ html {
 .works__thumbnails .thumbnail h4 {
   display: inline-block;
   margin: 2% 5% 0 0;
-}
-
-.works__thumbnails .thumbnail h4::after {
-  content: '';
-  display: block;
-  width: 100%;
-  border-bottom: 5px solid #EE817B;
-  border-radius: 20px;
 }
 
 @media (min-width: 1000px) {
@@ -912,7 +905,7 @@ html {
     height: 150px;
     border-radius: 20px;
     padding: 0;
-    margin: 0 auto;
+    margin: 0 0 20% auto;
   }
   .works__thumbnails .thumbnail img {
     width: 100%;
