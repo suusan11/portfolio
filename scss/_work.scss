@@ -28,25 +28,21 @@
     width: 70%;
     height: 150px;
     border-radius: 20px;
-    margin-bottom: 10%;
+    margin-bottom: 13%;
     margin-left: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    flex-direction: row-reverse;
+    text-align: right;
 
     img {
-      width: 100%;
+      width: 80%;
       height: 150px;
       object-fit: cover;
       border-radius: 20px;
       cursor: pointer;
     }
 
-    h4 {
-      display: inline-block;
+    p {
       letter-spacing: 0.2em;
-      margin-left: 10%;
+      padding-right: 2%;
 
       &::after {
         content: '';
@@ -72,7 +68,7 @@
     margin: 0 auto;
 
     .thumbnail {
-      width: 60%;
+      width: 70%;
       height: 150px;
       border-radius: 20px;
       padding: 0;

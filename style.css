@@ -863,26 +863,22 @@ html {
     width: 70%;
     height: 150px;
     border-radius: 20px;
-    margin-bottom: 10%;
+    margin-bottom: 13%;
     margin-left: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    flex-direction: row-reverse;
+    text-align: right;
   }
   .thumbnail img {
-    width: 100%;
+    width: 80%;
     height: 150px;
     object-fit: cover;
     border-radius: 20px;
     cursor: pointer;
   }
-  .thumbnail h4 {
-    display: inline-block;
+  .thumbnail p {
     letter-spacing: 0.2em;
-    margin-left: 10%;
+    padding-right: 2%;
   }
-  .thumbnail h4::after {
+  .thumbnail p::after {
     content: '';
     display: block;
     width: 0;
@@ -901,7 +897,7 @@ html {
     margin: 0 auto;
   }
   .works__thumbnails .thumbnail {
-    width: 60%;
+    width: 70%;
     height: 150px;
     border-radius: 20px;
     padding: 0;
