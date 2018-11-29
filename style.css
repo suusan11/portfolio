@@ -106,11 +106,20 @@ main {
 
 section {
   margin: 30% 0;
+  padding-top: 25%;
 }
 
 @media (min-width: 1000px) {
   section {
     margin: 15% 0;
+    padding-top: 5%;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 999px) {
+  section {
+    margin: 15% 0;
+    padding-top: 10%;
   }
 }
 

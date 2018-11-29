@@ -25,11 +25,16 @@ main {
 
 section {
   margin: 30% 0;
-}
+  padding-top: 25%;
 
-@include pcSize {
-  section {
+  @include pcSize {
     margin: 15% 0;
+    padding-top: 5%;
+  }
+
+  @include middleSize {
+    margin: 15% 0;
+    padding-top: 10%;
   }
 }
 
