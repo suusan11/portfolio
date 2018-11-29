@@ -980,7 +980,7 @@ html {
 }
 
 .values__block--detail {
-  margin: 5% 0 0 10%;
+  margin: 6% 0 0 10%;
 }
 
 .values__block--detail li {
@@ -989,28 +989,26 @@ html {
 }
 
 @media (min-width: 1000px) {
-  .values__block {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 8% auto 0 3%;
-    padding: 2% 0;
-  }
   .values__block--heading {
-    margin-bottom: 0;
-  }
-  .values__block h3 {
-    font-size: 1.5rem;
-    width: 500px;
+    margin-bottom: 2%;
   }
   .values__block--detail {
-    margin: 0 0 0 5%;
+    margin-top: 0;
+  }
+  .values__block--detail li {
+    padding: 1.5%;
   }
 }
 
 @media (min-width: 640px) and (max-width: 999px) {
   .values__block--heading {
-    margin-bottom: 0;
+    margin-bottom: 2%;
+  }
+  .values__block--detail {
+    margin-top: 0;
+  }
+  .values__block--detail li {
+    padding: 1.5%;
   }
 }
 

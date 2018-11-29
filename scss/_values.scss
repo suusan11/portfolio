@@ -34,7 +34,7 @@
 
 
     &--detail {
-      margin: 5% 0 0 10%;
+      margin: 6% 0 0 10%;
 
       li {
         list-style-type: disc;
@@ -45,29 +45,34 @@
 
 @include pcSize {
   .values__block {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 8% auto 0 3%;
-    padding: 2% 0;
 
     &--heading {
-      margin-bottom: 0;
-    }
-
-    h3 {
-      font-size: $font-size-h3-pc;
-      width: 500px;
+      margin-bottom: 2%;
     }
 
     &--detail {
-      margin: 0 0 0 5%;
+      margin-top: 0;
+
+      li {
+        padding: 1.5%;
+      }
     }
   }
 }
 
 @include middleSize {
-  .values__block--heading {
-    margin-bottom: 0;
+  .values__block {
+
+    &--heading {
+      margin-bottom: 2%;
+    }
+
+    &--detail {
+      margin-top: 0;
+
+      li {
+        padding: 1.5%;
+      }
+    }
   }
 }
