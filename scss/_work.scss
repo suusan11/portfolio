@@ -21,6 +21,10 @@
         display: inline-block;
         margin: 2% 5% 0 0;
       }
+
+      &:hover img {
+        opacity: 0.8;
+      }
     }
   }
 }
@@ -50,19 +54,10 @@
       p {
         letter-spacing: 0.2em;
         padding-right: 2%;
-
-        &::after {
-          content: '';
-          display: block;
-          width: 0;
-          border-bottom: 5px solid $secondary-pink;
-          border-radius: 20px;
-          transition: width .3s ease-in;
-        }
       }
 
-      &:hover h4::after {
-        width: 100%;
+      &:hover img {
+        opacity: 0.8;
       }
     }
   }
@@ -93,21 +88,8 @@
           cursor: pointer;
         }
 
-        h4 {
+        p {
           margin: 2% 5% 0 0;
-
-          &::after {
-            content: '';
-            display: block;
-            width: 0;
-            border-bottom: 5px solid $secondary-pink;
-            border-radius: 20px;
-            transition: width .3s ease-in;
-          }
-        }
-
-        &:hover h4::after {
-          width: 100%;
         }
       }
     }
