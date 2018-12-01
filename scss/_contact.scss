@@ -27,6 +27,9 @@
 
 //responsive for pc
 @include pcSize {
+  .contact {
+    margin-bottom: 10%;
+  }
   .contact__text {
     line-height: 50px;
   }

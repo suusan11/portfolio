@@ -105,8 +105,7 @@ main {
 }
 
 section {
-  margin: 30% 0;
-  padding-top: 25%;
+  margin: 10% 0;
 }
 
 @media (min-width: 1000px) {
@@ -838,6 +837,10 @@ html {
   }
 }
 
+.works {
+  padding-top: 5%;
+}
+
 .works__thumbnails {
   width: 100%;
 }
@@ -944,6 +947,10 @@ html {
   }
 }
 
+.values {
+  padding-top: 5%;
+}
+
 .values__block {
   width: 100%;
   margin: 5% auto 15% 0;
@@ -1032,6 +1039,7 @@ html {
 
 .about {
   text-align: center;
+  padding-top: 5%;
 }
 
 .about img {
@@ -1191,6 +1199,9 @@ html {
 }
 
 @media (min-width: 1000px) {
+  .contact {
+    margin-bottom: 10%;
+  }
   .contact__text {
     line-height: 50px;
   }
