@@ -4,7 +4,7 @@
   width: 100%;
   min-height: 600px;
   margin-top: 0;
-  padding-top: 80%;
+  padding-top: 100%;
 
   &__txt {
 
@@ -95,10 +95,11 @@
 //responsive for PC
 @include pcSize {
   .hero {
-    padding-top: 25%;
+    padding-top: 300px;
     text-align: center;
 
     &__txt {
+      text-align: center;
 
       h1 {
         font-size: $font-size-h1-pc;
@@ -115,7 +116,7 @@
 //responsive for before mb
 @include middleSize {
   .hero {
-    padding-top: 50%;
+    padding-top: 45%;
 
     &__txt {
       h1 {
