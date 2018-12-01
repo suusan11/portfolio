@@ -1112,9 +1112,10 @@ html {
   .about__flex-item--left {
     width: 30%;
     margin-left: 10%;
+    margin-bottom: 20%;
   }
   .about__flex-item--left img {
-    width: 80%;
+    width: 100%;
   }
   .about__flex-item--right {
     width: 60%;
