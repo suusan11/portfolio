@@ -6,7 +6,7 @@
   &__text {
     margin: 50px auto 30px;
     width: 70%;
-    line-height: 50px;
+    line-height: 35px;
   }
 }
 
@@ -24,3 +24,10 @@
   }
 }
 
+
+//responsive for pc
+@include pcSize {
+  .contact__text {
+    line-height: 50px;
+  }
+}

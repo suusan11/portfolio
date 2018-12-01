@@ -855,7 +855,7 @@ html {
   object-fit: cover;
 }
 
-.works__thumbnails .thumbnail h4 {
+.works__thumbnails .thumbnail p {
   display: inline-block;
   margin: 2% 5% 0 0;
 }
@@ -979,7 +979,7 @@ html {
 }
 
 .values__block--detail {
-  margin: 6% 0 0 10%;
+  margin: 8% 0 0 10%;
 }
 
 .values__block--detail li {
@@ -1168,7 +1168,7 @@ html {
 .contact__text {
   margin: 50px auto 30px;
   width: 70%;
-  line-height: 50px;
+  line-height: 35px;
 }
 
 .icon--bg-pink {
@@ -1188,6 +1188,12 @@ html {
 .icon--bg-pink:hover {
   opacity: 0.8;
   filter: none;
+}
+
+@media (min-width: 1000px) {
+  .contact__text {
+    line-height: 50px;
+  }
 }
 
 html {
