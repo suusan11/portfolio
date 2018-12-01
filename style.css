@@ -1046,7 +1046,7 @@ html {
 }
 
 .about img {
-  width: 40%;
+  width: 60%;
   border-radius: 50% 40% 50% 50%/50% 50% 50% 40%;
   margin: 3% 0;
 }
@@ -1115,7 +1115,7 @@ html {
     margin-bottom: 20%;
   }
   .about__flex-item--left img {
-    width: 100%;
+    width: 80%;
   }
   .about__flex-item--right {
     width: 60%;
