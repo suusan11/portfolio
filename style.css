@@ -838,7 +838,7 @@ html {
 }
 
 .works {
-  padding-top: 5%;
+  padding-top: 25%;
 }
 
 .works__thumbnails {
@@ -864,7 +864,10 @@ html {
 }
 
 @media (min-width: 1000px) {
-  .thumbnail {
+  .works {
+    padding-top: 5%;
+  }
+  .works .thumbnail {
     width: 70%;
     height: 150px;
     border-radius: 20px;
@@ -872,18 +875,18 @@ html {
     margin-left: auto;
     text-align: right;
   }
-  .thumbnail img {
+  .works .thumbnail img {
     width: 80%;
     height: 150px;
     object-fit: cover;
     border-radius: 20px;
     cursor: pointer;
   }
-  .thumbnail p {
+  .works .thumbnail p {
     letter-spacing: 0.2em;
     padding-right: 2%;
   }
-  .thumbnail p::after {
+  .works .thumbnail p::after {
     content: '';
     display: block;
     width: 0;
@@ -891,7 +894,7 @@ html {
     border-radius: 20px;
     transition: width .3s ease-in;
   }
-  .thumbnail:hover h4::after {
+  .works .thumbnail:hover h4::after {
     width: 100%;
   }
 }
@@ -948,7 +951,7 @@ html {
 }
 
 .values {
-  padding-top: 5%;
+  padding-top: 25%;
 }
 
 .values__block {
@@ -995,6 +998,9 @@ html {
 }
 
 @media (min-width: 1000px) {
+  .values {
+    padding-top: 5%;
+  }
   .values__block {
     margin-left: 3%;
   }
@@ -1039,7 +1045,7 @@ html {
 
 .about {
   text-align: center;
-  padding-top: 5%;
+  padding-top: 25%;
 }
 
 .about img {
@@ -1099,6 +1105,9 @@ html {
 }
 
 @media (min-width: 1000px) {
+  .about {
+    padding-top: 5%;
+  }
   .about__flex {
     display: flex;
     justify-content: space-around;
@@ -1131,7 +1140,7 @@ html {
     margin-top: 5%;
     background-color: #FCECEA;
   }
-  .about__flex-item--right .about__button {
+  .about__flex-item--right__button {
     position: absolute;
     bottom: -5%;
     right: 0;
@@ -1143,13 +1152,13 @@ html {
     text-align: center;
     cursor: pointer;
   }
-  .about__flex-item--right .about__button a {
+  .about__flex-item--right__button a {
     color: #545454;
   }
-  .about__flex-item--right .about__button:hover {
+  .about__flex-item--right__button:hover {
     background-color: #EE817B;
   }
-  .about__flex-item--right .about__button:hover a {
+  .about__flex-item--right__button:hover a {
     color: #FFFFFF;
     font-weight: 700;
   }
@@ -1171,6 +1180,7 @@ html {
 
 .contact {
   text-align: center;
+  padding-top: 25%;
 }
 
 .contact__text {
@@ -1200,6 +1210,7 @@ html {
 
 @media (min-width: 1000px) {
   .contact {
+    padding-top: 0;
     margin-bottom: 10%;
   }
   .contact__text {

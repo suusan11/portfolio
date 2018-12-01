@@ -2,6 +2,7 @@
 
 .contact {
   text-align: center;
+  padding-top: 25%;
 
   &__text {
     margin: 50px auto 30px;
@@ -28,6 +29,7 @@
 //responsive for pc
 @include pcSize {
   .contact {
+    padding-top: 0;
     margin-bottom: 10%;
   }
   .contact__text {

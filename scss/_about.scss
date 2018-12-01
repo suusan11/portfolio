@@ -2,7 +2,7 @@
 
 .about {
   text-align: center;
-  padding-top: 5%;
+  padding-top: 25%;
 
   img {
     width: 40%;
@@ -66,25 +66,28 @@
 
 
 @include pcSize {
-  .about__flex {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  .about {
+    padding-top: 5%;
 
-    &-item--left {
-      width: 30%;
-      margin-left: 10%;
+    &__flex {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
 
-      img {
-        width: 90%;
+      &-item--left {
+        width: 30%;
+        margin-left: 10%;
+
+        img {
+          width: 90%;
+        }
       }
-    }
 
-    &-item--right {
-      width: 60%;
-      margin-right: 3%;
-      position: relative;
-      text-align: right;
+      &-item--right {
+        width: 60%;
+        margin-right: 3%;
+        position: relative;
+        text-align: right;
 
         .text__container {
           width: 90%;
@@ -103,29 +106,30 @@
           }
         }
 
-      .about__button {
-        position: absolute;
-        bottom: -5%;
-        right: 0;
-        width: 170px;
-        margin-top: 2%;
-        padding: 2% 0;
-        border: 3px solid $secondary-pink;
-        border-radius: 20px;
-        text-align: center;
-        cursor: pointer;
+        &__button {
+          position: absolute;
+          bottom: -5%;
+          right: 0;
+          width: 170px;
+          margin-top: 2%;
+          padding: 2% 0;
+          border: 3px solid $secondary-pink;
+          border-radius: 20px;
+          text-align: center;
+          cursor: pointer;
 
-        a{
-          color: $black;
-        }
+          a{
+            color: $black;
+          }
 
-        &:hover {
-          background-color: $secondary-pink;
-        }
+          &:hover {
+            background-color: $secondary-pink;
+          }
 
-        &:hover a {
-          color: $white;
-          font-weight: $font-weight-bold;
+          &:hover a {
+            color: $white;
+            font-weight: $font-weight-bold;
+          }
         }
       }
     }
