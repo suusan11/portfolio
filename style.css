@@ -900,6 +900,9 @@ html {
 }
 
 @media (min-width: 640px) and (max-width: 999px) {
+  .works {
+    padding-top: 13%;
+  }
   .works__thumbnails {
     width: 90%;
     margin: 0 auto;
@@ -1016,6 +1019,9 @@ html {
 }
 
 @media (min-width: 640px) and (max-width: 999px) {
+  .values {
+    padding-top: 10%;
+  }
   .values__block--heading {
     margin-bottom: 2%;
   }

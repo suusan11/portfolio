@@ -72,17 +72,20 @@
 }
 
 @include middleSize {
-  .values__block {
+  .values {
+    padding-top: 10%;
 
-    &--heading {
-      margin-bottom: 2%;
-    }
+    &__block {
 
-    &--detail {
-      margin-top: 0;
+      &--heading {
+        margin-bottom: 2%;
+      }
+      &--detail {
+        margin-top: 0;
 
-      li {
-        padding: 1.5%;
+        li {
+          padding: 1.5%;
+        }
       }
     }
   }
