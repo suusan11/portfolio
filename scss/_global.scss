@@ -52,10 +52,8 @@ h2 {
 h2.text--upright {
   display: inline-block;
   letter-spacing: 10px;
-  -webkit-writing-mode: vertical-rl;
-  writing-mode: vertical-rl;
-  -webkit-text-orientation: upright;
-  text-orientation: upright;
+  @include vendorPrefix(writing-mode, vertical-rl);
+  @include vendorPrefix(text-orientation, upright);
 }
 
 h3 {
