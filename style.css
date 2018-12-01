@@ -198,6 +198,7 @@ a:hover {
 }
 
 .heading__left h2.text--upright {
+  position: relative;
   margin-top: 5%;
   padding-left: 30px;
 }
@@ -231,7 +232,6 @@ a:hover {
 }
 
 .heading__right h2.text--upright {
-  display: inline-block;
   position: relative;
   margin-top: 5%;
   padding-right: 45px;
