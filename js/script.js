@@ -99,13 +99,3 @@ document.addEventListener('DOMContentLoaded', function(){
 
     checkBreakPoint(pcSize);
 });
-
-//for IE
-if (!window.console){
-    window.console = {
-        log : function(msg){
-            // do nothing.
-        }
-    };
-}
-
