@@ -100,23 +100,12 @@ document.addEventListener('DOMContentLoaded', function(){
     checkBreakPoint(pcSize);
 });
 
-// function addContainer() {
-//     const pcSize = window.matchMedia('screen and (min-width: 1000px)');
-//     const widthMargin = document.getElementById("js-container");
-//
-//     function checkBreakPoint(pcSize) {
-//         if(pcSize.matches) {
-//             widthMargin.classList.add('container');
-//             widthMargin.classList.remove('works__thumbnails');
-//         }else {
-//             widthMargin.classList.add('works__thumbnails');
-//             widthMargin.classList.remove('container');
-//         }
-//     }
-//     pcSize.addListener(checkBreakPoint);
-//     checkBreakPoint(pcSize);
-// }
-//
-// document.getElementById('js-container').addEventListener("DOMContentLoaded", addContainer);
-
+//for IE
+if (!window.console){
+    window.console = {
+        log : function(msg){
+            // do nothing.
+        }
+    };
+}
 
