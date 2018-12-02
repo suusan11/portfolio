@@ -108,10 +108,6 @@ a {
     margin-top: 5%;
     padding-left: 30px;
 
-    @include pcSize {
-      padding-left: 50px;
-    }
-
     &::before {
       @include circle(-25px, 0, 0, -70px);
       position: absolute;
@@ -123,7 +119,7 @@ a {
       @include guideLineH(110px, 13px, 0, 0);
       position: absolute;
       bottom: 35%;
-      left: 35px;
+      left: 15px;
     }
   }
 }

@@ -203,12 +203,6 @@ a:hover {
   padding-left: 30px;
 }
 
-@media (min-width: 1000px) {
-  .heading__left h2.text--upright {
-    padding-left: 50px;
-  }
-}
-
 .heading__left h2.text--upright::before {
   content: '';
   display: block;
@@ -230,7 +224,7 @@ a:hover {
   margin: 110px 13px 0 0;
   position: absolute;
   bottom: 35%;
-  left: 35px;
+  left: 15px;
 }
 
 .heading__right {
