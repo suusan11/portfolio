@@ -114,10 +114,15 @@ a {
 
     &::before {
       @include circle(-25px, 0, 0, -70px);
+      position: absolute;
+      top: 0;
+      z-index: -1;
     }
 
     &::after {
       @include guideLineH(110px, 13px, 0, 0);
+      position: absolute;
+      bottom: 35%;
     }
   }
 }
@@ -150,7 +155,6 @@ a {
 @include pcSize {
   .heading__right {
     h2.text--upright {
-      display: inline-block;
       position: relative;
       padding-right: 70px;
 

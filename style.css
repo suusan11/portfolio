@@ -217,6 +217,9 @@ a:hover {
   border-radius: 50%;
   background-color: #FCECEA;
   margin: -25px 0 0 -70px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
 .heading__left h2.text--upright::after {
@@ -225,6 +228,8 @@ a:hover {
   border-left: 3px solid #928484;
   height: 30px;
   margin: 110px 13px 0 0;
+  position: absolute;
+  bottom: 35%;
 }
 
 .heading__right {
@@ -264,7 +269,6 @@ a:hover {
 
 @media (min-width: 1000px) {
   .heading__right h2.text--upright {
-    display: inline-block;
     position: relative;
     padding-right: 70px;
   }
