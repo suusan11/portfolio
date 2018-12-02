@@ -200,7 +200,7 @@ a:hover {
 .heading__left h2.text--upright {
   position: relative;
   margin-top: 5%;
-  padding-left: 30px;
+  padding-left: 80px;
 }
 
 .heading__left h2.text--upright::before {
