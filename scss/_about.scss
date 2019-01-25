@@ -162,7 +162,7 @@
 
 .about {
   text-align: center;
-  min-height: 1500px;
+  min-height: 1300px;
   padding-top: 25%;
 
   &__flex {
@@ -186,6 +186,7 @@
     margin: 5% auto;
     padding: 10%;
     text-align: left;
+    opacity: 0.7;
 
     &--blue {
       position: absolute;
@@ -208,13 +209,22 @@
   .text__wrapper {
     width: 70%;
     text-align: left;
-    position: absolute;
-    top: 100%;
-    left: 15%;
 
     p {
       line-height: 2em;
       padding: 3%;
+    }
+
+    &--blue {
+      position: absolute;
+      top: 100%;
+      left: 10%;
+    }
+
+    &--pink {
+      position: absolute;
+      top: 220%;
+      left: 25%;
     }
   }
 }

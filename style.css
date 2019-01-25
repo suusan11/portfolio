@@ -1041,7 +1041,7 @@ html {
 
 .about {
   text-align: center;
-  min-height: 1500px;
+  min-height: 1300px;
   padding-top: 25%;
 }
 
@@ -1062,6 +1062,7 @@ html {
   margin: 5% auto;
   padding: 10%;
   text-align: left;
+  opacity: 0.7;
 }
 
 .about .text__container--blue {
@@ -1084,14 +1085,23 @@ html {
 .about .text__wrapper {
   width: 70%;
   text-align: left;
-  position: absolute;
-  top: 100%;
-  left: 15%;
 }
 
 .about .text__wrapper p {
   line-height: 2em;
   padding: 3%;
+}
+
+.about .text__wrapper--blue {
+  position: absolute;
+  top: 100%;
+  left: 10%;
+}
+
+.about .text__wrapper--pink {
+  position: absolute;
+  top: 220%;
+  left: 25%;
 }
 
 .contact {
