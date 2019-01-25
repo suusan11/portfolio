@@ -1124,6 +1124,25 @@ html {
   .about img {
     width: 25%;
   }
+  .about .text__container {
+    width: 55%;
+    height: 100%;
+  }
+  .about .text__container--blue {
+    left: 43%;
+  }
+  .about .text__container--pink {
+    left: 10%;
+  }
+  .about .text__wrapper {
+    width: 60%;
+  }
+  .about .text__wrapper--blue {
+    left: 20%;
+  }
+  .about .text__wrapper--pink {
+    left: 35%;
+  }
 }
 
 .contact {

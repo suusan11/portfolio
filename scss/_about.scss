@@ -238,5 +238,30 @@
     img {
       width: 25%;
     }
+
+    .text__container {
+      width: 55%;
+      height: 100%;
+
+      &--blue {
+        left: 43%;
+      }
+
+      &--pink {
+        left: 10%;
+      }
+    }
+
+    .text__wrapper {
+      width: 60%;
+
+      &--blue {
+        left: 20%;
+      }
+
+      &--pink {
+        left: 35%;
+      }
+    }
   }
 }
