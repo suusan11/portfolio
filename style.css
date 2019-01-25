@@ -1080,7 +1080,7 @@ html {
 
 .about .text__container--pink {
   position: absolute;
-  top: 150%;
+  top: 120%;
   left: 0;
   z-index: -1;
   background-color: #FCECEA;
@@ -1104,7 +1104,7 @@ html {
 
 .about .text__wrapper--pink {
   position: absolute;
-  top: 200%;
+  top: 180%;
   left: 13%;
 }
 
