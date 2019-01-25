@@ -176,12 +176,12 @@
   }
 
   &__flex-item--right {
-    //text-align: center;
+    text-align: center;
   }
 
   .text__container {
     width: 70%;
-    height: 180%;
+    height: 120%;
     border-radius: 30px;
     margin: 5% auto;
     padding: 10%;
@@ -199,7 +199,7 @@
 
     &--pink {
       position: absolute;
-      top: 180%;
+      top: 150%;
       left: 0;
       z-index: -1;
       background-color: $primary-pink;
@@ -207,7 +207,7 @@
   }
 
   .text__wrapper {
-    width: 70%;
+    width: 80%;
     text-align: left;
 
     p {
@@ -218,13 +218,13 @@
     &--blue {
       position: absolute;
       top: 100%;
-      left: 10%;
+      left: 13%;
     }
 
     &--pink {
       position: absolute;
-      top: 220%;
-      left: 25%;
+      top: 200%;
+      left: 13%;
     }
   }
 }
