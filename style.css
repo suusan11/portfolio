@@ -1091,6 +1091,12 @@ html {
   text-align: left;
 }
 
+.about .text__wrapper span {
+  font-weight: 700;
+  font-size: 1.562rem;
+  padding-right: 2px;
+}
+
 .about .text__wrapper p {
   line-height: 2em;
   padding: 3%;

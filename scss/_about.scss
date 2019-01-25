@@ -210,6 +210,12 @@
     width: 80%;
     text-align: left;
 
+    span {
+      font-weight: $font-weight-bold;
+      font-size: $font-size-h3-mb;
+      padding-right: 2px;
+    }
+
     p {
       line-height: 2em;
       padding: 3%;
