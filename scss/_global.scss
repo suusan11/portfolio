@@ -100,9 +100,11 @@ a {
   margin: 0 auto;
 }
 
-.container__pc {
-  width: 80%;
-  margin: 0 auto;
+@include pcSize {
+  .container__pc {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .heading__left {

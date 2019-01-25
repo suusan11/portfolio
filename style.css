@@ -193,9 +193,11 @@ a:hover {
   margin: 0 auto;
 }
 
-.container__pc {
-  width: 80%;
-  margin: 0 auto;
+@media (min-width: 1000px) {
+  .container__pc {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .heading__left {
