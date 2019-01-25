@@ -1057,7 +1057,8 @@ html {
 
 .about .text__container {
   width: 70%;
-  height: 130%;
+  height: 180%;
+  border-radius: 30px;
   margin: 5% auto;
   padding: 10%;
   text-align: left;
@@ -1067,10 +1068,17 @@ html {
   position: absolute;
   top: 50%;
   left: 30%;
-  z-index: -1;
+  z-index: -2;
   background-color: #B2E0F2;
   margin-right: 0;
-  border-radius: 30px;
+}
+
+.about .text__container--pink {
+  position: absolute;
+  top: 180%;
+  left: 0;
+  z-index: -1;
+  background-color: #FCECEA;
 }
 
 .about .text__wrapper {
