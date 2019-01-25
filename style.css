@@ -1041,11 +1041,11 @@ html {
 
 .about {
   text-align: center;
-  min-height: 1300px;
+  min-height: 1000px;
   padding-top: 25%;
 }
 
-.about__flex {
+.about__container {
   position: relative;
 }
 
@@ -1053,10 +1053,6 @@ html {
   width: 60%;
   border-radius: 50% 40% 50% 50%/50% 50% 50% 40%;
   margin: 3% 0;
-}
-
-.about__flex-item--right {
-  text-align: center;
 }
 
 .about .text__container {
