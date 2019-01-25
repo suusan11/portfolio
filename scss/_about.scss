@@ -230,3 +230,13 @@
     }
   }
 }
+
+@include pcSize {
+  .about {
+    min-height: 1800px;
+
+    img {
+      width: 25%;
+    }
+  }
+}

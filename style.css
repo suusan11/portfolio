@@ -189,6 +189,11 @@ a:hover {
 }
 
 .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container__pc {
   width: 80%;
   margin: 0 auto;
 }
@@ -1108,6 +1113,15 @@ html {
   position: absolute;
   top: 180%;
   left: 13%;
+}
+
+@media (min-width: 1000px) {
+  .about {
+    min-height: 1800px;
+  }
+  .about img {
+    width: 25%;
+  }
 }
 
 .contact {
