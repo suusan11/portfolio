@@ -1,8 +1,173 @@
 @import "variable", "mixin", "typography";
 
+//.about {
+//  text-align: center;
+//  padding-top: 25%;
+//
+//  img {
+//    width: 60%;
+//    border-radius: 50% 40% 50% 50%/50% 50% 50% 40%;
+//    margin: 3% 0;
+//  }
+//
+//  &__flex-item--right {
+//    text-align: center;
+//  }
+//
+//  .text__container {
+//    width: 100%;
+//    margin: 5% auto;
+//    padding: 10%;
+//    text-align: left;
+//
+//    p {
+//      line-height: 2em;
+//      padding: 3%;
+//    }
+//
+//    &--blue {
+//      background-color: #B2E0F2;
+//    }
+//
+//    &--pink {
+//      background-color: $primary-pink;
+//    }
+//  }
+//
+//  .about__button {
+//    width: 180px;
+//    height: auto;
+//    margin: 5% auto;
+//    padding: 15px 0;
+//    border: 3px solid $secondary-pink;
+//    border-radius: 20px;
+//    text-align: center;
+//    vertical-align: middle;
+//
+//    a{
+//      color: $black;
+//      font-weight: $font-weight-bold;
+//    }
+//
+//    &:hover {
+//      background-color: $secondary-pink;
+//    }
+//
+//    &:hover a {
+//      color: $white;
+//      font-weight: $font-weight-bold;
+//    }
+//  }
+//}
+//
+//
+//
+//
+//
+//@include pcSize {
+//  .about {
+//    padding-top: 5%;
+//
+//    &__flex {
+//      display: flex;
+//      justify-content: space-around;
+//      align-items: center;
+//
+//      &-item--left {
+//        width: 30%;
+//        margin-left: 10%;
+//        margin-bottom: 20%;
+//
+//        img {
+//          width: 80%;
+//        }
+//      }
+//
+//      &-item--right {
+//        width: 60%;
+//        margin-right: 3%;
+//        position: relative;
+//        text-align: right;
+//
+//        .text__container {
+//          width: 80%;
+//          border-radius: 30px;
+//          margin: 0 10%;
+//          text-align: left;
+//          line-height: 2em;
+//          padding: 3%;
+//
+//          &--blue {
+//            background-color: #B2E0F2;
+//          }
+//
+//          &--pink {
+//            margin-top: 5%;
+//            background-color: $primary-pink;
+//          }
+//        }
+//
+//        &__button {
+//          position: absolute;
+//          bottom: -5%;
+//          right: 0;
+//          width: 170px;
+//          margin-top: 2%;
+//          padding: 2% 0;
+//          border: 3px solid $secondary-pink;
+//          border-radius: 20px;
+//          text-align: center;
+//          cursor: pointer;
+//
+//          a{
+//            color: $black;
+//          }
+//
+//          &:hover {
+//            background-color: $secondary-pink;
+//          }
+//
+//          &:hover a {
+//            color: $white;
+//            font-weight: $font-weight-bold;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@include middleSize {
+//  .about__flex-item--left img {
+//    width: 30%;
+//  }
+//  .about__flex-item--right {
+//    .text__container {
+//      width: 80%;
+//      border-radius: 30px;
+//      padding: 5%;
+//    }
+//
+//    .about__button {
+//      width: 200px;
+//      height: auto;
+//      padding:15px 0;
+//
+//      a {
+//        font-size: $font-size-base-pc;
+//      }
+//    }
+//  }
+//}
+
 .about {
   text-align: center;
+  min-height: 1500px;
   padding-top: 25%;
+
+  &__flex {
+    position: relative;
+  }
 
   img {
     width: 60%;
@@ -11,151 +176,44 @@
   }
 
   &__flex-item--right {
-    text-align: center;
+    //text-align: center;
   }
 
   .text__container {
-    width: 100%;
+    width: 70%;
+    height: 130%;
     margin: 5% auto;
     padding: 10%;
     text-align: left;
 
+    &--blue {
+      position: absolute;
+      top: 50%;
+      left: 30%;
+      z-index: -1;
+      background-color: #B2E0F2;
+      margin-right: 0;
+      border-radius: 30px;
+    }
+
+    //&--pink {
+    //  position: absolute;
+    //  top: 100%;
+    //  right: 50%;
+    //  background-color: $primary-pink;
+    //}
+  }
+
+  .text__wrapper {
+    width: 70%;
+    text-align: left;
+    position: absolute;
+    top: 100%;
+    left: 15%;
+
     p {
       line-height: 2em;
       padding: 3%;
-    }
-
-    &--blue {
-      background-color: #B2E0F2;
-    }
-
-    &--pink {
-      background-color: $primary-pink;
-    }
-  }
-
-  .about__button {
-    width: 180px;
-    height: auto;
-    margin: 5% auto;
-    padding: 15px 0;
-    border: 3px solid $secondary-pink;
-    border-radius: 20px;
-    text-align: center;
-    vertical-align: middle;
-
-    a{
-      color: $black;
-      font-weight: $font-weight-bold;
-    }
-
-    &:hover {
-      background-color: $secondary-pink;
-    }
-
-    &:hover a {
-      color: $white;
-      font-weight: $font-weight-bold;
-    }
-  }
-}
-
-
-
-
-
-@include pcSize {
-  .about {
-    padding-top: 5%;
-
-    &__flex {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-
-      &-item--left {
-        width: 30%;
-        margin-left: 10%;
-        margin-bottom: 20%;
-
-        img {
-          width: 80%;
-        }
-      }
-
-      &-item--right {
-        width: 60%;
-        margin-right: 3%;
-        position: relative;
-        text-align: right;
-
-        .text__container {
-          width: 80%;
-          border-radius: 30px;
-          margin: 0 10%;
-          text-align: left;
-          line-height: 2em;
-          padding: 3%;
-
-          &--blue {
-            background-color: #B2E0F2;
-          }
-
-          &--pink {
-            margin-top: 5%;
-            background-color: $primary-pink;
-          }
-        }
-
-        &__button {
-          position: absolute;
-          bottom: -5%;
-          right: 0;
-          width: 170px;
-          margin-top: 2%;
-          padding: 2% 0;
-          border: 3px solid $secondary-pink;
-          border-radius: 20px;
-          text-align: center;
-          cursor: pointer;
-
-          a{
-            color: $black;
-          }
-
-          &:hover {
-            background-color: $secondary-pink;
-          }
-
-          &:hover a {
-            color: $white;
-            font-weight: $font-weight-bold;
-          }
-        }
-      }
-    }
-  }
-}
-
-@include middleSize {
-  .about__flex-item--left img {
-    width: 30%;
-  }
-  .about__flex-item--right {
-    .text__container {
-      width: 80%;
-      border-radius: 30px;
-      padding: 5%;
-    }
-
-    .about__button {
-      width: 200px;
-      height: auto;
-      padding:15px 0;
-
-      a {
-        font-size: $font-size-base-pc;
-      }
     }
   }
 }
