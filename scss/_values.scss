@@ -40,15 +40,31 @@
         margin: 0 auto;
       }
 
-        .icon {
-          width: 2.5rem;
-          height: 2.5rem;
-          margin: 25% 2%;
-        }
+      .icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 25% 2%;
+      }
 
-        h3 {
-          font-size: $font-size-h3-mb;
-        }
+      .grid__text--row2 {
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 1;
+      }
+
+      .grid__text--row4 {
+        grid-column: 1 / span 3;
+        grid-row: 4 / span 1;
+      }
+
+      .grid__text--row6 {
+        grid-column: 1 / span 3;
+        grid-row: 6 / span 1;
+      }
+
+      .grid__text--row8 {
+        grid-column: 1 / span 3;
+        grid-row: 8 / span 1;
+      }
   }
 
 
