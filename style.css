@@ -957,14 +957,14 @@ html {
 .values .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 100px auto 100px auto 100px auto 100px auto;
+  grid-template-rows: 150px auto 150px auto 150px auto 150px auto;
   text-align: center;
 }
 
 .values .grid__circle--row1 {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 5px inset #B2E0F2;
   margin: 0 auto;
@@ -974,8 +974,8 @@ html {
 
 .values .grid__circle--row3 {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 5px inset #96DADB;
   margin: 0 auto;
@@ -985,8 +985,8 @@ html {
 
 .values .grid__circle--row5 {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 5px inset #ABBAF9;
   margin: 0 auto;
@@ -996,8 +996,8 @@ html {
 
 .values .grid__circle--row7 {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 5px inset #B2A3E5;
   margin: 0 auto;
@@ -1005,16 +1005,20 @@ html {
   grid-row: 7 / span 1;
 }
 
-.values .grid__item2 {
-  grid-column: 1 / span 3;
-  grid-row: 2 / span 1;
-  margin: 0 auto;
+.values .icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 29% 0 0 5%;
 }
 
-.values .icon {
-  width: 2.5rem;
-  height: 2.5rem;
-  margin: 25% 2%;
+.values .icon--scale {
+  width: 4rem;
+  height: 4rem;
+  margin: 25% auto;
+}
+
+.values h4 {
+  padding: 15px 0 40px;
 }
 
 .values .grid__text--row2 {
