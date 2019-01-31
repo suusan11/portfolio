@@ -970,7 +970,7 @@ html {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #B2E0F2;
+  border: 5px inset #B2E0F2;
 }
 
 .values__block .grid__item1 {
