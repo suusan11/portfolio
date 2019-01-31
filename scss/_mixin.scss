@@ -74,6 +74,15 @@
   }
 }
 
+@mixin circleValue($color) {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px inset $color;
+  margin: 0 auto;
+}
+
 //for responsive
 @mixin pcSize {
   @media (min-width: (1000px)) {

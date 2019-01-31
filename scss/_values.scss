@@ -6,31 +6,32 @@
     .grid {
       display: grid;
       grid-template-columns: 1fr 2fr 1fr;
-      grid-template-rows: 100px 50px;
+      grid-template-rows: 100px auto 100px auto 100px auto 100px auto;
       text-align: center;
     }
 
-    &__block {
-      width: 100%;
-      margin: 5% auto 15% 0;
-
-      &--circle {
-        //display: flex;
-        //justify-content: flex-start;
-        //align-items: center;
-        //margin-bottom: 5%;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        //background-color: #B2E0F2;
-        border: 5px inset #B2E0F2;
-      }
-
-      .grid__item1 {
+      .grid__circle--row1 {
+        @include circleValue(#B2E0F2);
         grid-column: 2 / span 1;
         grid-row: 1 / span 1;
-        display: inline-block;
-        margin: 0 auto;
+      }
+
+      .grid__circle--row3 {
+        @include circleValue(#96DADB);
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+      }
+
+      .grid__circle--row5 {
+        @include circleValue(#ABBAF9);
+        grid-column: 2 / span 1;
+        grid-row: 5 / span 1;
+      }
+
+      .grid__circle--row7 {
+        @include circleValue(#B2A3E5);
+        grid-column: 2 / span 1;
+        grid-row: 7 / span 1;
       }
 
       .grid__item2 {
@@ -48,30 +49,6 @@
         h3 {
           font-size: $font-size-h3-mb;
         }
-      //}
-
-      //&:nth-child(1) {
-      //  border-left: 5px solid #B2E0F2;
-      //}
-
-      &:nth-child(2) {
-        border-left: 5px solid #96DADB;
-      }
-
-      &:nth-child(3) {
-        border-left: 5px solid #ABBAF9;
-      }
-
-
-      //&--detail {
-      //  margin: 8% 0 0 10%;
-      //
-      //  li {
-      //    list-style-type: disc;
-      //    padding: 3% 0;
-      //  }
-      //}
-    }
   }
 
 

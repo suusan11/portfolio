@@ -957,51 +957,68 @@ html {
 .values .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 100px 50px;
+  grid-template-rows: 100px auto 100px auto 100px auto 100px auto;
   text-align: center;
 }
 
-.values__block {
-  width: 100%;
-  margin: 5% auto 15% 0;
-}
-
-.values__block--circle {
+.values .grid__circle--row1 {
+  display: inline-block;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   border: 5px inset #B2E0F2;
-}
-
-.values__block .grid__item1 {
+  margin: 0 auto;
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
-  display: inline-block;
-  margin: 0 auto;
 }
 
-.values__block .grid__item2 {
+.values .grid__circle--row3 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px inset #96DADB;
+  margin: 0 auto;
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.values .grid__circle--row5 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px inset #ABBAF9;
+  margin: 0 auto;
+  grid-column: 2 / span 1;
+  grid-row: 5 / span 1;
+}
+
+.values .grid__circle--row7 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px inset #B2A3E5;
+  margin: 0 auto;
+  grid-column: 2 / span 1;
+  grid-row: 7 / span 1;
+}
+
+.values .grid__item2 {
   grid-column: 1 / span 3;
   grid-row: 2 / span 1;
   margin: 0 auto;
 }
 
-.values__block .icon {
+.values .icon {
   width: 2.5rem;
   height: 2.5rem;
   margin: 25% 2%;
 }
 
-.values__block h3 {
+.values h3 {
   font-size: 1.562rem;
-}
-
-.values__block:nth-child(2) {
-  border-left: 5px solid #96DADB;
-}
-
-.values__block:nth-child(3) {
-  border-left: 5px solid #ABBAF9;
 }
 
 @media (min-width: 1000px) {
