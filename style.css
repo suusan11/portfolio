@@ -966,7 +966,7 @@ html {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 5px inset #B2E0F2;
+  border: 3px inset #B2E0F2;
   margin: 0 auto;
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
@@ -977,7 +977,7 @@ html {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 5px inset #96DADB;
+  border: 3px inset #96DADB;
   margin: 0 auto;
   grid-column: 2 / span 1;
   grid-row: 3 / span 1;
@@ -988,7 +988,7 @@ html {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 5px inset #ABBAF9;
+  border: 3px inset #ABBAF9;
   margin: 0 auto;
   grid-column: 2 / span 1;
   grid-row: 5 / span 1;
@@ -999,7 +999,7 @@ html {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 5px inset #B2A3E5;
+  border: 3px inset #B2A3E5;
   margin: 0 auto;
   grid-column: 2 / span 1;
   grid-row: 7 / span 1;
