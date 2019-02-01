@@ -1009,13 +1009,15 @@ html {
 .values .icon {
   width: 3.5rem;
   height: 3.5rem;
-  margin: 23% 0 0 5%;
+  margin: 25% 0 0 5%;
+  fill: currentColor;
 }
 
 .values .icon--scale {
   width: 4rem;
   height: 4rem;
   margin: 25% auto;
+  fill: currentColor;
 }
 
 .values h4 {
