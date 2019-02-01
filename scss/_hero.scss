@@ -1,8 +1,12 @@
 @import "variable", "typography", "mixin";
 
+.bg-color--pink {
+  background-color: $primary-pink;
+}
+
 .hero {
   width: 100%;
-  min-height: 600px;
+  min-height: 670px;
   margin-top: 0;
   padding-top: 80%;
 
@@ -95,6 +99,7 @@
 //responsive for PC
 @include pcSize {
   .hero {
+    min-height: 800px;
     padding-top: 300px;
     text-align: center;
 

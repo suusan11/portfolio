@@ -106,7 +106,13 @@ main {
 }
 
 section {
-  margin: 10% 0;
+  margin: 5% 0;
+}
+
+@media (min-width: 1000px) {
+  section {
+    margin: 0;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 999px) {
@@ -634,9 +640,13 @@ html {
   }
 }
 
+.bg-color--pink {
+  background-color: #FCECEA;
+}
+
 .hero {
   width: 100%;
-  min-height: 600px;
+  min-height: 670px;
   margin-top: 0;
   padding-top: 80%;
 }
@@ -817,6 +827,7 @@ html {
 
 @media (min-width: 1000px) {
   .hero {
+    min-height: 800px;
     padding-top: 300px;
     text-align: center;
   }
