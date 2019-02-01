@@ -44,16 +44,18 @@
       grid-row: 4 / span 2;
     }
 
-    .span__font--weight {
-      font-weight: $font-weight-bold;
-      font-size: $font-size-h1-mb;
-      padding-right: 2px;
-    }
-
     .p__font--light {
+      display: inline-block;
       font-weight: $font-weight-light;
       line-height: 2em;
+
+      span {
+        font-weight: $font-weight-bold;
+        font-size: $font-size-h1-mb;
+        padding-right: 2px;
+      }
     }
+
   }
 }
 
@@ -88,16 +90,6 @@
         z-index: 3;
         grid-column: 3 / span 3;
         grid-row: 2 / span 2;
-
-        span {
-          font-weight: $font-weight-bold;
-          font-size: $font-size-h1-mb;
-          padding-right: 2px;
-        }
-
-        p {
-          line-height: 2em;
-        }
       }
 
       &--pink-box {
@@ -114,16 +106,6 @@
         margin-left: -30%;
         grid-column: 4 / span 3;
         grid-row: 4 / span 2;
-
-        span {
-          font-weight: $font-weight-bold;
-          font-size: $font-size-h1-mb;
-          padding-right: 2px;
-        }
-
-        p {
-          line-height: 2em;
-        }
       }
     }
   }
@@ -161,16 +143,6 @@
         z-index: 3;
         grid-column: 2 / span 3;
         grid-row: 2 / span 2;
-
-        span {
-          font-weight: $font-weight-bold;
-          font-size: $font-size-h1-mb;
-          padding-right: 2px;
-        }
-
-        p {
-          line-height: 2em;
-        }
       }
 
       &--pink-box {
@@ -188,16 +160,6 @@
         margin-left: -30%;
         grid-column: 3 / span 2;
         grid-row: 4 / span 2;
-
-        span {
-          font-weight: $font-weight-bold;
-          font-size: $font-size-h1-mb;
-          padding-right: 2px;
-        }
-
-        p {
-          line-height: 2em;
-        }
       }
     }
   }

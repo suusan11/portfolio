@@ -1168,15 +1168,16 @@ html {
   grid-row: 4 / span 2;
 }
 
-.about__container .span__font--weight {
+.about__container .p__font--light {
+  display: inline-block;
+  font-weight: 300;
+  line-height: 2em;
+}
+
+.about__container .p__font--light span {
   font-weight: 700;
   font-size: 1.875rem;
   padding-right: 2px;
-}
-
-.about__container .p__font--light {
-  font-weight: 300;
-  line-height: 2em;
 }
 
 @media (min-width: 1000px) {
@@ -1207,14 +1208,6 @@ html {
     grid-column: 3 / span 3;
     grid-row: 2 / span 2;
   }
-  .about__container--blue-text span {
-    font-weight: 700;
-    font-size: 1.875rem;
-    padding-right: 2px;
-  }
-  .about__container--blue-text p {
-    line-height: 2em;
-  }
   .about__container--pink-box {
     width: 350px;
     height: 350px;
@@ -1228,14 +1221,6 @@ html {
     margin-left: -30%;
     grid-column: 4 / span 3;
     grid-row: 4 / span 2;
-  }
-  .about__container--pink-text span {
-    font-weight: 700;
-    font-size: 1.875rem;
-    padding-right: 2px;
-  }
-  .about__container--pink-text p {
-    line-height: 2em;
   }
 }
 
@@ -1268,14 +1253,6 @@ html {
     grid-column: 2 / span 3;
     grid-row: 2 / span 2;
   }
-  .about__container--blue-text span {
-    font-weight: 700;
-    font-size: 1.875rem;
-    padding-right: 2px;
-  }
-  .about__container--blue-text p {
-    line-height: 2em;
-  }
   .about__container--pink-box {
     width: 300px;
     height: 300px;
@@ -1290,14 +1267,6 @@ html {
     margin-left: -30%;
     grid-column: 3 / span 2;
     grid-row: 4 / span 2;
-  }
-  .about__container--pink-text span {
-    font-weight: 700;
-    font-size: 1.875rem;
-    padding-right: 2px;
-  }
-  .about__container--pink-text p {
-    line-height: 2em;
   }
 }
 
