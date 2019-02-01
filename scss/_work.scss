@@ -1,4 +1,4 @@
-@import "variable", "mixin";
+@import "variable", "_typography", "mixin";
 .works {
   padding-top: 25%;
 
@@ -6,20 +6,30 @@
     width: 100%;
 
     .thumbnail {
-      height: 150px;
-      text-align: right;
+      display: flex;
+      justify-content: flex-start;
+      height: 250px;
       margin: 0 auto 30%;
       padding: 8% 0;
 
-      img{
-        width: 100%;
-        height: 150px;
+      a {
+        width: 90%;
+        height: 250px;
+      }
+
+      img {
+        width: 90%;
+        height: 250px;
         object-fit: cover;
+        border-radius: 30px;
+        margin-left: 8%;
       }
 
       p {
-        display: inline-block;
-        margin: 2% 5% 0 0;
+        font-weight: $font-weight-light;
+        padding-top: 5px;
+        @include vendorPrefix(writing-mode, vertical-rl);
+        @include vendorPrefix(text-orientation, sideways);
       }
 
       &:hover img {
