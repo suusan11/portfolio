@@ -2,7 +2,6 @@
 
 .about {
   min-height: 1000px;
-  padding-top: 25%;
 
   &__container {
     display: grid;
@@ -60,8 +59,6 @@
 
 @include pcSize {
   .about {
-    min-height: 1000px;
-    padding-top: 25%;
 
     &__container {
       display: grid;
@@ -134,8 +131,6 @@
 
 @include middleSize {
   .about {
-    min-height: 1000px;
-    padding-top: 25%;
 
     &__container {
       display: grid;

@@ -26,9 +26,9 @@ main {
 section {
   margin: 10% 0;
 
-  @include pcSize {
-    margin: 15% 0;
-  }
+  //@include pcSize {
+  //  margin: 15% 0;
+  //}
 
   @include middleSize {
     margin: 15% 0;
