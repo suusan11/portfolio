@@ -87,11 +87,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
     function checkBreakPoint(pcSize) {
         if(pcSize.matches) {
-            widthMargin.classList.add('container');
+            widthMargin.classList.add('works__thumbnails--pc');
             widthMargin.classList.remove('works__thumbnails');
         }else {
             widthMargin.classList.add('works__thumbnails');
-            widthMargin.classList.remove('container');
+            widthMargin.classList.remove('works__thumbnails--pc');
         }
     }
 

@@ -883,6 +883,7 @@ html {
 .works__thumbnails .thumbnail {
   display: flex;
   justify-content: flex-start;
+  width: 100%;
   height: 250px;
   margin: 0 auto 30%;
   padding: 8% 0;
@@ -924,26 +925,47 @@ html {
   .works {
     padding-top: 5%;
   }
-  .works .thumbnail {
-    width: 70%;
-    height: 150px;
+  .works__thumbnails--pc {
+    width: 80%;
+    margin: 0 auto;
+    padding: 8% 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .works__thumbnails--pc .thumbnail {
+    width: 45%;
+    height: 300px;
     border-radius: 20px;
     margin-bottom: 13%;
     margin-left: auto;
-    text-align: right;
+    display: flex;
+    justify-content: flex-start;
   }
-  .works .thumbnail img {
-    width: 80%;
-    height: 150px;
+  .works__thumbnails--pc .thumbnail img {
+    width: 100%;
+    height: 300px;
     object-fit: cover;
     border-radius: 20px;
     cursor: pointer;
   }
-  .works .thumbnail p {
-    letter-spacing: 0.2em;
-    padding-right: 2%;
+  .works__thumbnails--pc .thumbnail p {
+    letter-spacing: 0.1em;
+    padding-left: 2%;
+    font-weight: 300;
+    padding-top: 5px;
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    -o-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    -webkit-text-orientation: sideways;
+    -moz-text-orientation: sideways;
+    -ms-text-orientation: sideways;
+    -o-text-orientation: sideways;
+    text-orientation: sideways;
   }
-  .works .thumbnail:hover img {
+  .works__thumbnails--pc .thumbnail:hover img {
     opacity: 0.8;
   }
 }
