@@ -643,17 +643,17 @@ html {
 
 .bg-color--pink {
   background-color: rgba(252, 236, 234, 0.5);
+  position: relative;
 }
 
 .hero {
   width: 100%;
   min-height: 670px;
   margin-top: 0;
-  padding-top: 80%;
+  padding-top: 300px;
 }
 
 .hero__txt h1 {
-  position: relative;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -829,7 +829,6 @@ html {
 @media (min-width: 1000px) {
   .hero {
     min-height: 800px;
-    padding-top: 300px;
     text-align: center;
   }
   .hero__txt {
@@ -846,7 +845,7 @@ html {
 
 @media (min-width: 640px) and (max-width: 999px) {
   .hero {
-    padding-top: 45%;
+    min-height: 800px;
   }
   .hero__txt h1 {
     font-size: 2.5rem;
