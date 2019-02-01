@@ -974,7 +974,7 @@ html {
   .works__thumbnails .thumbnail {
     width: 50%;
     height: 300px;
-    margin: 0 0 10% auto;
+    margin: 0 auto 10%;
   }
   .works__thumbnails .thumbnail img {
     width: 100%;
