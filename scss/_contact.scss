@@ -1,4 +1,4 @@
-@import "variable", "mixin";
+@import "variable", "mixin", "typography";
 
 .contact {
   text-align: center;
@@ -8,6 +8,7 @@
     margin: 50px auto 30px;
     width: 70%;
     line-height: 35px;
+    font-weight: $font-weight-light;
   }
 }
 
