@@ -83,9 +83,23 @@
   margin: 0 auto;
 }
 
-@mixin circleAbout($color) {
+@mixin circleAboutMb($color) {
   width: 250px;
   height: 250px;
+  border-radius: 50%;
+  background-color: $color;
+}
+
+@mixin circleAboutPc($color) {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: $color;
+}
+
+@mixin circleAboutMid($color) {
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   background-color: $color;
 }
