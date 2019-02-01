@@ -83,6 +83,13 @@
   margin: 0 auto;
 }
 
+@mixin circleAbout($color) {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: $color;
+}
+
 //for responsive
 @mixin pcSize {
   @media (min-width: (1000px)) {
