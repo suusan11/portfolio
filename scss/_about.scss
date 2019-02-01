@@ -61,6 +61,7 @@
 
 @include pcSize {
   .about {
+    min-height: 1400px;
 
     &__container {
       display: grid;
