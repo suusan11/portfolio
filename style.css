@@ -1134,7 +1134,7 @@ html {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px inset #B2E0F2;
+    border: 3px inset #96DADB;
     margin: 0 auto;
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
@@ -1154,7 +1154,7 @@ html {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px inset #ABBAF9;
+    border: 3px inset #96DADB;
     margin: 0 auto;
     grid-column: 2 / span 1;
     grid-row: 4 / span 1;
@@ -1164,7 +1164,7 @@ html {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px inset #B2A3E5;
+    border: 3px inset #96DADB;
     margin: 0 auto;
     grid-column: 4 / span 1;
     grid-row: 4 / span 1;

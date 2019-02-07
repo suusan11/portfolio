@@ -85,25 +85,25 @@
     }
 
     .grid__circle--row1 {
-      @include circleValue(#B2E0F2);
+      @include circleValue($values-blue);
       grid-column: 2 / span 1;
       grid-row: 1 / span 1;
     }
 
     .grid__circle--row3 {
-      @include circleValue(#96DADB);
+      @include circleValue($values-blue);
       grid-column: 4 / span 1;
       grid-row: 1 / span 1;
     }
 
     .grid__circle--row5 {
-      @include circleValue(#ABBAF9);
+      @include circleValue($values-blue);
       grid-column: 2 / span 1;
       grid-row: 4 / span 1;
     }
 
     .grid__circle--row7 {
-      @include circleValue(#B2A3E5);
+      @include circleValue($values-blue);
       grid-column: 4 / span 1;
       grid-row: 4 / span 1;
     }
