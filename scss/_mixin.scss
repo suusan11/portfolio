@@ -81,6 +81,15 @@
   border-radius: 50%;
   border: 3px inset $color;
   margin: 0 auto;
+  text-align: center;
+}
+
+@mixin circleValueImg($width, $height, $img) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  background: url($img) center;
+  margin: 20% 0 0 5%;
 }
 
 @mixin circleAboutMb($color) {
