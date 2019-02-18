@@ -433,18 +433,18 @@ header .header__flex--left img {
 }
 
 header .header__flex--left .header__text {
-  display: none;
+  opacity: 0;
   margin-left: 5%;
   letter-spacing: 0.2rem;
-  -webkit-transition: opacity 0.3s ease-in;
-  -moz-transition: opacity 0.3s ease-in;
-  -ms-transition: opacity 0.3s ease-in;
-  -o-transition: opacity 0.3s ease-in;
-  transition: opacity 0.3s ease-in;
 }
 
 header .header__flex--left .header__text.is-show {
-  display: block;
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 header .header__flex--left.is-expand {
