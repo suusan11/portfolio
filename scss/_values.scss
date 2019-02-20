@@ -19,7 +19,7 @@
           display: inline-block;
           width: 100px;
           height: 100px;
-          background: url("../images/values_icon/glasses.svg") center;
+          //background: url("../images/values_icon/glasses.svg") center;
           margin-top: 12%;
         }
       }
@@ -30,7 +30,7 @@
         grid-row: 3 / span 1;
 
         .grid__circle--bg-img {
-          @include circleValueImg(80px, 80px, "../images/values_icon/target.svg");
+          @include circleValueImg(80px, 80px);
         }
       }
 
@@ -40,7 +40,7 @@
         grid-row: 5 / span 1;
 
         .grid__circle--bg-img {
-          @include circleValueImg(80px, 80px, "../images/values_icon/paint.svg");
+          @include circleValueImg(80px, 80px);
         }
       }
 
@@ -50,7 +50,7 @@
         grid-row: 7 / span 1;
 
         .grid__circle--bg-img {
-          @include circleValueImg(80px, 80px, "../images/values_icon/beer.svg");
+          @include circleValueImg(80px, 80px);
         }
       }
 

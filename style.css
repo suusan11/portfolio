@@ -1056,7 +1056,6 @@ html {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: url("../images/values_icon/glasses.svg") center;
   margin-top: 12%;
 }
 
@@ -1076,7 +1075,6 @@ html {
   display: inline-block;
   width: 80px;
   height: 80px;
-  background: url("../images/values_icon/target.svg") center;
   margin: 20% 0 0 5%;
 }
 
@@ -1096,7 +1094,6 @@ html {
   display: inline-block;
   width: 80px;
   height: 80px;
-  background: url("../images/values_icon/paint.svg") center;
   margin: 20% 0 0 5%;
 }
 
@@ -1116,7 +1113,6 @@ html {
   display: inline-block;
   width: 80px;
   height: 80px;
-  background: url("../images/values_icon/beer.svg") center;
   margin: 20% 0 0 5%;
 }
 
