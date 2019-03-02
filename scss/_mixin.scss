@@ -12,6 +12,16 @@
   transition: transform 3s;
 }
 
+@mixin bgText($content) {
+  display: block;
+  content: $content;
+  color: $primary-pink;
+  opacity: 0.1;
+  font-family: $font-base;
+  font-size: 15rem;
+  position: absolute;
+}
+
 
 @mixin circle($top, $right, $bottom, $left) {
   content: '';

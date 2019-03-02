@@ -87,13 +87,12 @@
 
   h1 {
     color: $white;
-    margin-top: 250px;
+    margin-top: 300px;
     text-align: right;
     //@include vendorPrefix(animation, textShadow .8s 2s forwards ease-in);
 
   }
 }
-
 
 
 //responsive for PC
@@ -102,11 +101,27 @@
 
     &__txt {
       text-align: left;
+      position: relative;
+
+      &::before {
+        @include bgText("MIE");
+        writing-mode: vertical-lr;
+        text-orientation: sideways;
+        bottom: -570px;
+        left: -120px;
+      }
+
+      &::after {
+        @include bgText("Front-End");
+        text-align: right;
+        top: -150px;
+        right: -100px;
+      }
     }
 
     h1 {
       font-size: $font-size-h1-pc;
-      margin-top: 300px;
+      margin-top: 350px;
       padding-left: 30%;
     }
   }
@@ -125,7 +140,7 @@
 
     h1 {
       font-size: $font-size-h1-pc;
-      margin-top: 300px;
+      margin-top: 350px;
     }
   }
 }
