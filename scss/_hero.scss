@@ -8,66 +8,65 @@
 
 .hero {
   width: 100%;
-  min-height: 670px;
+  height: 100vh;
   margin-top: 0;
-  padding-top: 300px;
+  padding-top: 200px;
 
   &__txt {
+    text-align: left;
 
-    @-webkit-keyframes textShadow {
-      0% {text-shadow: none;}
-      100% {text-shadow: 5px 2px 7px rgba(138, 124, 124, 0.4);}
-    }
+    //@-webkit-keyframes textShadow {
+    //  0% {text-shadow: none;}
+    //  100% {text-shadow: 5px 2px 7px rgba(138, 124, 124, 0.4);}
+    //}
+    //
+    //@-o-keyframes textShadow {
+    //  0% {text-shadow: none;}
+    //  100% {text-shadow: 5px 2px 7px rgba(138, 124, 124, 0.4);}
+    //}
+    //
+    //@keyframes textShadow {
+    //  0% {text-shadow: none;}
+    //  100% {text-shadow: 5px 2px 7px rgba(138, 124, 124, 0.4);}
+    //}
+    //
+    //span {
+    //  display: inline-block;
+    //  @include vendorPrefix(transform, translateY(-1000px));
+    //
+    //  &:nth-child(3) {
+    //    padding-right: 2%;
+    //  }
+    //}
+    //
+    //span.fallDown {
+    //  @include vendorPrefix(animation, fallDown 1s forwards ease-in);
+    //}
+    //
+    //@-webkit-keyframes fallDown {
+    //  0% {@include vendorPrefix(transform, translateY(-1000px));}
+    //  50% {@include vendorPrefix(transform, translateY(-500px));}
+    //  100% {@include vendorPrefix(transform, translateY(0));}
+    //}
+    //
+    //@-o-keyframes fallDown {
+    //  0% {@include vendorPrefix(transform, translateY(-1000px));}
+    //  50% {@include vendorPrefix(transform, translateY(-500px));}
+    //  100% {@include vendorPrefix(transform, translateY(0));}
+    //}
+    //
+    //@keyframes fallDown {
+    //  0% {@include vendorPrefix(transform, translateY(-1000px));}
+    //  50% {@include vendorPrefix(transform, translateY(-500px));}
+    //  100% {@include vendorPrefix(transform, translateY(0));}
+    //}
 
-    @-o-keyframes textShadow {
-      0% {text-shadow: none;}
-      100% {text-shadow: 5px 2px 7px rgba(138, 124, 124, 0.4);}
-    }
-
-    @keyframes textShadow {
-      0% {text-shadow: none;}
-      100% {text-shadow: 5px 2px 7px rgba(138, 124, 124, 0.4);}
-    }
-
-    span {
-      display: inline-block;
-      @include vendorPrefix(transform, translateY(-1000px));
-
-      &:nth-child(3) {
-        padding-right: 2%;
-      }
-    }
-
-    span.fallDown {
-      @include vendorPrefix(animation, fallDown 1s forwards ease-in);
-    }
-
-    @-webkit-keyframes fallDown {
-      0% {@include vendorPrefix(transform, translateY(-1000px));}
-      50% {@include vendorPrefix(transform, translateY(-500px));}
-      100% {@include vendorPrefix(transform, translateY(0));}
-    }
-
-    @-o-keyframes fallDown {
-      0% {@include vendorPrefix(transform, translateY(-1000px));}
-      50% {@include vendorPrefix(transform, translateY(-500px));}
-      100% {@include vendorPrefix(transform, translateY(0));}
-    }
-
-    @keyframes fallDown {
-      0% {@include vendorPrefix(transform, translateY(-1000px));}
-      50% {@include vendorPrefix(transform, translateY(-500px));}
-      100% {@include vendorPrefix(transform, translateY(0));}
-    }
-
-    h2 {
-      //opacity: 0;
-      text-align: center;
+    h3 {
       letter-spacing: 0.15em;
-      color: $secondary-pink;
+      color: $primary-pink;
       text-shadow: 5px 2px 7px rgba(212, 115, 109, 0.4);
       padding-bottom: 10px;
-      @include vendorPrefix(animation, showDelay 0.8s 2s forwards ease-in);
+      //@include vendorPrefix(animation, showDelay 0.8s 2s forwards ease-in);
     }
 
     //@-webkit-keyframes showDelay {
@@ -100,18 +99,12 @@
 //responsive for PC
 @include pcSize {
   .hero {
-    text-align: right;
 
     &__txt {
-      text-align: right;
-
-      h2 {
-        font-size: $font-size-h2-pc;
-      }
+      text-align: left;
     }
 
     h1 {
-      display: block;
       font-size: $font-size-h1-pc;
       margin-top: 300px;
       padding-left: 30%;
@@ -124,13 +117,15 @@
   .hero {
 
     &__txt {
-      h2 {
-        font-size: $font-size-h2-pc;
+
+      h3 {
+        font-size: $font-size-h3-pc;
       }
     }
 
     h1 {
       font-size: $font-size-h1-pc;
+      margin-top: 300px;
     }
   }
 }

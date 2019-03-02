@@ -152,8 +152,8 @@ h2.text--upright {
 }
 
 h3 {
-  display: inline-block;
   font-size: 1.562rem;
+  font-family: "Dosis", sans-serif;
 }
 
 @media (min-width: 1000px) {
@@ -649,142 +649,20 @@ html {
 
 .hero {
   width: 100%;
-  min-height: 670px;
+  height: 100vh;
   margin-top: 0;
-  padding-top: 300px;
+  padding-top: 200px;
 }
 
-@-webkit-keyframes textShadow {
-  0% {
-    text-shadow: none;
-  }
-  100% {
-    text-shadow: 5px 2px 7px rgba(138, 124, 124, 0.4);
-  }
+.hero__txt {
+  text-align: left;
 }
 
-@-o-keyframes textShadow {
-  0% {
-    text-shadow: none;
-  }
-  100% {
-    text-shadow: 5px 2px 7px rgba(138, 124, 124, 0.4);
-  }
-}
-
-@keyframes textShadow {
-  0% {
-    text-shadow: none;
-  }
-  100% {
-    text-shadow: 5px 2px 7px rgba(138, 124, 124, 0.4);
-  }
-}
-
-.hero__txt span {
-  display: inline-block;
-  -webkit-transform: translateY(-1000px);
-  -moz-transform: translateY(-1000px);
-  -ms-transform: translateY(-1000px);
-  -o-transform: translateY(-1000px);
-  transform: translateY(-1000px);
-}
-
-.hero__txt span:nth-child(3) {
-  padding-right: 2%;
-}
-
-.hero__txt span.fallDown {
-  -webkit-animation: fallDown 1s forwards ease-in;
-  -moz-animation: fallDown 1s forwards ease-in;
-  -ms-animation: fallDown 1s forwards ease-in;
-  -o-animation: fallDown 1s forwards ease-in;
-  animation: fallDown 1s forwards ease-in;
-}
-
-@-webkit-keyframes fallDown {
-  0% {
-    -webkit-transform: translateY(-1000px);
-    -moz-transform: translateY(-1000px);
-    -ms-transform: translateY(-1000px);
-    -o-transform: translateY(-1000px);
-    transform: translateY(-1000px);
-  }
-  50% {
-    -webkit-transform: translateY(-500px);
-    -moz-transform: translateY(-500px);
-    -ms-transform: translateY(-500px);
-    -o-transform: translateY(-500px);
-    transform: translateY(-500px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-@-o-keyframes fallDown {
-  0% {
-    -webkit-transform: translateY(-1000px);
-    -moz-transform: translateY(-1000px);
-    -ms-transform: translateY(-1000px);
-    -o-transform: translateY(-1000px);
-    transform: translateY(-1000px);
-  }
-  50% {
-    -webkit-transform: translateY(-500px);
-    -moz-transform: translateY(-500px);
-    -ms-transform: translateY(-500px);
-    -o-transform: translateY(-500px);
-    transform: translateY(-500px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-@keyframes fallDown {
-  0% {
-    -webkit-transform: translateY(-1000px);
-    -moz-transform: translateY(-1000px);
-    -ms-transform: translateY(-1000px);
-    -o-transform: translateY(-1000px);
-    transform: translateY(-1000px);
-  }
-  50% {
-    -webkit-transform: translateY(-500px);
-    -moz-transform: translateY(-500px);
-    -ms-transform: translateY(-500px);
-    -o-transform: translateY(-500px);
-    transform: translateY(-500px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-.hero__txt h2 {
-  text-align: center;
+.hero__txt h3 {
   letter-spacing: 0.15em;
-  color: #EE817B;
+  color: #FCECEA;
   text-shadow: 5px 2px 7px rgba(212, 115, 109, 0.4);
   padding-bottom: 10px;
-  -webkit-animation: showDelay 0.8s 2s forwards ease-in;
-  -moz-animation: showDelay 0.8s 2s forwards ease-in;
-  -ms-animation: showDelay 0.8s 2s forwards ease-in;
-  -o-animation: showDelay 0.8s 2s forwards ease-in;
-  animation: showDelay 0.8s 2s forwards ease-in;
 }
 
 .hero h1 {
@@ -794,17 +672,10 @@ html {
 }
 
 @media (min-width: 1000px) {
-  .hero {
-    text-align: right;
-  }
   .hero__txt {
-    text-align: right;
-  }
-  .hero__txt h2 {
-    font-size: 2rem;
+    text-align: left;
   }
   .hero h1 {
-    display: block;
     font-size: 4.5rem;
     margin-top: 300px;
     padding-left: 30%;
@@ -812,11 +683,12 @@ html {
 }
 
 @media (min-width: 640px) and (max-width: 999px) {
-  .hero__txt h2 {
-    font-size: 2rem;
+  .hero__txt h3 {
+    font-size: 1.5rem;
   }
   .hero h1 {
     font-size: 4.5rem;
+    margin-top: 300px;
   }
 }
 
