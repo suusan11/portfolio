@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="shortcut icon" href="images/logo-brown.png" type="image/x-icon">
     <title>Mie Suzuki - Front end designer</title>
     <meta property="og:title" content="Mie Suzuki - Front end designer">
@@ -17,30 +18,18 @@
     <meta property="fb:app_id" content="598135503886621" />
 </head>
 <body>
-    <!--<header id="js-header">-->
-        <!--<div class="container">-->
-            <!--<div class="header__flex">-->
-                <!--<div id="js-logo-container" class="header__flex&#45;&#45;left">-->
-                    <!--<a href="index.html"><img src="images/logo-brown.png" alt="logo"></a>-->
-                    <!--<p id="js-scroll-show" class="header__text">Mie Suzuki</p>-->
-                <!--</div>-->
-                <!--<div id="js-nav-container" class="header__flex&#45;&#45;right">-->
-                    <!--<a id="js-nav-toggle" class="nav-toggle">-->
-                        <!--<span></span>-->
-                    <!--</a>-->
-                    <!--<ul id="js-global-nav-list" class="global-nav">-->
-                        <!--<li><a href="#hero">HOME</a></li>-->
-                        <!--<li><a href="#works">WORK</a></li>-->
-                        <!--<li><a href="#values">VALUES</a></li>-->
-                        <!--<li><a href="#about">ABOUT</a></li>-->
-                        <!--<li><a href="#contact">CONTACT</a></li>-->
-                    <!--</ul>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</header>-->
 
     <div id="js-breakPoint" class="bg-color--pink">
+        <div class="menu-bg"></div>
+            <div class="menu-burger">☰</div>
+            <ul class="menu-items">
+                <li><a href="#hero">HOME</a></li>
+                <li><a href="#works">WORK</a></li>
+                <li><a href="#values">VALUES</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+
         <div class="container">
             <section id="hero" class="hero">
                 <div class="hero__txt">
@@ -51,6 +40,7 @@
             </section>
         </div>
     </div>
+    <!--/hero section-->
 
     <header id="js-header">
         <div class="container">
@@ -63,13 +53,18 @@
                     <a id="js-nav-toggle" class="nav-toggle">
                         <span></span>
                     </a>
-                    <ul id="js-global-nav-list" class="global-nav">
-                        <li><a href="#hero">HOME</a></li>
-                        <li><a href="#works">WORK</a></li>
-                        <li><a href="#values">VALUES</a></li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                    </ul>
+                    <!--<nav class="menu-bg">-->
+                        <!--<div class="menu-burger">☰</div>-->
+                        <!--&lt;!&ndash;<ul id="js-global-nav-list" class="global-nav">&ndash;&gt;-->
+                        <!--<ul class="menu-items">-->
+                            <!--<li><a href="#hero">HOME</a></li>-->
+                            <!--<li><a href="#works">WORK</a></li>-->
+                            <!--<li><a href="#values">VALUES</a></li>-->
+                            <!--<li><a href="#about">ABOUT</a></li>-->
+                            <!--<li><a href="#contact">CONTACT</a></li>-->
+                        <!--</ul>-->
+                    <!--</nav>-->
+                    <!--<a href="#" id="nav-trigger" class="nav-reveal-button"></a>-->
                 </div>
             </div>
         </div>
@@ -94,6 +89,7 @@
                 </div>
             </div>
     </section>
+    <!--/works section-->
 
     <section id="values" class="values">
         <div class="container heading__right">
@@ -126,6 +122,7 @@
             <h4 class="grid__text--row8">Enjoy creating with love and passion</h4>
         </div>
     </section>
+    <!--/values section-->
 
     <section id="about" class="about">
         <div class="container heading__left">
@@ -145,6 +142,7 @@
             </div>
         </div>
     </section>
+    <!--/about section-->
 
     <section id="contact" class="contact">
         <div class="container heading__center">
@@ -158,6 +156,7 @@
             <a href="mailto:gawow11@gmail.com"><img src="images/email.svg" alt="icon email"></a>
         </div>
     </section>
+    <!--/contact section-->
 
     <footer>
         <div class="sns">
@@ -180,5 +179,11 @@
     </footer>
 
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript">
+        $('.menu-burger, .menu-items').on('click', function() {
+            $('.menu-bg, .menu-items, .menu-burger').toggleClass('fs');
+            $('.menu-burger').text() == "☰" ? $('.menu-burger').text('✕') : $('.menu-burger').text('☰');
+        });
+    </script>
 </body>
 </html>
