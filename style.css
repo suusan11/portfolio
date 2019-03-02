@@ -702,9 +702,27 @@ html {
     right: -100px;
   }
   .hero h1 {
+    position: relative;
     font-size: 4.5rem;
     margin-top: 350px;
     padding-left: 30%;
+  }
+  .hero h1::before {
+    content: url("../images/arrow3.png");
+    position: absolute;
+    opacity: 0.1;
+    top: -100px;
+    left: 300px;
+    animation: downNav 2s infinite ease-in;
+  }
+  @keyframes downNav {
+    from {
+      top: -50px;
+    }
+    to {
+      top: 200px;
+      opacity: 0;
+    }
   }
 }
 
