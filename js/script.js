@@ -1,32 +1,32 @@
 //text effect for name on top
-var fullName = document.getElementsByTagName('h1')[0];
-
-function textEffect(animationName) {
-    let text = fullName.innerHTML;
-    let newText = '';
-    let animation = animationName;
-
-    for(let i = 0; i < text.length; i++) {
-        newText += '<span>' + text.charAt(i) + '</span>';
-    }
-
-    fullName.innerHTML = newText;
-
-    var wrappedChars = document.getElementsByTagName('span');
-    let j = 0;
-
-    function addEffect() {
-        setTimeout(function () {
-            wrappedChars[j].className = animation;
-            j += 1;
-            if(j < wrappedChars.length) {
-                addEffect();
-            }
-        }, 100);
-    }
-    addEffect();
-}
-textEffect('fallDown');
+// var fullName = document.getElementsByTagName('h1')[0];
+//
+// function textEffect(animationName) {
+//     let text = fullName.innerHTML;
+//     let newText = '';
+//     let animation = animationName;
+//
+//     for(let i = 0; i < text.length; i++) {
+//         newText += '<span>' + text.charAt(i) + '</span>';
+//     }
+//
+//     fullName.innerHTML = newText;
+//
+//     var wrappedChars = document.getElementsByTagName('span');
+//     let j = 0;
+//
+//     function addEffect() {
+//         setTimeout(function () {
+//             wrappedChars[j].className = animation;
+//             j += 1;
+//             if(j < wrappedChars.length) {
+//                 addEffect();
+//             }
+//         }, 100);
+//     }
+//     addEffect();
+// }
+// textEffect('fallDown');
 
 
 //global menu

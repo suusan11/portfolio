@@ -127,7 +127,7 @@ h1 {
   font-size: 1.875rem;
   font-family: "Dosis", sans-serif;
   font-weight: 700;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
 }
 
 h2 {
@@ -642,7 +642,8 @@ html {
 }
 
 .bg-color--pink {
-  background-color: rgba(252, 236, 234, 0.5);
+  height: 100vh;
+  background-color: #EE817B;
   position: relative;
 }
 
@@ -786,7 +787,6 @@ html {
 }
 
 .hero__txt h2 {
-  opacity: 0;
   text-align: center;
   letter-spacing: 0.15em;
   color: #EE817B;
@@ -799,56 +799,28 @@ html {
   animation: showDelay 0.8s 2s forwards ease-in;
 }
 
-@-webkit-keyframes showDelay {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes showDelay {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes showDelay {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @media (min-width: 1000px) {
   .hero {
-    min-height: 800px;
-    text-align: center;
+    text-align: right;
   }
   .hero__txt {
-    text-align: center;
-  }
-  .hero__txt h1 {
-    font-size: 2.5rem;
-    width: 80%;
+    text-align: right;
   }
   .hero__txt h2 {
     font-size: 2rem;
   }
+  .hero h1 {
+    display: block;
+    font-size: 4.5rem;
+    color: #FFFFFF;
+    margin-top: 20%;
+    padding-left: 30%;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 999px) {
-  .hero {
-    min-height: 800px;
-  }
   .hero__txt h1 {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
   }
   .hero__txt h2 {
     font-size: 2rem;

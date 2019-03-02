@@ -1,7 +1,8 @@
 @import "variable", "typography", "mixin";
 
 .bg-color--pink {
-  background-color: $pink-opacity;
+  height: 100vh;
+  background-color: $secondary-pink;
   position: relative;
 }
 
@@ -68,7 +69,7 @@
     }
 
     h2 {
-      opacity: 0;
+      //opacity: 0;
       text-align: center;
       letter-spacing: 0.15em;
       color: $secondary-pink;
@@ -77,20 +78,20 @@
       @include vendorPrefix(animation, showDelay 0.8s 2s forwards ease-in);
     }
 
-    @-webkit-keyframes showDelay {
-      0% {opacity: 0;}
-      100% {opacity: 1;}
-    }
-
-    @-o-keyframes showDelay {
-      0% {opacity: 0;}
-      100% {opacity: 1;}
-    }
-
-    @keyframes showDelay {
-      0% {opacity: 0;}
-      100% {opacity: 1;}
-    }
+    //@-webkit-keyframes showDelay {
+    //  0% {opacity: 0;}
+    //  100% {opacity: 1;}
+    //}
+    //
+    //@-o-keyframes showDelay {
+    //  0% {opacity: 0;}
+    //  100% {opacity: 1;}
+    //}
+    //
+    //@keyframes showDelay {
+    //  0% {opacity: 0;}
+    //  100% {opacity: 1;}
+    //}
   }
 }
 
@@ -99,20 +100,22 @@
 //responsive for PC
 @include pcSize {
   .hero {
-    min-height: 800px;
-    text-align: center;
+    text-align: right;
 
     &__txt {
-      text-align: center;
-
-      h1 {
-        font-size: $font-size-h1-pc;
-        width: 80%;
-      }
+      text-align: right;
 
       h2 {
         font-size: $font-size-h2-pc;
       }
+    }
+
+    h1 {
+      display: block;
+      font-size: $font-size-h1-pc;
+      color: $white;
+      margin-top: 20%;
+      padding-left: 30%;
     }
   }
 }
@@ -120,7 +123,6 @@
 //responsive for before mb
 @include middleSize {
   .hero {
-    min-height: 800px;
 
     &__txt {
       h1 {
