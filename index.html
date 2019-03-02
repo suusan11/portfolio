@@ -49,23 +49,6 @@
                     <a href="index.html"><img src="images/logo-brown.png" alt="logo"></a>
                     <p id="js-scroll-show" class="header__text">Mie Suzuki</p>
                 </div>
-                <div id="js-nav-container" class="header__flex--right">
-                    <a id="js-nav-toggle" class="nav-toggle">
-                        <span></span>
-                    </a>
-                    <!--<nav class="menu-bg">-->
-                        <!--<div class="menu-burger">☰</div>-->
-                        <!--&lt;!&ndash;<ul id="js-global-nav-list" class="global-nav">&ndash;&gt;-->
-                        <!--<ul class="menu-items">-->
-                            <!--<li><a href="#hero">HOME</a></li>-->
-                            <!--<li><a href="#works">WORK</a></li>-->
-                            <!--<li><a href="#values">VALUES</a></li>-->
-                            <!--<li><a href="#about">ABOUT</a></li>-->
-                            <!--<li><a href="#contact">CONTACT</a></li>-->
-                        <!--</ul>-->
-                    <!--</nav>-->
-                    <!--<a href="#" id="nav-trigger" class="nav-reveal-button"></a>-->
-                </div>
             </div>
         </div>
     </header>
@@ -181,7 +164,7 @@
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript">
         $('.menu-burger, .menu-items').on('click', function() {
-            $('.menu-bg, .menu-items, .menu-burger').toggleClass('fs');
+            $('.menu-bg, .menu-items, .menu-burger').toggleClass('fullScreen');
             $('.menu-burger').text() == "☰" ? $('.menu-burger').text('✕') : $('.menu-burger').text('☰');
         });
     </script>
