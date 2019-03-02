@@ -14,14 +14,6 @@
 
   &__txt {
 
-    h1 {
-      display: inline-block;
-      width: 100%;
-      text-align: center;
-      @include vendorPrefix(animation, textShadow .8s 2s forwards ease-in);
-      padding-bottom: 32px;
-    }
-
     @-webkit-keyframes textShadow {
       0% {text-shadow: none;}
       100% {text-shadow: 5px 2px 7px rgba(138, 124, 124, 0.4);}
@@ -93,6 +85,14 @@
     //  100% {opacity: 1;}
     //}
   }
+
+  h1 {
+    color: $white;
+    margin-top: 250px;
+    text-align: right;
+    //@include vendorPrefix(animation, textShadow .8s 2s forwards ease-in);
+
+  }
 }
 
 
@@ -113,8 +113,7 @@
     h1 {
       display: block;
       font-size: $font-size-h1-pc;
-      color: $white;
-      margin-top: 20%;
+      margin-top: 300px;
       padding-left: 30%;
     }
   }
@@ -125,13 +124,13 @@
   .hero {
 
     &__txt {
-      h1 {
-        font-size: $font-size-h1-pc;
-      }
-
       h2 {
         font-size: $font-size-h2-pc;
       }
+    }
+
+    h1 {
+      font-size: $font-size-h1-pc;
     }
   }
 }

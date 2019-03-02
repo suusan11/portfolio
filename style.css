@@ -124,7 +124,7 @@ section {
 }
 
 h1 {
-  font-size: 1.875rem;
+  font-size: 2.5rem;
   font-family: "Dosis", sans-serif;
   font-weight: 700;
   letter-spacing: 0.2em;
@@ -654,18 +654,6 @@ html {
   padding-top: 300px;
 }
 
-.hero__txt h1 {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  -webkit-animation: textShadow 0.8s 2s forwards ease-in;
-  -moz-animation: textShadow 0.8s 2s forwards ease-in;
-  -ms-animation: textShadow 0.8s 2s forwards ease-in;
-  -o-animation: textShadow 0.8s 2s forwards ease-in;
-  animation: textShadow 0.8s 2s forwards ease-in;
-  padding-bottom: 32px;
-}
-
 @-webkit-keyframes textShadow {
   0% {
     text-shadow: none;
@@ -799,6 +787,12 @@ html {
   animation: showDelay 0.8s 2s forwards ease-in;
 }
 
+.hero h1 {
+  color: #FFFFFF;
+  margin-top: 250px;
+  text-align: right;
+}
+
 @media (min-width: 1000px) {
   .hero {
     text-align: right;
@@ -812,18 +806,17 @@ html {
   .hero h1 {
     display: block;
     font-size: 4.5rem;
-    color: #FFFFFF;
-    margin-top: 20%;
+    margin-top: 300px;
     padding-left: 30%;
   }
 }
 
 @media (min-width: 640px) and (max-width: 999px) {
-  .hero__txt h1 {
-    font-size: 4.5rem;
-  }
   .hero__txt h2 {
     font-size: 2rem;
+  }
+  .hero h1 {
+    font-size: 4.5rem;
   }
 }
 
@@ -1279,7 +1272,7 @@ html {
 
 .about__container .p__font--light span {
   font-weight: 700;
-  font-size: 1.875rem;
+  font-size: 2.5rem;
   padding-right: 2px;
 }
 
