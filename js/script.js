@@ -47,8 +47,8 @@
 //         tagA[i].addEventListener("click", navToggle);
 //     }
 // }
-
-document.getElementById("js-nav-toggle").addEventListener("click", navToggle);
+//
+// document.getElementById("js-nav-toggle").addEventListener("click", navToggle);
 
 
 //get scroll position
