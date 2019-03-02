@@ -399,6 +399,7 @@ html {
 }
 
 header {
+  display: none;
   width: 100%;
   height: 80px;
   position: fixed;
@@ -406,6 +407,11 @@ header {
   left: 0;
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.8);
+  transition: 2s ease-in;
+}
+
+header.is-show {
+  display: block;
 }
 
 header .header__flex {
@@ -433,18 +439,9 @@ header .header__flex--left img {
 }
 
 header .header__flex--left .header__text {
-  opacity: 0;
+  opacity: 1;
   margin-left: 5%;
   letter-spacing: 0.2rem;
-}
-
-header .header__flex--left .header__text.is-show {
-  opacity: 1;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -ms-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
 }
 
 header .header__flex--left.is-expand {
@@ -537,10 +534,6 @@ header .header__flex--right .nav-toggle.open span::after {
   -ms-transform: translateX(-10px);
   -o-transform: translateX(-10px);
   transform: translateX(-10px);
-}
-
-header .header__flex--right.is-hide {
-  display: none;
 }
 
 @media (min-width: 1000px) {
@@ -708,7 +701,7 @@ html {
     padding-left: 30%;
   }
   .hero h1::before {
-    content: url("../images/arrow3.png");
+    content: url("../images/arrow.png");
     position: absolute;
     opacity: 0.1;
     top: -100px;
