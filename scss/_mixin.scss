@@ -15,7 +15,7 @@
 @mixin bgText($content) {
   display: block;
   content: $content;
-  color: $primary-pink;
+  color: $secondary-pink;
   opacity: 0.1;
   font-family: $font-base;
   font-size: 15rem;
