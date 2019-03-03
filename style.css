@@ -833,7 +833,7 @@ html {
   .works__thumbnails--pc {
     width: 80%;
     margin: 0 auto;
-    padding: 8% 0;
+    padding: 8% 0 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
