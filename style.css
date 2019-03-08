@@ -574,7 +574,7 @@ html {
 .menu-bg.fullScreen {
   transform: translate3d(50%, -50%, 0);
   width: 300vw;
-  height: 300vw;
+  height: 300vh;
 }
 
 .menu-burger {
@@ -592,7 +592,7 @@ html {
 }
 
 .menu-items {
-  position: absolute;
+  position: fixed;
   font-size: 20px;
   letter-spacing: 10px;
   color: white;
@@ -604,6 +604,7 @@ html {
   transform: translateY(-200%);
   pointer-events: none;
   z-index: 30;
+  overflow: hidden;
 }
 
 .menu-items li {

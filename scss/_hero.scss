@@ -31,7 +31,7 @@
   &.fullScreen{
     transform:translate3d(50%,-50%,0);
     width: 300vw;
-    height: 300vw;
+    height: 300vh;
   }
 }
 .menu-burger {
@@ -48,7 +48,7 @@
   }
 }
 .menu-items{
-  position:absolute;
+  position: fixed;
   font-size: $font-size-base-pc;
   letter-spacing:10px;
   color: white;
@@ -60,6 +60,7 @@
   transform: translateY(-200%);
   pointer-events:none;
   z-index: 30;
+  overflow: hidden;
 
   li {
     transition: 1s;
