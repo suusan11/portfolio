@@ -59,32 +59,42 @@
 
 //responsive for PC
 @include pcSize {
-  .works__introduction {
-    width: 550px;
-    height: auto;
-    border-radius: 30px;
-    padding: 5% 0;
-    margin-top: 15%;
-    margin-left: 10%;
+  .works__top {
+    width: 100%;
 
-    h2 {
-      padding-bottom: 10%;
+    .works__top-img {
+      width: 100%;
+      height: 300px;
+      background: url("../images/works_images/kulkuri/works-top.png") bottom;
+      background-size: cover;
     }
 
-    .information {
-      border-left: 5px solid $secondary-pink;
-      padding-left: 5%;
-      margin-bottom: 5%;
+    .works__introduction {
+      width: 550px;
+      height: auto;
+      border-radius: 30px;
+      padding: 5% 0;
+      margin: 5% 0 0 10%;
 
-      p {
-        line-height: 1.5em;
+      h2 {
+        padding-bottom: 10%;
       }
-    }
 
-    .description {
-      font-weight: $font-weight-light;
-      letter-spacing: 0.05em;
-      font-size: $font-size-base-pc - 3px;
+      .information {
+        border-left: 5px solid $secondary-pink;
+        padding-left: 5%;
+        margin-bottom: 5%;
+
+        p {
+          line-height: 1.5em;
+        }
+      }
+
+      .description {
+        font-weight: $font-weight-light;
+        letter-spacing: 0.05em;
+        font-size: $font-size-base-pc - 3px;
+      }
     }
   }
 }
