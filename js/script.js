@@ -93,3 +93,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
     checkBreakPoint(pcSize);
 });
+
+//parallax scroll
+var rellax = new Rellax('.rellax');
