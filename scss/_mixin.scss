@@ -123,6 +123,14 @@
   background-color: $color;
 }
 
+//top img for each work page
+@mixin workImagTop($url) {
+  width: 100%;
+  height: 300px;
+  background: $url bottom;
+  background-size: cover;
+}
+
 //for responsive
 @mixin pcSize {
   @media (min-width: (1000px)) {
