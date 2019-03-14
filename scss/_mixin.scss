@@ -124,7 +124,7 @@
 }
 
 //top img for each work page
-@mixin workImagTop($url) {
+@mixin workImgTop($url) {
   width: 100%;
   height: 300px;
   background: $url bottom;
