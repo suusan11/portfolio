@@ -94,11 +94,12 @@
   text-align: center;
 }
 
-@mixin circleValueImg($width, $height) {
+@mixin circleValueImg($url, $width, $height) {
   display: inline-block;
   width: $width;
   height: $height;
   margin: 20% 0 0 5%;
+  background-image: $url;
 }
 
 @mixin circleAboutMb($color) {
