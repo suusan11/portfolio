@@ -1446,6 +1446,12 @@ html {
     background: url("https://suusan11.github.io/portfolio/images/works_images/kulkuri/works-top.png") bottom;
     background-size: cover;
   }
+  .works__top .wp-top {
+    width: 100%;
+    height: 300px;
+    background: url("https://suusan11.github.io/portfolio/images/works_images/wp/works-top.png") bottom;
+    background-size: cover;
+  }
   .works__top .works__introduction {
     width: 550px;
     height: auto;

@@ -65,6 +65,9 @@
     .kulkuri-top {
       @include workImgTop(url("https://suusan11.github.io/portfolio/images/works_images/kulkuri/works-top.png"));
     }
+    .wp-top {
+      @include workImgTop(url("https://suusan11.github.io/portfolio/images/works_images/wp/works-top.png"));
+    }
 
     .works__introduction {
       width: 550px;
