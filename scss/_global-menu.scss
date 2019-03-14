@@ -1,51 +1,99 @@
 @import "variable", "typography", "mixin";
 
-.global-nav {
-  visibility: hidden;
-  width: 80px;
-  margin-top: -5px;
-  margin-left: auto;
-  @include vendorPrefix(transform, translateX(100%));
-  @include vendorPrefix(transition, .5s transform ease-out);
+.menu {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  text-align:center;
+  border-radius: 100%;
+  right:25px;
+  top:25px;
+}
+.menu-bg {
+  @extend .menu;
+  background: $white;
+  pointer-events: none;
+  transition: .5s;
+  right:50px;
+  top:50px;
+  transform:translate3d(50%,-50%,0);
+  transform-origin: center center;
+  z-index: 15;
+
+  &.fullScreen{
+    transform:translate3d(50%,-50%,0);
+    width: 300vw;
+    height: 300vh;
+  }
+}
+.menu-burger {
+  @extend .menu;
+  color: $brown;
+  padding-top: 9px;
+  -webkit-user-select: none;
+  cursor: pointer;
+  transition: .4s;
+  transform-origin: center;
+  z-index: 20;
+
+  &.fullScreen {
+    @include vendorPrefix(transform, rotate(-180deg) translateY(10px));
+  }
+}
+.menu-items{
+  position: fixed;
+  font-size: $font-size-base-pc;
+  letter-spacing:10px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  opacity:0;
+  transition: .4s;
+  margin-top:100px;
+  @include vendorPrefix(transform, translateY(-200%));
+  pointer-events:none;
+  z-index: 30;
+  overflow: hidden;
 
   li {
-    display: inline-block;
-    width: 100%;
-    font-size: $font-size-base-pc - 5px;
-    font-weight: $font-weight-light;
-    padding: 15% 0;
+    transition: 1s;
+    opacity: 0;
+    margin-top: 0;
+    text-align: center;
 
     a {
+      position: relative;
+      display: inline-block;
       color: $black;
+      text-align: center;
 
-      &:hover {
-        opacity: 0.5;
+      &::after {
+        position: absolute;
+        top: 35px;
+        right: 0;
+        content: '';
+        display: inline-block;
+        width: 100%;
+        @include vendorPrefix(transform, scaleX(0));
+        border-bottom: 3px solid $primary-pink;
+        @include vendorPrefix(transition, .5s ease-out);
       }
     }
   }
 
-  &.open {
-    visibility: visible;
-    @include vendorPrefix(transform, translateX(0));
-  }
-}
+  &.fullScreen {
+    transform: translateY(0);
+    pointer-events:auto;
+    opacity: 1;
 
-@include pcSize {
-  .global-nav {
-    width: 100px;
+    li{
+      opacity: 1;
+      margin-top: 75px;
 
-    li {
-      padding: 20% 0;
-    }
-  }
-}
-
-@include middleSize {
-  .global-nav {
-    width: 100px;
-
-    li {
-      padding: 20% 0;
+      a:hover::after {
+        @include vendorPrefix(transform, scaleX(1));
+      }
     }
   }
 }
