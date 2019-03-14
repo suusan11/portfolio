@@ -64,9 +64,15 @@
 
     .kulkuri-top {
       @include workImgTop(url("https://suusan11.github.io/portfolio/images/works_images/kulkuri/works-top.png"));
+      @include workImgTop(url("../images/works_images/kulkuri/works-top.png"));
     }
     .wp-top {
       @include workImgTop(url("https://suusan11.github.io/portfolio/images/works_images/wp/works-top.png"));
+      @include workImgTop(url("../images/works_images/wp/works-top.png"));
+    }
+    .ui-top {
+      @include workImgTop(url("https://suusan11.github.io/portfolio/images/works_images/uidesign/works-top.png"));
+      @include workImgTop(url("../images/works_images/uidesign/works-top.png"));
     }
 
     .works__introduction {
