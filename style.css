@@ -1476,6 +1476,16 @@ html {
     background: url("../images/works_images/uidesign/works-top.png") bottom;
     background-size: cover;
   }
+  .works__top .mogu-top {
+    width: 100%;
+    height: 300px;
+    background: url("https://suusan11.github.io/portfolio/images/works_images/mogu/works-top.png") bottom;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    background: url("../images/works_images/mogu/works-top.png") bottom;
+    background-size: cover;
+  }
   .works__top .works__introduction {
     width: 550px;
     height: auto;

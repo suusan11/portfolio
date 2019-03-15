@@ -80,6 +80,10 @@
       @include workImgTop(url("https://suusan11.github.io/portfolio/images/works_images/uidesign/works-top.png"));
       @include workImgTop(url("../images/works_images/uidesign/works-top.png"));
     }
+    .mogu-top {
+      @include workImgTop(url("https://suusan11.github.io/portfolio/images/works_images/mogu/works-top.png"));
+      @include workImgTop(url("../images/works_images/mogu/works-top.png"));
+    }
 
     .works__introduction {
       width: 550px;
