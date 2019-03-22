@@ -1504,6 +1504,13 @@ html {
   .works__top .works__introduction .information p {
     line-height: 1.5em;
   }
+  .works__top .works__introduction .information .icon {
+    width: 10%;
+    height: 30px;
+    object-fit: cover;
+    fill: #545454;
+    margin: 5% 2% 0 0;
+  }
   .works__top .works__introduction .description {
     font-weight: 300;
     letter-spacing: 0.05em;
