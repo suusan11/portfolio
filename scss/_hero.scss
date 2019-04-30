@@ -61,16 +61,7 @@
       z-index: 10;
 
       &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: -100px;
-        left: -30px;
-        width: 350px;
-        height: 350px;
-        border-radius: 50%;
-        background-color: #FFFFFF;
-        z-index: -1;
+        @include heroBgCircle(-100px, -30px, 350px, 350px);
       }
     }
 

@@ -123,6 +123,19 @@
   background-color: $color;
 }
 
+@mixin heroBgCircle($top, $left, $width, $height) {
+  content: '';
+  display: block;
+  position: absolute;
+  top: $top;
+  left: $left;
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+  background-color: $white;
+  z-index: -1;
+}
+
 //top img for each work page
 @mixin workImgTop($url) {
   width: 100%;
