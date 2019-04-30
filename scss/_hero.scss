@@ -53,8 +53,8 @@
       }
     }
   }
-  .hero {
 
+  .hero {
     &__txt {
       text-align: left;
       position: relative;
@@ -70,6 +70,11 @@
       font-size: $font-size-h1-pc;
       margin-top: 350px;
       padding-left: 30%;
+      z-index: 10;
+
+      &::before {
+        @include heroBgCircle(-100px, 1000px, 250px, 250px);
+      }
     }
   }
 }
