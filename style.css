@@ -671,8 +671,8 @@ html {
     border-radius: 50%;
     background-color: #FFFFFF;
     z-index: -1;
-    animation: inherit;
     opacity: 0;
+    animation: inherit;
   }
   .hero h1 {
     position: relative;
@@ -694,8 +694,8 @@ html {
     border-radius: 50%;
     background-color: #FFFFFF;
     z-index: -1;
-    animation: inherit;
     opacity: 0;
+    animation: inherit;
   }
   @keyframes heromove {
     100% {
@@ -719,6 +719,7 @@ html {
     border-radius: 50%;
     background-color: #FFFFFF;
     z-index: -1;
+    opacity: 0;
   }
   .hero__txt h2 {
     font-size: 2rem;
@@ -739,6 +740,7 @@ html {
     border-radius: 50%;
     background-color: #FFFFFF;
     z-index: -1;
+    opacity: 0;
   }
 }
 

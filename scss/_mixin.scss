@@ -134,6 +134,12 @@
   border-radius: 50%;
   background-color: $white;
   z-index: -1;
+  opacity: 0;
+}
+
+@mixin heroAnimation($delay) {
+  animation: heromove 1.5s ease-in $delay 1 forwards;
+  opacity: 0;
 }
 
 //top img for each work page
