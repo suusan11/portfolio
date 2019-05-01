@@ -639,12 +639,14 @@ html {
     position: absolute;
     bottom: 200px;
     left: 50px;
-    animation: downNav 2s infinite ease-in-out;
+    animation: downNav 2s 3.5s infinite ease-in-out;
     z-index: 11;
+    opacity: 0;
   }
   @keyframes downNav {
     from {
       bottom: 100px;
+      opacity: 1;
     }
     to {
       bottom: 0;
@@ -655,6 +657,8 @@ html {
     text-align: left;
     position: relative;
     z-index: 10;
+    animation: heromove 1.5s ease-in 0.5s 1 forwards;
+    opacity: 0;
   }
   .hero__txt::before {
     content: '';
@@ -667,6 +671,8 @@ html {
     border-radius: 50%;
     background-color: #FFFFFF;
     z-index: -1;
+    animation: inherit;
+    opacity: 0;
   }
   .hero h1 {
     position: relative;
@@ -674,6 +680,8 @@ html {
     margin-top: 330px;
     padding-left: 30%;
     z-index: 10;
+    animation: heromove 1.5s ease-in 1.5s 1 forwards;
+    opacity: 0;
   }
   .hero h1::before {
     content: '';
@@ -686,6 +694,13 @@ html {
     border-radius: 50%;
     background-color: #FFFFFF;
     z-index: -1;
+    animation: inherit;
+    opacity: 0;
+  }
+  @keyframes heromove {
+    100% {
+      opacity: 1;
+    }
   }
 }
 

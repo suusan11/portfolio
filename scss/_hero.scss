@@ -41,12 +41,16 @@
       position: absolute;
       bottom: 200px;
       left: 50px;
-      animation: downNav 2s infinite ease-in-out;
+      animation: downNav 2s 3.5s infinite ease-in-out;
       z-index: 11;
+      opacity: 0;
     }
 
     @keyframes downNav {
-      from { bottom: 100px; }
+      from {
+        bottom: 100px;
+        opacity: 1;
+      }
       to {
         bottom: 0;
         opacity: 0;
@@ -59,9 +63,14 @@
       text-align: left;
       position: relative;
       z-index: 10;
+      animation: heromove 1.5s ease-in 0.5s 1 forwards;
+      opacity: 0;
 
       &::before {
         @include heroBgCircle(-100px, -30px, 350px, 350px);
+        //animation: heromove 0.5s ease-in 0.5s 1 forwards;
+        animation: inherit;
+        opacity: 0;
       }
     }
 
@@ -71,12 +80,25 @@
       margin-top: 330px;
       padding-left: 30%;
       z-index: 10;
+      animation: heromove 1.5s ease-in 1.5s 1 forwards;
+      opacity: 0;
 
       &::before {
         @include heroBgCircle(-100px, 75%, 250px, 250px);
+        //animation: heromove 0.5s ease-in 1s 1 forwards;
+        animation: inherit;
+        opacity: 0;
+      }
+    }
+
+    @keyframes heromove {
+      100% {
+        opacity: 1;
       }
     }
   }
+
+
 }
 
 //responsive for before mb
