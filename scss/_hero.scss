@@ -73,7 +73,7 @@
       z-index: 10;
 
       &::before {
-        @include heroBgCircle(-100px, 1000px, 250px, 250px);
+        @include heroBgCircle(-100px, 75%, 250px, 250px);
       }
     }
   }
@@ -84,6 +84,11 @@
   .hero {
 
     &__txt {
+      position: relative;
+
+      &::before {
+        @include heroBgCircle(-100px, -30px, 350px, 350px);
+      }
 
       h2 {
         font-size: $font-size-h2-pc;
@@ -91,8 +96,13 @@
     }
 
     h1 {
+      position: relative;
       font-size: $font-size-h1-pc;
       margin-top: 350px;
+
+      &::before {
+        @include heroBgCircle(-100px, 75%, 250px, 250px);
+      }
     }
   }
 }
