@@ -9,6 +9,11 @@ Mie Suzuki's portfolio site using **HTML**, **CSS/SCSS**, and **JavaScript**.
 Introduce my work/projects, values, and myself. The concept of the website is *Beautiful River*. The idea came from my name.
 In order to express the concept, put headings on the left and right like the flow of a river, and also expressed bubbles in circles.
 
+<img width="778" alt="Screen Shot 2019-05-02 at 2 07 06 AM" src="https://user-images.githubusercontent.com/38636923/57065743-3eb1d900-6c7f-11e9-9dde-379c2c2daf2c.png">
+
+
+<img width="725" alt="Screen Shot 2019-05-02 at 2 08 28 AM" src="https://user-images.githubusercontent.com/38636923/57065762-4cfff500-6c7f-11e9-9fb2-10450895406e.png">
+
 ## Tools
 ### Gulp
 Compile SCSS to CSS and watch changes in HTML, SCSS and JS, after that browser will be reloaded automatically.
