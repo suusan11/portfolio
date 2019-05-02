@@ -11,7 +11,7 @@ In order to express the concept, put headings on the left and right like the flo
 
 ## Tools
 ### Gulp
-Compile SCSS to CSS and watch changes in HTML, SCSS and JS, after that browser will be reloaded automatically
+Compile SCSS to CSS and watch changes in HTML, SCSS and JS, after that browser will be reloaded automatically.
 
 ``gulp: 3.9.1``
 
@@ -22,6 +22,7 @@ Compile SCSS to CSS and watch changes in HTML, SCSS and JS, after that browser w
 ``gulp-plumber": 1.2.0``
 
 ### Rellax.js
+Add parallax effect.
 
 ## Usage
 Install modules
