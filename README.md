@@ -23,9 +23,6 @@ Compile SCSS to CSS and watch changes in HTML, SCSS and JS, after that browser w
 
 ``gulp-plumber": 1.2.0``
 
-### Rellax.js
-Add parallax effect.
-
 ## Usage
 Install modules
 
