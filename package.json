@@ -19,9 +19,11 @@
   },
   "homepage": "https://github.com/suusan11/portfolio#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.0",
+    "browser-sync": "^2.26.5",
+    "eslint": "^5.16.0",
     "gulp": "^3.9.1",
-    "gulp-plumber": "^1.2.0",
-    "gulp-sass": "^4.0.1"
-  }
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {}
 }
