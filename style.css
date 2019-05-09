@@ -844,7 +844,7 @@ html {
   }
   .works__thumbnails--pc .thumbnail {
     width: 480px;
-    height: 300px;
+    height: 100%;
     border-radius: 20px;
     display: flex;
     justify-content: flex-start;
@@ -861,7 +861,7 @@ html {
   }
   .works__thumbnails--pc .thumbnail img {
     width: 100%;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
     cursor: pointer;
   }
@@ -914,7 +914,7 @@ html {
   }
   .works__thumbnails .thumbnail {
     width: 480px;
-    height: 330px;
+    height: 100%;
   }
   .works__thumbnails .thumbnail.delighter {
     transition: all .5s ease-out;
@@ -927,7 +927,7 @@ html {
   }
   .works__thumbnails .thumbnail img {
     width: 100%;
-    height: 330px;
+    height: 100%;
   }
   .works__thumbnails .thumbnail p {
     padding-left: 2%;
