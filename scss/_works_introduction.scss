@@ -25,6 +25,14 @@
       p {
         line-height: 1.5em;
       }
+
+      .icon {
+        width: 10%;
+        height: 30px;
+        object-fit: cover;
+        fill: $black;
+        margin: 5% 2% 0 0;
+      }
     }
 
     .description {
@@ -107,14 +115,6 @@
 
         p {
           line-height: 1.5em;
-        }
-
-        .icon {
-          width: 10%;
-          height: 30px;
-          object-fit: cover;
-          fill: $black;
-          margin: 5% 2% 0 0;
         }
       }
 
