@@ -22,7 +22,6 @@
   position: absolute;
 }
 
-
 @mixin circle($top, $right, $bottom, $left) {
   content: '';
   display: block;
@@ -76,6 +75,17 @@
   border: 3px solid $borderColor;
   background-color: $bgColor;
   margin: 0 auto;
+}
+
+@mixin detailBox {
+  display: inline-block;
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  width: 330px;
+  height: 180px;
+  background-color: $secondary-pink;
+  border-radius: 30px;
 }
 
 @mixin vendorPrefix($property, $value) {

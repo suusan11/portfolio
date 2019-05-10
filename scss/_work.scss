@@ -76,6 +76,7 @@
       flex-wrap: wrap;
 
       .thumbnail {
+        position: relative;
         width: 480px;
         height: 100%;
         border-radius: 20px;
@@ -101,31 +102,12 @@
           cursor: pointer;
         }
 
-        p {
-          position: relative;
-          font-weight: $font-weight-light;
-          letter-spacing: 0.1em;
-          padding-top: 5px;
-          padding-left: 2%;
-          @include vendorPrefix(writing-mode, vertical-rl);
-          @include vendorPrefix(text-orientation, sideways);
+        &:hover .detail__box {
+          @include detailBox;
         }
 
-        &:hover img {
-          opacity: 0.8;
-        }
-
-        &:hover p::after {
-          content: '';
-          position: absolute;
-          top: 5px;
-          right: 30%;
-          z-index: -1;
-          width: 80%;
-          height: 30%;
-          background: repeating-linear-gradient(-45deg, $black-opacity, $black-opacity 1px, white 2px, white 7px);
-          border-radius: 30px;
-          transition: .8s ease-in;
+        .detail__box {
+          display: none;
         }
       }
     }
