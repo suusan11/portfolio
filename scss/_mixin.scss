@@ -78,7 +78,6 @@
 }
 
 @mixin detailBox {
-  display: inline-block;
   position: absolute;
   top: 50px;
   left: 70px;
@@ -86,6 +85,8 @@
   height: 180px;
   background-color: $secondary-pink;
   border-radius: 30px;
+  opacity: 0;
+  transition: opacity .5s ease;
 }
 
 @mixin vendorPrefix($property, $value) {

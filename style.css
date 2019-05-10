@@ -850,6 +850,7 @@ html {
     display: flex;
     justify-content: flex-start;
     margin: 3px;
+    transition: 1s;
   }
   .works__thumbnails--pc .thumbnail.delighter {
     transition: all .5s ease-out;
@@ -867,7 +868,9 @@ html {
     cursor: pointer;
   }
   .works__thumbnails--pc .thumbnail:hover .detail__box {
-    display: inline-block;
+    opacity: 1;
+  }
+  .works__thumbnails--pc .thumbnail .detail__box {
     position: absolute;
     top: 50px;
     left: 70px;
@@ -875,9 +878,8 @@ html {
     height: 180px;
     background-color: #EE817B;
     border-radius: 30px;
-  }
-  .works__thumbnails--pc .thumbnail .detail__box {
-    display: none;
+    opacity: 0;
+    transition: opacity .5s ease;
   }
 }
 

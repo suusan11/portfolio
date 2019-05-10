@@ -83,6 +83,7 @@
         display: flex;
         justify-content: flex-start;
         margin: 3px;
+        transition: 1s;
 
         &.delighter {
           transition: all .5s ease-out;
@@ -103,11 +104,11 @@
         }
 
         &:hover .detail__box {
-          @include detailBox;
+          opacity: 1;
         }
 
         .detail__box {
-          display: none;
+          @include detailBox;
         }
       }
     }
