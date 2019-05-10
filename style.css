@@ -612,7 +612,7 @@ html {
   width: 100%;
   height: 100vh;
   margin-top: 0;
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
 .hero__txt {
@@ -629,7 +629,7 @@ html {
 
 .hero h1 {
   color: #EE817B;
-  margin-top: 300px;
+  margin-top: 200px;
   text-align: right;
 }
 
