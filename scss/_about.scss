@@ -14,7 +14,7 @@
       z-index: 3;
       grid-column: 2 / span 2;
       grid-row: 2 / span 2;
-      margin-top: 50%;
+      margin-top: 90%;
 
       img {
         width: 100%;
@@ -139,15 +139,16 @@
         width: 250px;
         border-radius: 50% 40% 50% 50%/50% 50% 50% 40%;
         z-index: 3;
-        margin-left: -20%;
+        margin-left: 20%;
         grid-column: 2 / span 3;
-        grid-row: 1 / span 2;
+        grid-row: 2 / span 2;
+        margin-top: 5%;
       }
 
       &--blue-box {
         @include circleAboutMid($blue-opacity);
         grid-column: 4 / span 2;
-        grid-row: 2 / span 2;
+        grid-row: 1 / span 2;
       }
 
       &--blue-text {
@@ -155,7 +156,7 @@
         padding-left: 5%;
         z-index: 3;
         grid-column: 2 / span 3;
-        grid-row: 2 / span 2;
+        grid-row: 1 / span 2;
       }
 
       &--pink-box {

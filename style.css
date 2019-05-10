@@ -1182,7 +1182,7 @@ html {
   z-index: 3;
   grid-column: 2 / span 2;
   grid-row: 2 / span 2;
-  margin-top: 50%;
+  margin-top: 90%;
 }
 
 .about__container .profile-img img {
@@ -1192,8 +1192,8 @@ html {
 }
 
 .about__container--blue-box {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background-color: rgba(178, 224, 242, 0.9);
   margin-left: -20%;
@@ -1210,8 +1210,8 @@ html {
 }
 
 .about__container--pink-box {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background-color: rgba(252, 236, 234, 0.5);
   grid-column: 1 / span 2;
@@ -1307,9 +1307,10 @@ html {
     width: 250px;
     border-radius: 50% 40% 50% 50%/50% 50% 50% 40%;
     z-index: 3;
-    margin-left: -20%;
+    margin-left: 20%;
     grid-column: 2 / span 3;
-    grid-row: 1 / span 2;
+    grid-row: 2 / span 2;
+    margin-top: 5%;
   }
   .about__container--blue-box {
     width: 300px;
@@ -1317,14 +1318,14 @@ html {
     border-radius: 50%;
     background-color: rgba(178, 224, 242, 0.9);
     grid-column: 4 / span 2;
-    grid-row: 2 / span 2;
+    grid-row: 1 / span 2;
   }
   .about__container--blue-text {
     margin-top: 20%;
     padding-left: 5%;
     z-index: 3;
     grid-column: 2 / span 3;
-    grid-row: 2 / span 2;
+    grid-row: 1 / span 2;
   }
   .about__container--pink-box {
     width: 300px;
