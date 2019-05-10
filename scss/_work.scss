@@ -109,6 +109,17 @@
 
         .detail__box {
           @include detailBox;
+          text-align: center;
+
+          h3 {
+            color: $white;
+            letter-spacing: 3px;
+            padding: 60px 0 10px;
+          }
+          p {
+            color: $white;
+            font-weight: $font-weight-light;
+          }
         }
       }
     }

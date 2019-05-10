@@ -880,6 +880,16 @@ html {
     border-radius: 30px;
     opacity: 0;
     transition: opacity .5s ease;
+    text-align: center;
+  }
+  .works__thumbnails--pc .thumbnail .detail__box h3 {
+    color: #FFFFFF;
+    letter-spacing: 3px;
+    padding: 60px 0 10px;
+  }
+  .works__thumbnails--pc .thumbnail .detail__box p {
+    color: #FFFFFF;
+    font-weight: 300;
   }
 }
 
