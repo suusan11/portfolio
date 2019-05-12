@@ -867,10 +867,13 @@ html {
     object-fit: cover;
     cursor: pointer;
   }
-  .works__thumbnails--pc .thumbnail:hover .detail__box {
+  .works__thumbnails--pc .thumbnail:hover .summary {
     opacity: 1;
   }
-  .works__thumbnails--pc .thumbnail .detail__box {
+  .works__thumbnails--pc .thumbnail .summary.active {
+    background-color: black;
+  }
+  .works__thumbnails--pc .thumbnail .summary {
     position: absolute;
     top: 50px;
     left: 70px;
@@ -882,12 +885,12 @@ html {
     transition: opacity .5s ease;
     text-align: center;
   }
-  .works__thumbnails--pc .thumbnail .detail__box h3 {
+  .works__thumbnails--pc .thumbnail .summary h3 {
     color: #FFFFFF;
     letter-spacing: 3px;
     padding: 60px 0 10px;
   }
-  .works__thumbnails--pc .thumbnail .detail__box p {
+  .works__thumbnails--pc .thumbnail .summary p {
     color: #FFFFFF;
     font-weight: 300;
   }

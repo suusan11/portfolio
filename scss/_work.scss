@@ -103,11 +103,11 @@
           cursor: pointer;
         }
 
-        &:hover .detail__box {
+        &:hover .summary {
           opacity: 1;
         }
 
-        .detail__box {
+        .summary {
           @include detailBox;
           text-align: center;
 
