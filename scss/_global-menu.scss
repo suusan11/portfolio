@@ -89,7 +89,7 @@
 
     li{
       opacity: 1;
-      margin-top: 75px;
+      margin-top: 50px;
 
       a:hover::after {
         @include vendorPrefix(transform, scaleX(1));

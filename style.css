@@ -574,7 +574,7 @@ html {
 
 .menu-items.fullScreen li {
   opacity: 1;
-  margin-top: 75px;
+  margin-top: 50px;
 }
 
 .menu-items.fullScreen li a:hover::after {
@@ -869,9 +869,6 @@ html {
   }
   .works__thumbnails--pc .thumbnail:hover .summary {
     opacity: 1;
-  }
-  .works__thumbnails--pc .thumbnail .summary.active {
-    background-color: black;
   }
   .works__thumbnails--pc .thumbnail .summary {
     position: absolute;
