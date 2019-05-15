@@ -77,24 +77,24 @@
     width: 100%;
 
     .kulkuri-top {
-      @include workImgTop(url("https://suusan11.github.io/portfolio/images/works_images/kulkuri/works-top.png"));
+      @include workImgTop(url("https://suusan11.github.io/portfolio/images/works_images/kulkuri/works-top.jpg"));
       //for local server
-      // @include workImgTop(url("../images/works_images/kulkuri/works-top.png"));
+      // @include workImgTop(url("../images/works_images/kulkuri/works-top.jpg"));
     }
     .wp-top {
-      @include workImgTop(url("https://suusan11.github.io/portfolio/images/works_images/wp/works-top.png"));
+      @include workImgTop(url("https://suusan11.github.io/portfolio/images/works_images/wp/works-top.jpg"));
       //for local server
-      //@include workImgTop(url("../images/works_images/wp/works-top.png"));
+      //@include workImgTop(url("../images/works_images/wp/works-top.jpg"));
     }
     .ui-top {
-      @include workImgTop(url("https://suusan11.github.io/portfolio/images/works_images/uidesign/works-top.png"));
+      @include workImgTop(url("https://suusan11.github.io/portfolio/images/works_images/uidesign/works-top.jpg"));
       //for local server
-      //@include workImgTop(url("../images/works_images/uidesign/works-top.png"));
+      //@include workImgTop(url("../images/works_images/uidesign/works-top.jpg"));
     }
     .mogu-top {
-      @include workImgTop(url("https://suusan11.github.io/portfolio/images/works_images/mogu/works-top.png"));
+      @include workImgTop(url("https://suusan11.github.io/portfolio/images/works_images/mogu/works-top.jpg"));
       //for local server
-      //@include workImgTop(url("../images/works_images/mogu/works-top.png"));
+      //@include workImgTop(url("../images/works_images/mogu/works-top.jpg"));
     }
 
     .works__introduction {
